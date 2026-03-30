@@ -1,0 +1,514 @@
+openapi: 3.0.3
+info:
+  title: GTA Online Vehicles API
+  version: 1.0.0
+  description: API to manage vehicles, custom templates and assets for the GTA Online (Enhanced) guide site.
+servers:
+  - url: https://api.example.com/api
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    Error:
+      type: object
+      properties:
+        code:
+          type: integer
+        message:
+          type: string
+
+    Color:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        hex:
+          type: string
+        rgb:
+          type: array
+          items:
+            type: integer
+      required: [id, name]
+
+    Image:
+      type: object
+      properties:
+        url:
+          type: string
+        caption:
+          type: string
+        order:
+          type: integer
+
+    TemplateItem:
+      type: object
+      properties:
+        id:
+          type: string
+        key:
+          type: string
+        label:
+          type: string
+        input_type:
+          type: string
+          description: select|text|color|boolean|number|image
+        choices:
+          type: array
+          items:
+            type: object
+        editable:
+          type: boolean
+        display_order:
+          type: integer
+
+    Template:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/TemplateItem'
+
+    VehicleSummary:
+      type: object
+      properties:
+        id:
+          type: string
+        slug:
+          type: string
+        name:
+          type: string
+        main_image:
+          type: string
+        is_rare:
+          type: boolean
+        template_id:
+          type: string
+
+    CustomValue:
+      type: object
+      properties:
+        custom_item_id:
+          type: string
+        key:
+          type: string
+        value:
+          type: object
+        value_text:
+          type: string
+        value_hex:
+          type: string
+
+    PerformanceStats:
+      type: object
+      properties:
+        top_speed_stock:
+          type: number
+          description: top speed in km/h or game units
+        top_speed_hsw:
+          type: number
+        acceleration_rating:
+          type: number
+        braking_rating:
+          type: number
+        traction_rating:
+          type: number
+        lap_time_best:
+          type: string
+          description: formatted mm:ss.ms
+        tested_by:
+          type: string
+        last_verified:
+          type: string
+          format: date
+
+    PriceHistory:
+      type: object
+      properties:
+        date:
+          type: string
+          format: date
+        price:
+          type: number
+          format: double
+        note:
+          type: string
+
+    RankingCache:
+      type: object
+      properties:
+        ranking_type:
+          type: string
+        rank_position:
+          type: integer
+        generated_at:
+          type: string
+          format: date-time
+
+    VehicleDetail:
+      type: object
+      properties:
+        id:
+          type: string
+        slug:
+          type: string
+        english_name:
+          type: string
+        japanese_name:
+          type: string
+        name:
+          type: string
+          description: Display name (fallback / legacy)
+        main_image:
+          type: string
+        images:
+          type: array
+          items:
+            $ref: '#/components/schemas/Image'
+        acquisition_method:
+          type: string
+        purchase_site:
+          type: string
+        storage_location:
+          type: string
+        base_price:
+          type: number
+          format: double
+        trade_price:
+          type: number
+          format: double
+        is_rare:
+          type: boolean
+        is_limited_stock:
+          type: boolean
+        is_removed_from_store:
+          type: boolean
+        manufacturer:
+          type: string
+        category:
+          type: string
+        sub_category:
+          type: string
+        vehicle_class_internal:
+          type: string
+        is_hsw:
+          type: boolean
+        is_bennys:
+          type: boolean
+        is_weaponized:
+          type: boolean
+        is_armored:
+          type: boolean
+        drivetrain:
+          type: string
+          description: RWD|AWD|FWD
+        engine_position:
+          type: string
+          description: Front|Mid|Rear
+        seats:
+          type: integer
+        release_dlc:
+          type: string
+        release_date:
+          type: string
+          format: date
+        is_electric:
+          type: boolean
+        notes:
+          type: string
+        template:
+          $ref: '#/components/schemas/Template'
+        custom_values:
+          type: array
+          items:
+            $ref: '#/components/schemas/CustomValue'
+        colors:
+          type: array
+          items:
+            $ref: '#/components/schemas/Color'
+        performance_stats:
+          $ref: '#/components/schemas/PerformanceStats'
+        price_history:
+          type: array
+          items:
+            $ref: '#/components/schemas/PriceHistory'
+        rankings_cache:
+          type: array
+          items:
+            $ref: '#/components/schemas/RankingCache'
+
+paths:
+  /templates:
+    get:
+      summary: List templates
+      responses:
+        '200':
+          description: A list of templates
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Template'
+    post:
+      summary: Create a template (admin)
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Template'
+      responses:
+        '201':
+          description: Template created
+        '401':
+          $ref: '#/components/schemas/Error'
+
+  /templates/{templateId}:
+    get:
+      summary: Get template detail
+      parameters:
+        - name: templateId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Template detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Template'
+    put:
+      summary: Update template (admin)
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: templateId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Template'
+      responses:
+        '200':
+          description: Updated
+
+  /vehicles:
+    get:
+      summary: List vehicles (summary)
+      parameters:
+        - name: page
+          in: query
+          schema:
+            type: integer
+        - name: limit
+          in: query
+          schema:
+            type: integer
+        - name: template_id
+          in: query
+          schema:
+            type: string
+        - name: search
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: vehicle list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  total:
+                    type: integer
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/VehicleSummary'
+    post:
+      summary: Create vehicle (admin)
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VehicleDetail'
+      responses:
+        '201':
+          description: Created
+
+  /vehicles/{id}:
+    get:
+      summary: Get vehicle detail by id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Vehicle detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VehicleDetail'
+    put:
+      summary: Update vehicle (admin)
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VehicleDetail'
+      responses:
+        '200':
+          description: Updated
+    delete:
+      summary: Delete vehicle (admin)
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Deleted
+
+  /vehicles/slug/{slug}:
+    get:
+      summary: Get vehicle detail by slug
+      parameters:
+        - name: slug
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Vehicle detail by slug
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VehicleDetail'
+
+  /colors:
+    get:
+      summary: List colors
+      responses:
+        '200':
+          description: color list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Color'
+    post:
+      summary: Create color (admin)
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Color'
+      responses:
+        '201':
+          description: Created
+
+  /uploads:
+    post:
+      summary: Upload image (returns URL)
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: upload result
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  url:
+                    type: string
+
+  /auth/login:
+    post:
+      summary: Admin login (returns JWT)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: token
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+
+tags:
+  - name: templates
+  - name: vehicles
+  - name: colors
+  - name: uploads
+  - name: auth

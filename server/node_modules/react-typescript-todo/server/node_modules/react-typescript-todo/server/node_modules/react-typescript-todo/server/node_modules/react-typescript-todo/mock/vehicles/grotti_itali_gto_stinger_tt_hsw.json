@@ -1,0 +1,110 @@
+{
+  "id": "1e8b9f4a-3d2a-4c5a-9a2f-0f6b1a2c3d4e",
+  "slug": "grotti-itali-gto-stinger-tt-hsw",
+  "name": "Grotti Itali GTO Stinger TT (HSW)",
+  "main_image": "https://cdn.example.com/images/grotti_itali_gto_main.jpg",
+  "images": [
+    { "url": "https://cdn.example.com/images/grotti_itali_front.jpg", "caption": "Front", "order": 0 },
+    { "url": "https://cdn.example.com/images/grotti_itali_rear.jpg", "caption": "Rear", "order": 1 },
+    { "url": "https://cdn.example.com/images/grotti_itali_side.jpg", "caption": "Side", "order": 2 }
+  ],
+  "acquisition_method": "Legendary Motorsport - 購入 / HSWアップグレード対応",
+  "is_rare": false,
+  "template": {
+    "id": "tpl-hsw-sports",
+    "name": "HSWスポーツカー用",
+    "description": "HSW対応スポーツカー向けテンプレート（性能系・外観系）",
+    "items": [
+      { "id": "i-engine", "key": "engine", "label": "エンジン", "input_type": "select", "choices": [], "editable": true, "display_order": 10 },
+      { "id": "i-transmission", "key": "transmission", "label": "トランスミッション", "input_type": "select", "choices": [], "editable": true, "display_order": 11 },
+      { "id": "i-suspension", "key": "suspension", "label": "サスペンション", "input_type": "select", "choices": [], "editable": true, "display_order": 12 },
+      { "id": "i-turbo", "key": "turbo", "label": "ターボ", "input_type": "boolean", "editable": true, "display_order": 13 },
+      { "id": "i-paint", "key": "paint", "label": "ペイント（HSWカメレオン含む）", "input_type": "color", "editable": true, "display_order": 20 },
+      { "id": "i-wheels", "key": "wheels", "label": "ホイール", "input_type": "select", "choices": [], "editable": true, "display_order": 30 },
+      { "id": "i-hswPerformance", "key": "hswPerformance", "label": "HSWパフォーマンス", "input_type": "object", "editable": true, "display_order": 40 }
+    ]
+  },
+  "custom_values": [
+    {
+      "custom_item_id": "i-engine",
+      "key": "engine",
+      "value": { "value": "level_4", "label": "Engine +4" },
+      "value_text": "Engine +4"
+    },
+    {
+      "custom_item_id": "i-transmission",
+      "key": "transmission",
+      "value": { "value": "level_4", "label": "Transmission +4" },
+      "value_text": "Transmission +4"
+    },
+    {
+      "custom_item_id": "i-suspension",
+      "key": "suspension",
+      "value": { "value": "level_3", "label": "Suspension +3" },
+      "value_text": "Suspension +3"
+    },
+    {
+      "custom_item_id": "i-turbo",
+      "key": "turbo",
+      "value": { "value": true },
+      "value_text": "Installed"
+    },
+    {
+      "custom_item_id": "i-paint",
+      "key": "paint",
+      "value": { "type": 6, "chameleonId": 1, "name": "ブルー/パープルシフト", "hex": null },
+      "value_text": "ブルー/パープルシフト",
+      "value_hex": null
+    },
+    {
+      "custom_item_id": "i-wheels",
+      "key": "wheels",
+      "value": { "categoryId": 10, "index": 0, "name": "HSWエアロディスク" },
+      "value_text": "HSWエアロディスク"
+    },
+    {
+      "custom_item_id": "i-hswPerformance",
+      "key": "hswPerformance",
+      "value": { "engineLevel": 4, "brakesLevel": 3, "transmissionLevel": 4, "suspensionLevel": 3, "turbo": true },
+      "value_text": "HSW Performance: E4 B3 T4 S3"
+    }
+  ],
+  "hsw": {
+    "enabled": true,
+    "modKit": 4,
+    "upgradeInstalled": true,
+    "hswPerformance": {
+      "engineLevel": 4,
+      "brakesLevel": 3,
+      "transmissionLevel": 4,
+      "suspensionLevel": 3,
+      "turbo": true
+    }
+  },
+  "mods": {
+    "11": 4,
+    "12": 3,
+    "13": 4,
+    "18": 1,
+    "23": 0,
+    "24": 0,
+    "0": 2,
+    "1": 1,
+    "2": 1
+  },
+  "paint": {
+    "primaryType": 6,
+    "primaryChameleonId": 1,
+    "pearlescentColor": 3,
+    "wheelColor": 120
+  },
+  "wheel": {
+    "modType": 23,
+    "categoryId": 10,
+    "index": 0,
+    "customTires": false,
+    "bulletproof": true,
+    "lowGrip": false,
+    "tireSmokeColor": [0,0,0]
+  }
+}
