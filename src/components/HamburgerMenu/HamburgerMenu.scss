@@ -1,0 +1,230 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.hmenu {
+  position: relative;
+
+  // ── ハンバーガーボタン ──
+  &__trigger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 101;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: $radius-sm;
+    transition: background 0.15s;
+
+    &:hover {
+      background: rgba($color-border, 0.4);
+    }
+  }
+
+  &__bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: $color-text;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+  }
+
+  &__trigger--active &__bar {
+    &:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    &:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    &:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  }
+
+  // ── オーバーレイ ──
+  &__overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 99;
+    backdrop-filter: blur(2px);
+
+    &--visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  // ── ドロワー ──
+  &__drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    max-width: 85vw;
+    height: 100vh;
+    height: 100dvh;
+    background: $color-surface;
+    border-right: 1px solid $color-border;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    z-index: 100;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    display: flex;
+    flex-direction: column;
+
+    &--open {
+      transform: translateX(0);
+    }
+  }
+
+  // ── ドロワーヘッダー ──
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $space-md;
+    border-bottom: 1px solid $color-border;
+    position: sticky;
+    top: 0;
+    background: $color-surface;
+    z-index: 1;
+  }
+
+  &__brand {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $color-text;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__close {
+    background: none;
+    border: 1px solid $color-border;
+    color: $color-sub;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: $radius-sm;
+    transition: all 0.15s;
+
+    &:hover {
+      color: $color-text;
+      border-color: $color-sub;
+    }
+  }
+
+  // ── リスト ──
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: $space-xs 0 $space-lg;
+  }
+
+  &__item {
+    border-bottom: 1px solid rgba($color-border, 0.4);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 13px $space-md;
+    background: none;
+    border: none;
+    color: $color-text;
+    font-size: 0.93rem;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.15s;
+
+    &:hover {
+      background: rgba($color-primary, 0.08);
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px $space-md;
+    color: $color-text;
+    font-size: 0.93rem;
+    text-decoration: none;
+    transition: background 0.15s;
+
+    &:hover {
+      background: rgba($color-primary, 0.08);
+    }
+
+    &--sub {
+      padding-left: 48px;
+      font-size: 0.88rem;
+      color: $color-sub;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      &:hover {
+        color: $color-text;
+      }
+    }
+  }
+
+  &__icon {
+    font-size: 1.1rem;
+    width: 22px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  &__label {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__arrow {
+    margin-left: auto;
+    transition: transform 0.25s ease;
+    color: $color-sub;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+
+    &--open {
+      transform: rotate(90deg);
+    }
+  }
+
+  // ── サブメニュー (アコーディオン) ──
+  &__sub {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: rgba($color-surface-2, 0.6);
+
+    &--open {
+      max-height: 600px;
+    }
+  }
+
+  &__sub-item {
+    border-top: 1px solid rgba($color-border, 0.3);
+  }
+}

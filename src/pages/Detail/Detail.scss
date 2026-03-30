@@ -1,0 +1,67 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.detail {
+	display: grid;
+	grid-template-columns: minmax(260px, 420px) 1fr;
+	gap: $space-md;
+
+	@include respond-tablet {
+		grid-template-columns: 1fr;
+	}
+
+	&__main-image {
+		width: 100%;
+		border-radius: $radius-md;
+		border: 1px solid $color-border;
+	}
+
+	&__gallery {
+		list-style: none;
+		margin: $space-sm 0;
+		padding: 0;
+		display: grid;
+		gap: $space-xs;
+	}
+
+	&__gallery-item {
+		background: $color-surface;
+		border: 1px solid $color-border;
+		border-radius: $radius-sm;
+		padding: $space-xs;
+
+		img {
+			width: 100%;
+			border-radius: $radius-sm;
+			display: block;
+		}
+
+		p {
+			margin: $space-xs 0 0;
+			color: $color-sub;
+			font-size: 13px;
+		}
+	}
+
+	&__add-image {
+		display: grid;
+		gap: $space-xs;
+	}
+
+	&__content {
+		background: $color-surface;
+		border: 1px solid $color-border;
+		border-radius: $radius-md;
+		padding: $space-md;
+	}
+
+	&__jp {
+		color: $color-sub;
+	}
+
+	&__actions {
+		display: flex;
+		gap: $space-xs;
+		margin-top: $space-md;
+	}
+}

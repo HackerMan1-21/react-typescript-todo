@@ -1,0 +1,163 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.career-card {
+  @include card-base;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:not(&--locked):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+  }
+
+  // ── 完了 ──
+  &--complete {
+    border-color: var(--accent, $color-primary);
+    box-shadow: 0 0 0 1px var(--accent, $color-primary),
+      0 2px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  // ── ロック ──
+  &--locked {
+    opacity: 0.45;
+    filter: grayscale(0.7);
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+
+  // ── サムネイル ──
+  &__thumb {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: $color-surface-2;
+    flex-shrink: 0;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+
+    .career-card:hover & {
+      transform: scale(1.03);
+    }
+  }
+
+  &__img-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, $color-surface-2 0%, $color-border 100%);
+  }
+
+  &__badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: var(--accent, $color-primary);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 12px;
+    letter-spacing: 0.03em;
+  }
+
+  &__lock-overlay {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: rgba(#000, 0.65);
+  }
+
+  &__lock-icon {
+    font-size: 2.2rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+  }
+
+  // ── ボディ ──
+  &__body {
+    padding: $space-md;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $color-text;
+    line-height: 1.4;
+  }
+
+  &__desc {
+    margin: 0;
+    font-size: 0.83rem;
+    color: $color-sub;
+    line-height: 1.55;
+  }
+
+  &__condition {
+    font-size: 0.8rem;
+    color: #f59e0b;
+  }
+
+  // ── タスクリスト ──
+  &__tasks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-top: 1px solid $color-border;
+    padding-top: 10px;
+  }
+
+  &__task {
+    // リスト要素
+  }
+
+  &__check {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.83rem;
+    color: $color-sub;
+    cursor: pointer;
+    line-height: 1.4;
+    padding: 3px 0;
+
+    input[type='checkbox'] {
+      accent-color: var(--accent, $color-primary);
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
+      margin-top: 1px;
+      cursor: pointer;
+    }
+
+    &--done span {
+      text-decoration: line-through;
+      opacity: 0.5;
+    }
+  }
+
+  // ── 報酬 ──
+  &__reward {
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid $color-border;
+    font-size: 0.83rem;
+    color: #22c55e;
+    font-weight: 600;
+  }
+}

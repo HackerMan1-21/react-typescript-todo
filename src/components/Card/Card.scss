@@ -1,0 +1,48 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.card {
+	@include card-base;
+	overflow: hidden;
+
+	&__image-link {
+		position: relative;
+		display: block;
+		text-decoration: none;
+	}
+
+	&__image {
+		width: 100%;
+		aspect-ratio: 4 / 3;
+		object-fit: cover;
+		display: block;
+	}
+
+	&__title-wrap {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		display: flex;
+		justify-content: space-between;
+		padding: $space-xs;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+
+	&__title-en {
+		font-weight: 700;
+		font-size: 12px;
+	}
+
+	&__title-jp {
+		color: #d8e4ff;
+		font-size: 12px;
+	}
+
+	&__actions {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: $space-xs;
+	}
+}

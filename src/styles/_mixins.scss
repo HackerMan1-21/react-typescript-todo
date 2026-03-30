@@ -1,0 +1,19 @@
+@use './variables' as *;
+
+@mixin respond-tablet {
+	@media (max-width: 900px) {
+		@content;
+	}
+}
+
+@mixin respond-mobile {
+	@media (max-width: 560px) {
+		@content;
+	}
+}
+
+@mixin card-base {
+	background: $color-surface;
+	border: 1px solid $color-border;
+	border-radius: $radius-md;
+}

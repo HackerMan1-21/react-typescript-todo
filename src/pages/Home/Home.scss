@@ -1,0 +1,51 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.home {
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: $space-md;
+	}
+
+	&__controls {
+		display: flex;
+		gap: $space-sm;
+		align-items: center;
+		font-size: 0.9rem;
+		color: $color-sub;
+	}
+
+	&__count {
+		margin-right: $space-sm;
+	}
+
+	&__category {
+		margin-bottom: $space-lg;
+	}
+
+	&__category-title {
+		border-left: 4px solid $color-primary;
+		padding-left: $space-xs;
+		margin-bottom: $space-sm;
+	}
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: $space-sm;
+
+		@include respond-tablet {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include respond-mobile {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__empty {
+		color: $color-sub;
+	}
+}

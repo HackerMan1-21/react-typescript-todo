@@ -1,0 +1,23 @@
+@use '../../styles/variables' as *;
+
+.guide-section {
+  margin-bottom: 40px;
+
+  &__heading {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: $color-text;
+    margin: 0 0 $space-md;
+    padding-bottom: $space-sm;
+    border-bottom: 2px solid $color-primary;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: $space-sm;
+    color: $color-sub;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}

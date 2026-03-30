@@ -1,0 +1,41 @@
+@use '../../styles/variables' as *;
+
+.breadcrumb {
+  margin-bottom: $space-md;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__link {
+    font-size: 0.85rem;
+    color: $color-primary;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__current {
+    font-size: 0.85rem;
+    color: $color-sub;
+  }
+
+  &__sep {
+    font-size: 0.85rem;
+    color: $color-border;
+  }
+}

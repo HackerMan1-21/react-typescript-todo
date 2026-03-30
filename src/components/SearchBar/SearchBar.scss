@@ -1,0 +1,9 @@
+@use '../../styles/variables' as *;
+
+.search-bar {
+	margin-bottom: $space-md;
+
+	&__input {
+		width: 100%;
+	}
+}

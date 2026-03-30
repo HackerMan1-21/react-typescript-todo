@@ -1,0 +1,44 @@
+[
+  {
+    "id": "weapon-1",
+    "name": "Assault Rifle",
+    "nameJP": "アサルトライフル",
+    "category": "武器",
+    "image": "https://images.unsplash.com/photo-1581822261290-991b38693d1b?auto=format&fit=crop&w=1200&q=80",
+    "description": "中距離〜遠距離で安定した火力を出せる標準的な自動小銃。",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1581822261290-991b38693d1b?auto=format&fit=crop&w=1200&q=80",
+        "comment": "標準画像"
+      }
+    ]
+  },
+  {
+    "id": "vehicle-1",
+    "name": "Vorschlaghammer",
+    "nameJP": "フォアシュラグハンマー",
+    "category": "車両",
+    "image": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80",
+    "description": "最高速と加速のバランスに優れた高性能スポーツセダン。",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80",
+        "comment": "サムネイル"
+      }
+    ]
+  },
+  {
+    "id": "character-1",
+    "name": "Mission Handler",
+    "nameJP": "ミッションハンドラー",
+    "category": "キャラクター",
+    "image": "https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&w=1200&q=80",
+    "description": "攻略進行に合わせて依頼を出すサポート役のNPC。",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&w=1200&q=80",
+        "comment": "NPC"
+      }
+    ]
+  }
+]

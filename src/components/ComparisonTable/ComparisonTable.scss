@@ -1,0 +1,52 @@
+@use '../../styles/variables' as *;
+
+.comp-table-wrap {
+  overflow-x: auto;
+  margin: $space-md 0;
+  -webkit-overflow-scrolling: touch;
+  border-radius: $radius-sm;
+  border: 1px solid $color-border;
+}
+
+.comp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+
+  &__caption {
+    text-align: left;
+    font-weight: 700;
+    padding: $space-sm $space-md;
+    color: $color-text;
+    background: $color-surface-2;
+    border-bottom: 1px solid $color-border;
+  }
+
+  th,
+  td {
+    padding: 10px 14px;
+    border-bottom: 1px solid $color-border;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  th {
+    background: $color-surface-2;
+    color: $color-text;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+
+  td {
+    color: $color-sub;
+    background: $color-surface;
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  tbody tr:hover td {
+    background: rgba($color-primary, 0.06);
+  }
+}

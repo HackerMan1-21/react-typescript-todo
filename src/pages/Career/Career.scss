@@ -1,0 +1,122 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.career {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $space-lg;
+
+  @include respond-mobile {
+    padding: $space-md;
+  }
+
+  // ── ヘッダー ──
+  &__header {
+    text-align: center;
+    margin-bottom: $space-lg;
+    position: relative;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: $color-text;
+
+    @include respond-mobile {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__subtitle {
+    color: $color-sub;
+    margin: 0 0 $space-md;
+    font-size: 0.95rem;
+  }
+
+  &__overall {
+    max-width: 480px;
+    margin: 0 auto $space-sm;
+  }
+
+  &__reset {
+    margin-top: $space-sm;
+    background: none;
+    border: 1px solid $color-border;
+    color: $color-sub;
+    font-size: 0.8rem;
+    padding: 5px 14px;
+    border-radius: $radius-full;
+    cursor: pointer;
+    transition: all 0.15s;
+
+    &:hover {
+      border-color: #ef4444;
+      color: #ef4444;
+    }
+  }
+
+  // ── フィルター ──
+  &__filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+  &__filter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px 14px;
+    border: 1px solid $color-border;
+    border-radius: 20px;
+    background: $color-surface;
+    color: $color-sub;
+    font-size: 0.83rem;
+    cursor: pointer;
+    transition: all 0.15s;
+
+    &:hover {
+      border-color: var(--filter-color, $color-primary);
+      color: $color-text;
+    }
+
+    &--active {
+      background: var(--filter-color, $color-primary);
+      color: #fff;
+      border-color: var(--filter-color, $color-primary);
+    }
+  }
+
+  &__filter-pct {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    font-size: 0.78rem;
+    opacity: 0.85;
+  }
+
+  // ── グリッド ──
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: $space-md;
+
+    @include respond-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // ── 空状態 ──
+  &__empty {
+    text-align: center;
+    color: $color-sub;
+    padding: $space-xl;
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,41 @@
+@use '../../styles/variables' as *;
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  text-align: center;
+  gap: $space-md;
+  padding: $space-lg;
+
+  &__title {
+    font-size: 5rem;
+    font-weight: 700;
+    color: $color-primary;
+    margin: 0;
+    line-height: 1;
+  }
+
+  &__msg {
+    color: $color-sub;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 10px 24px;
+    background: $color-primary;
+    color: #fff;
+    text-decoration: none;
+    border-radius: $radius-sm;
+    font-weight: 600;
+    transition: opacity 0.15s;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+}

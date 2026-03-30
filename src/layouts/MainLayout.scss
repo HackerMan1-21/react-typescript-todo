@@ -1,0 +1,136 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+$header-height: 60px;
+
+.main-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  // ── ヘッダー ──
+  &__header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(#0b0e14, 0.96);
+    border-bottom: 1px solid $color-border;
+    backdrop-filter: blur(8px);
+    height: $header-height;
+  }
+
+  &__header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 $space-md;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: $space-md;
+  }
+
+  &__brand {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: $color-text;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    flex: 1;
+    text-align: center;
+
+    @include respond-tablet {
+      text-align: left;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  // ── PCナビ ──
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    @include respond-tablet {
+      display: none;
+    }
+  }
+
+  &__nav-link {
+    padding: 7px 14px;
+    border-radius: $radius-sm;
+    font-size: 0.88rem;
+    color: $color-sub;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+
+    &:hover {
+      background: rgba($color-primary, 0.1);
+      color: $color-text;
+    }
+
+    &--accent {
+      background: rgba($color-primary, 0.15);
+      color: $color-primary;
+      font-weight: 600;
+
+      &:hover {
+        background: $color-primary;
+        color: #fff;
+      }
+    }
+  }
+
+  // ── メイン ──
+  &__main {
+    flex: 1;
+  }
+
+  // ── フッター ──
+  &__footer {
+    border-top: 1px solid $color-border;
+    background: $color-surface-2;
+    margin-top: auto;
+  }
+
+  &__footer-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: $space-md $space-lg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: $space-md;
+
+    @include respond-mobile {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__footer-copy {
+    font-size: 0.8rem;
+    color: $color-sub;
+    opacity: 0.6;
+    margin: 0;
+  }
+
+  &__footer-nav {
+    display: flex;
+    gap: $space-md;
+
+    a {
+      font-size: 0.82rem;
+      color: $color-sub;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-text;
+      }
+    }
+  }
+}

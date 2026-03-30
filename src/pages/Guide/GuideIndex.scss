@@ -1,0 +1,125 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.guide-index {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: $space-lg;
+
+  @include respond-mobile {
+    padding: $space-md;
+  }
+
+  &__header {
+    margin-bottom: $space-lg;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: $color-text;
+
+    @include respond-mobile {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__subtitle {
+    color: $color-sub;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+
+  &__section {
+    margin-bottom: 36px;
+  }
+
+  &__cat-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $color-text;
+    margin: 0 0 $space-sm;
+    padding-left: 10px;
+    border-left: 3px solid $color-primary;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: $space-sm;
+
+    @include respond-mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// ── ガイドカード ──
+.guide-card {
+  @include card-base;
+  display: flex;
+  flex-direction: column;
+  padding: $space-md;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-color: $color-primary;
+  }
+
+  &__body {
+    flex: 1;
+    margin-bottom: $space-sm;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $color-text;
+    margin: 0 0 8px;
+    line-height: 1.4;
+  }
+
+  &__desc {
+    font-size: 0.83rem;
+    color: $color-sub;
+    margin: 0;
+    line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid $color-border;
+    padding-top: $space-sm;
+  }
+
+  &__cat {
+    font-size: 0.75rem;
+    background: rgba($color-primary, 0.15);
+    color: $color-primary;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+
+  &__date {
+    font-size: 0.75rem;
+    color: $color-sub;
+    opacity: 0.6;
+    margin-left: auto;
+  }
+
+  &__arrow {
+    font-size: 1rem;
+    color: $color-sub;
+  }
+}
