@@ -1,0 +1,140 @@
+{
+  "category": "vehicles",
+  "label": "車両",
+  "icon": "🏎️",
+  "color": "#3b82f6",
+  "awards": [
+    {
+      "id": "vehicles-collector",
+      "name": "コレクター",
+      "description": "車両をコレクションした。ガレージに車を収納するたびにカウントが進む。",
+      "requirement": { "type": "unique", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 10000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 2000 },
+        { "tier": 2, "target": 25, "rp": 4000 },
+        { "tier": 3, "target": 50, "rp": 7000 },
+        { "tier": 4, "target": 100, "rp": 10000 }
+      ],
+      "guide": {
+        "summary": "任意の車両を購入または窃取してガレージに保管することでカウントが増える。",
+        "steps": [
+          "所有車両はメニュー → 輸送・ガレージ → マイガレージで確認",
+          "スパロの中古車市場や各ディーラーサイトから多様な車を購入可能",
+          "フリーモードで放置されている高級車を盗んで保管する方法もある",
+          "ガレージが満杯になったら新しいガレージ物件を購入して収納先を増やす"
+        ],
+        "tips": [
+          "複数ガレージを保有すると最大200台以上管理可能",
+          "週替わりセール対象の車は大幅割引で購入できる",
+          "コレクションの効率化にはロスサントス・カスタムズの近くのガレージが便利"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["車両コレクター", "ガレージ", "収集", "100台"],
+        "description": "GTA Online コレクターアワード。100台以上の車両を収集する方法。"
+      }
+    },
+    {
+      "id": "vehicles-tune-shop",
+      "name": "チューニング職人",
+      "description": "ロスサントス・カスタムズでカスタムを施した。",
+      "requirement": { "type": "cumulative", "target": 500000 },
+      "progressMax": 500000,
+      "reward": { "rp": 8000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10000, "rp": 1000 },
+        { "tier": 2, "target": 50000, "rp": 3000 },
+        { "tier": 3, "target": 200000, "rp": 6000 },
+        { "tier": 4, "target": 500000, "rp": 8000 }
+      ],
+      "guide": {
+        "summary": "LS カスタムズで車両のカスタムやパーツ交換を繰り返すことで累計支出金額がカウントされる。",
+        "steps": [
+          "LS カスタムズに車を持ち込み（自分の所有車またはフリーモードで盗んだ車）",
+          "エンジン・ブレーキ・タイヤ・外装など各種パーツをアップグレード",
+          "完全フルカスタムすると1台でも数十万ドル消費可能",
+          "安価な車でも繰り返しカスタムするとカウントが積まれる"
+        ],
+        "tips": [
+          "高級スポーツカーのフルカスタムは1回で数十万RP分の費用",
+          "平日の時間帯はLS カスタムズが無料開放されることがある（ロックスター週替り特典）",
+          "Benny's Original Motor Works は特定の車をマスタリー改造できる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["カスタム", "チューニング", "LSカスタムズ", "カーモッド"],
+        "description": "GTA Online チューニング職人アワード。LS カスタムズでの費用累計。"
+      }
+    },
+    {
+      "id": "vehicles-supercar",
+      "name": "スーパーカー オーナー",
+      "description": "スーパーカークラスの車両を購入した。",
+      "requirement": { "type": "unique", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 12000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 2000 },
+        { "tier": 2, "target": 3, "rp": 5000 },
+        { "tier": 3, "target": 6, "rp": 9000 },
+        { "tier": 4, "target": 10, "rp": 12000 }
+      ],
+      "guide": {
+        "summary": "Legendary Motorsport などのサイトでスーパーカークラスの車両を購入する。",
+        "steps": [
+          "スマートフォン → ブラウザ → Legendary Motorsport サイトにアクセス",
+          "カテゴリ「Supercars」から購入したい車を選ぶ",
+          "購入後はガレージに自動格納される",
+          "人気モデル: Zentorno, T20, Adder, Nero Custom, Pariah"
+        ],
+        "tips": [
+          "週替わりポッドキャストやTwitter（X）でセール情報をチェック",
+          "Pariah（約160万ドル）はスーパーカークラス最速クラスでコスパ良好",
+          "Deluxo や Oppressor は特殊能力付きスーパーカーでおすすめ"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["スーパーカー", "Legendary Motorsport", "高級車", "購入"],
+        "description": "GTA Online スーパーカーオーナー。おすすめスーパーカーと購入方法。"
+      }
+    },
+    {
+      "id": "vehicles-distance",
+      "name": "ロングドライブ",
+      "description": "車両で長距離を走行した。",
+      "requirement": { "type": "cumulative", "target": 10000 },
+      "progressMax": 10000,
+      "reward": { "rp": 7000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 100, "rp": 1000 },
+        { "tier": 2, "target": 500, "rp": 3000 },
+        { "tier": 3, "target": 2500, "rp": 5000 },
+        { "tier": 4, "target": 10000, "rp": 7000 }
+      ],
+      "guide": {
+        "summary": "フリーモードやミッション中に車両で走行した総距離がカウントされる（単位: マイル）。",
+        "steps": [
+          "通常のフリーモード活動で自然と増加する",
+          "ミッションの移動中も距離がカウントされる",
+          "高速道路（サンアンドレアス州間道路1号）を使うと長距離走行しやすい",
+          "遠距離のセットアップミッションを繰り返すと効率よく稼げる"
+        ],
+        "tips": [
+          "走行距離はキャリア統計から確認可能",
+          "自動車だけでなく、ボートや飛行機は別カウント",
+          "長時間セッションを続けることで自然と達成できる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["走行距離", "ドライブ", "ロングドライブ", "マイル"],
+        "description": "GTA Online ロングドライブアワード。車両での総走行距離を伸ばす方法。"
+      }
+    }
+  ]
+}

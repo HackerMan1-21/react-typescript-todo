@@ -1,13 +1,13 @@
 import { CareerCategoryMeta, CareerMilestone } from '../types/career';
 
 export const CAREER_CATEGORIES: CareerCategoryMeta[] = [
-  { key: 'crime',      label: '犯罪',         icon: '🔫', color: '#ef4444' },
-  { key: 'business',   label: 'ビジネス',     icon: '💼', color: '#22c55e' },
-  { key: 'racing',     label: 'レース',       icon: '🏎️', color: '#3b82f6' },
-  { key: 'heist',      label: '強盗',         icon: '💰', color: '#f59e0b' },
-  { key: 'freemode',   label: 'フリーモード', icon: '🌍', color: '#8b5cf6' },
-  { key: 'social',     label: 'ソーシャル',   icon: '👥', color: '#06b6d4' },
-  { key: 'collection', label: 'コレクション', icon: '🏆', color: '#ec4899' },
+  { key: 'crime',      label: '犯罪',         icon: '🔫', color: '#d4243b' },
+  { key: 'business',   label: 'ビジネス',     icon: '💼', color: '#7ec850' },
+  { key: 'racing',     label: 'レース',       icon: '🏎️', color: '#ff9500' },
+  { key: 'heist',      label: '強盗',         icon: '💰', color: '#ffcc00' },
+  { key: 'freemode',   label: 'フリーモード', icon: '🌍', color: '#4a9eff' },
+  { key: 'social',     label: 'ソーシャル',   icon: '👥', color: '#00a651' },
+  { key: 'collection', label: 'コレクション', icon: '🏆', color: '#9b30ff' },
 ];
 
 export const CAREER_MILESTONES: CareerMilestone[] = [

@@ -30,8 +30,8 @@
     display: block;
     width: 22px;
     height: 2px;
-    background: $color-text;
-    border-radius: 2px;
+    background: $color-primary;
+    border-radius: 1px;
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform-origin: center;
   }
@@ -59,7 +59,7 @@
     }
   }
 
-  // ── ドロワー ──
+  // ── ドロワー ── SAメニュー風
   &__drawer {
     position: fixed;
     top: 0;
@@ -68,8 +68,9 @@
     max-width: 85vw;
     height: 100vh;
     height: 100dvh;
-    background: $color-surface;
-    border-right: 1px solid $color-border;
+    background: rgba(#000, 0.97);
+    border-right: 2px solid $color-primary;
+    box-shadow: 4px 0 24px rgba($color-primary, 0.15);
     transform: translateX(-100%);
     transition: transform 0.3s ease-out;
     z-index: 100;
@@ -89,23 +90,24 @@
     align-items: center;
     justify-content: space-between;
     padding: $space-md;
-    border-bottom: 1px solid $color-border;
+    border-bottom: 2px solid $color-primary;
     position: sticky;
     top: 0;
-    background: $color-surface;
+    background: rgba(#000, 0.98);
     z-index: 1;
   }
 
   &__brand {
-    font-size: 1rem;
-    font-weight: 700;
-    color: $color-text;
+    font-family: $font-heading;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
     text-decoration: none;
-    letter-spacing: 0.02em;
-
-    &:hover {
-      color: $color-primary;
-    }
+    background: linear-gradient(135deg, $color-sunset-start, $color-sunset-end);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   &__close {
@@ -147,7 +149,10 @@
     padding: 13px $space-md;
     background: none;
     border: none;
-    color: $color-text;
+    font-family: $font-ui;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $color-sub;
     font-size: 0.93rem;
     cursor: pointer;
     text-align: left;
@@ -155,6 +160,8 @@
 
     &:hover {
       background: rgba($color-primary, 0.08);
+      color: $color-primary;
+      border-left: 3px solid $color-primary;
     }
   }
 
@@ -163,24 +170,35 @@
     align-items: center;
     gap: 10px;
     padding: 13px $space-md;
-    color: $color-text;
-    font-size: 0.93rem;
+    font-family: $font-ui;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $color-sub;
+    font-size: 0.9rem;
     text-decoration: none;
-    transition: background 0.15s;
+    transition: all 0.15s;
 
     &:hover {
       background: rgba($color-primary, 0.08);
+      color: $color-primary;
+      border-left: 3px solid $color-primary;
     }
 
     &--sub {
       padding-left: 48px;
-      font-size: 0.88rem;
+      font-size: 0.82rem;
       color: $color-sub;
+      opacity: 0.8;
       padding-top: 10px;
       padding-bottom: 10px;
+      text-transform: none;
+      font-family: $font-body;
+      letter-spacing: 0;
 
       &:hover {
-        color: $color-text;
+        color: $color-primary;
+        opacity: 1;
+        border-left: 2px solid $color-primary;
       }
     }
   }
@@ -217,7 +235,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    background: rgba($color-surface-2, 0.6);
+    background: rgba(#000, 0.4);
 
     &--open {
       max-height: 600px;

@@ -7,14 +7,16 @@
 
 body {
 	margin: 0;
-	font-family: 'Segoe UI', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+	font-family: $font-body;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background: $color-bg;
 	color: $color-text;
+	// SA風ノイズテクスチャ
+	background-image: url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='%23ffffff' opacity='0.015'/%3E%3C/svg%3E");
 }
 
-/* ページ全体のオーバーレイ（上→下の黒→淡い黄グラデーション、視認性向上用） */
+// SA風サンセットオーバーレイ
 body::before {
 	content: '';
 	position: fixed;
@@ -22,12 +24,193 @@ body::before {
 	pointer-events: none;
 	z-index: 5;
 	background:
-		linear-gradient(to bottom, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 18%, rgba(255,246,180,0.18) 100%),
-		radial-gradient(ellipse at 20% 8%, rgba(255,250,210,0.06), transparent 36%),
-		repeating-linear-gradient(135deg, rgba(255,255,255,0.02) 0 1px, rgba(255,255,255,0) 1px 6px);
-	mix-blend-mode: soft-light;
-	backdrop-filter: saturate(1.04) blur(0.3px);
+		radial-gradient(ellipse at 80% 0%, rgba($color-sunset-start, 0.07), transparent 50%),
+		radial-gradient(ellipse at 20% 100%, rgba($color-primary, 0.04), transparent 50%);
+	mix-blend-mode: screen;
 }
+
+// SA風スキャンライン（軽量）
+body::after {
+	content: '';
+	position: fixed;
+	inset: 0;
+	pointer-events: none;
+	z-index: 6;
+	background: repeating-linear-gradient(
+		0deg,
+		transparent 0px,
+		transparent 3px,
+		rgba(0, 0, 0, 0.025) 3px,
+		rgba(0, 0, 0, 0.025) 4px
+	);
+}
+
+// ── 見出し ──
+h1, h2, h3 {
+	font-family: $font-heading;
+	text-transform: uppercase;
+	font-style: italic;
+	letter-spacing: 0.04em;
+}
+
+h1 {
+	font-size: 2.2rem;
+	background: linear-gradient(135deg, $color-sunset-start, $color-sunset-end);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+h2 {
+	font-size: 1.5rem;
+	color: $color-primary;
+	border-left: 4px solid $color-primary;
+	padding-left: $space-sm;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7);
+}
+
+h3 {
+	font-size: 1.15rem;
+	color: $color-text;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
+}
+
+a {
+	color: $color-primary;
+	transition: color 0.15s;
+
+	&:hover {
+		color: $color-sunset-start;
+	}
+}
+
+// ── ページフェードイン（SA風） ──
+@keyframes sa-fade-in {
+	from {
+		opacity: 0;
+		transform: scale(0.98);
+		filter: brightness(0.6);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+		filter: brightness(1);
+	}
+}
+
+.layout {
+	min-height: 100vh;
+
+	&__header {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		background: rgba(#000, 0.96);
+		border-bottom: 2px solid $color-primary;
+	}
+
+	&__header-inner {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 14px 20px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__brand {
+		text-decoration: none;
+		font-family: $font-heading;
+		font-style: italic;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $color-primary;
+	}
+
+	&__nav {
+		display: flex;
+		gap: $space-sm;
+	}
+
+	&__main {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: $space-lg 20px 48px;
+		animation: sa-fade-in 0.35s ease-out;
+	}
+}
+
+// ── ボタン ──
+.btn {
+	border: 0;
+	border-radius: $radius-sm;
+	padding: $space-xs $space-md;
+	cursor: pointer;
+	font-family: $font-ui;
+	font-size: 0.95rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	transition: all 0.15s;
+
+	&--primary {
+		background: linear-gradient(180deg, $color-primary, $color-primary-dark);
+		color: #000;
+		font-weight: 700;
+		box-shadow: 0 2px 8px rgba($color-primary, 0.35);
+
+		&:hover {
+			background: linear-gradient(180deg, lighten($color-primary, 8%), $color-primary);
+			box-shadow: 0 4px 18px rgba($color-primary, 0.55);
+		}
+	}
+
+	&--secondary {
+		background: $color-surface;
+		color: $color-text;
+		border: 1px solid $color-border;
+
+		&:hover {
+			border-color: $color-primary;
+			color: $color-primary;
+		}
+	}
+
+	&--danger {
+		background: $color-danger;
+		color: #fff;
+
+		&:hover {
+			background: lighten($color-danger, 8%);
+		}
+	}
+}
+
+// ── フォーム ──
+.form-input,
+.form-textarea {
+	border: 1px solid $color-border;
+	background: $color-surface-2;
+	color: $color-text;
+	border-radius: $radius-sm;
+	padding: 10px;
+	width: 100%;
+	font-family: $font-body;
+
+	&:focus {
+		outline: none;
+		border-color: $color-primary;
+		box-shadow: 0 0 0 2px rgba($color-primary, 0.2);
+	}
+}
+
+@include respond-mobile {
+	.layout__header-inner {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: $space-xs;
+	}
+}
+
 
 a {
 	color: inherit;

@@ -34,7 +34,7 @@ export const Edit = (props: Props) => {
 		const rec: Record<string, string[]> = {};
 		for (const g of CATEGORY_GROUPS) rec[g.title] = g.subs;
 		return rec;
-	}, [props]);
+	}, []);
 
 	useEffect(() => setForm(source || null), [source]);
 

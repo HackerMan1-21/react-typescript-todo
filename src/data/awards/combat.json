@@ -1,0 +1,173 @@
+{
+  "category": "combat",
+  "label": "戦闘",
+  "icon": "🔫",
+  "color": "#ef4444",
+  "awards": [
+    {
+      "id": "combat-kills",
+      "name": "大量殺戮",
+      "description": "フリーモードで他のプレイヤーを倒した。",
+      "requirement": { "type": "cumulative", "target": 500 },
+      "progressMax": 500,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 50, "rp": 1500 },
+        { "tier": 3, "target": 200, "rp": 3000 },
+        { "tier": 4, "target": 500, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "フリーモードで他プレイヤーを倒すたびにカウントが進む。賞金首ターゲットをとると効率よく稼げる。",
+        "steps": [
+          "セッションに参加し、マップ上の赤点（プレイヤー）に近づく",
+          "賞金ターゲット（黄色のマーカー）は倒すと賞金と共にカウント加算",
+          "デスマッチモードに参加するとKill数が安定して増える",
+          "エアーサポート（軌道砲など）を使えばランク差があっても倒しやすい"
+        ],
+        "tips": [
+          "パッシブモードをOFFにして積極的に参加する",
+          "スナイパーライフルやヘビーウェポンは高Killが取りやすい",
+          "ヘリ・飛行機から地上のプレイヤーを狙うのが効率的"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["キル", "PvP", "フリーモード", "戦闘"],
+        "description": "GTA Online 大量殺戮アワード攻略。PvPキルを効率よく積む方法を解説。"
+      }
+    },
+    {
+      "id": "combat-headshots",
+      "name": "ヘッドショット マスター",
+      "description": "ヘッドショットでプレイヤーやNPCを倒した。",
+      "requirement": { "type": "cumulative", "target": 500 },
+      "progressMax": 500,
+      "reward": { "rp": 6000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 600 },
+        { "tier": 2, "target": 50, "rp": 2000 },
+        { "tier": 3, "target": 200, "rp": 4000 },
+        { "tier": 4, "target": 500, "rp": 6000 }
+      ],
+      "guide": {
+        "summary": "スナイパーライフルや拳銃で敵の頭部を狙って倒す。NPCも対象に含まれるのでミッションでも稼ぐことができる。",
+        "steps": [
+          "スナイパーライフル（Heavy Sniper Mk II推奨）を用意する",
+          "エイムアシストを活用して頭部をロックオンする",
+          "Police Station の前に立つとNPCが沸き続けるので手軽にヘッドショットが稼げる",
+          "サバイバルモードでも多数の敵が来るので効率よく稼げる"
+        ],
+        "tips": [
+          "Heavy Sniper Mk II にサーマルスコープを付けると見やすい",
+          "コンタクトミッションをソロで周回するとNPCヘッドショットが稼ぎやすい",
+          "照準感度を下げて頭部を狙いやすくする設定が有効"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ヘッドショット", "スナイパー", "狙撃", "アワード"],
+        "description": "GTA Online ヘッドショットマスターアワード。効率的なヘッドショットの稼ぎ方。"
+      }
+    },
+    {
+      "id": "combat-bounties",
+      "name": "賞金稼ぎ",
+      "description": "賞金のかかったプレイヤーを倒して賞金を稼いだ。",
+      "requirement": { "type": "cumulative", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 8000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 },
+        { "tier": 2, "target": 5, "rp": 3000 },
+        { "tier": 3, "target": 20, "rp": 6000 },
+        { "tier": 4, "target": 50, "rp": 8000 }
+      ],
+      "guide": {
+        "summary": "マップ上の黄色の星マーカーがある賞金首プレイヤーを倒して賞金を受け取る。",
+        "steps": [
+          "接触者メニューや他プレイヤーへのインタラクションで賞金が設定される",
+          "MazeBank アプリから任意のプレイヤーに賞金をかけることも可能",
+          "地図上の黄色マーカーを追いかけて賞金首を倒す",
+          "賞金は9000ドル〜1万ドルが最大設定可能"
+        ],
+        "tips": [
+          "賞金ターゲットが車移動中は Sticky Bomb や爆発物が効率的",
+          "セッション参加者が多いほど賞金が設定されやすい",
+          "自分に賞金がかかった状態で時間切れまで生き延びると賞金が自分に入る"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["賞金", "バウンティ", "賞金稼ぎ", "PvP"],
+        "description": "GTA Online 賞金稼ぎアワード攻略。賞金首の倒し方と効率的な稼ぎ方。"
+      }
+    },
+    {
+      "id": "combat-deathmatch",
+      "name": "デスマッチ制覇",
+      "description": "デスマッチモードで勝利した。",
+      "requirement": { "type": "count", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 10000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 },
+        { "tier": 2, "target": 5, "rp": 3000 },
+        { "tier": 3, "target": 20, "rp": 7000 },
+        { "tier": 4, "target": 50, "rp": 10000 }
+      ],
+      "guide": {
+        "summary": "チームデスマッチまたはフリーデスマッチに参加して勝利する。",
+        "steps": [
+          "クイックジョブメニューまたはマップのDMアイコンからロビーに参加",
+          "マップを覚えてハイグラウンド（高い場所）を確保する",
+          "チーム戦では指定エリアをカバーして味方をサポートする",
+          "ヘビーウェポン（ミニガン等）は使用制限があるマップが多い"
+        ],
+        "tips": [
+          "スペックⅡ改造銃は接近戦で強力",
+          "デスマッチの勝率は武器精度よりポジション取りが重要",
+          "ライトアーマーとスナイパーの組み合わせが汎用性高い"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["デスマッチ", "DM", "勝利", "PvP"],
+        "description": "GTA Online デスマッチ制覇アワード。勝率を上げる戦術とコツを解説。"
+      }
+    },
+    {
+      "id": "combat-adversary",
+      "name": "アドバーサリー戦士",
+      "description": "アドバーサリーモードで勝利した。",
+      "requirement": { "type": "count", "target": 30 },
+      "progressMax": 30,
+      "reward": { "rp": 9000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 },
+        { "tier": 2, "target": 5, "rp": 3000 },
+        { "tier": 3, "target": 15, "rp": 6000 },
+        { "tier": 4, "target": 30, "rp": 9000 }
+      ],
+      "guide": {
+        "summary": "Hunt The Beast・Motor Wars・Siege Mentality などのアドバーサリーモードをプレイして勝利を目指す。",
+        "steps": [
+          "クイックジョブから Adversary Mode を選択",
+          "Hunt The Beast: ビーストチームを全滅させるか、逃げ切る",
+          "Motor Wars: 最後まで生き残ったチームが勝利",
+          "各モードのルールを事前に理解してから参加する"
+        ],
+        "tips": [
+          "Motor Wars は車両選択が勝敗を左右する",
+          "Hunt The Beast（ビースト側）はフリーランニングで逃げ回る技術が必要",
+          "友人と組んで参加すると連携しやすい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["アドバーサリー", "特殊モード", "勝利", "PvP"],
+        "description": "GTA Online アドバーサリーモード攻略。各モードの勝ち方を解説。"
+      }
+    }
+  ]
+}

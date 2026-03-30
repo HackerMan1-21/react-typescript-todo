@@ -8,15 +8,16 @@ $header-height: 60px;
   display: flex;
   flex-direction: column;
 
-  // ── ヘッダー ──
+  // ── ヘッダー ── SA風ダーク+オレンジアクセント
   &__header {
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgba(#0b0e14, 0.96);
-    border-bottom: 1px solid $color-border;
-    backdrop-filter: blur(8px);
+    background: rgba(#000, 0.96);
+    border-bottom: 2px solid $color-primary;
+    backdrop-filter: blur(4px);
     height: $header-height;
+    box-shadow: 0 2px 16px rgba($color-primary, 0.12);
   }
 
   &__header-inner {
@@ -30,20 +31,22 @@ $header-height: 60px;
   }
 
   &__brand {
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: $color-text;
+    font-family: $font-heading;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
     text-decoration: none;
-    letter-spacing: 0.03em;
     flex: 1;
     text-align: center;
+    // サンセットグラデーション
+    background: linear-gradient(135deg, $color-sunset-start, $color-sunset-end);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 
     @include respond-tablet {
       text-align: left;
-    }
-
-    &:hover {
-      color: $color-primary;
     }
   }
 
@@ -61,25 +64,28 @@ $header-height: 60px;
   &__nav-link {
     padding: 7px 14px;
     border-radius: $radius-sm;
-    font-size: 0.88rem;
+    font-family: $font-ui;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     color: $color-sub;
     text-decoration: none;
-    transition: background 0.15s, color 0.15s;
+    transition: all 0.15s;
     white-space: nowrap;
 
     &:hover {
+      color: $color-primary;
       background: rgba($color-primary, 0.1);
-      color: $color-text;
     }
 
     &--accent {
-      background: rgba($color-primary, 0.15);
       color: $color-primary;
-      font-weight: 600;
+      border: 1px solid rgba($color-primary, 0.35);
 
       &:hover {
         background: $color-primary;
-        color: #fff;
+        color: #000;
+        font-weight: 700;
       }
     }
   }
@@ -89,10 +95,10 @@ $header-height: 60px;
     flex: 1;
   }
 
-  // ── フッター ──
+  // ── フッター ── SA風
   &__footer {
-    border-top: 1px solid $color-border;
-    background: $color-surface-2;
+    border-top: 2px solid $color-primary;
+    background: rgba(#000, 0.96);
     margin-top: auto;
   }
 
@@ -113,7 +119,10 @@ $header-height: 60px;
   }
 
   &__footer-copy {
-    font-size: 0.8rem;
+    font-family: $font-ui;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     color: $color-sub;
     opacity: 0.6;
     margin: 0;
@@ -124,12 +133,15 @@ $header-height: 60px;
     gap: $space-md;
 
     a {
-      font-size: 0.82rem;
+      font-family: $font-ui;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       color: $color-sub;
       text-decoration: none;
 
       &:hover {
-        color: $color-text;
+        color: $color-primary;
       }
     }
   }

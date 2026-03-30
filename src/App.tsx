@@ -12,6 +12,9 @@ import './styles/_global.scss';
 const Career = lazy(() => import('./pages/Career/Career'));
 const GuideIndex = lazy(() => import('./pages/Guide/GuideIndex'));
 const GuidePage = lazy(() => import('./pages/Guide/GuidePage'));
+const AwardsIndex = lazy(() => import('./pages/Awards/AwardsIndex'));
+const AwardCategory = lazy(() => import('./pages/Awards/AwardCategory'));
+const AwardDetail = lazy(() => import('./pages/Awards/AwardDetail'));
 const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
 
 const PageFallback = () => (
@@ -132,6 +135,30 @@ function App() {
           element={
             <Suspense fallback={<PageFallback />}>
               <GuidePage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/awards"
+          element={
+            <Suspense fallback={<PageFallback />}>
+              <AwardsIndex />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/awards/:category"
+          element={
+            <Suspense fallback={<PageFallback />}>
+              <AwardCategory />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/awards/:category/:id"
+          element={
+            <Suspense fallback={<PageFallback />}>
+              <AwardDetail />
             </Suspense>
           }
         />

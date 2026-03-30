@@ -1,0 +1,117 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.awards-index {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: $space-lg $space-md;
+
+  &__header {
+    margin-bottom: $space-lg;
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-style: italic;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, $color-sunset-start, $color-sunset-end);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 6px;
+  }
+
+  &__subtitle {
+    color: $color-sub;
+    font-size: 0.9rem;
+    margin: 0 0 $space-md;
+  }
+
+  &__total-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 480px;
+  }
+
+  &__total-label {
+    font-family: $font-ui;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    color: $color-sub;
+  }
+
+  &__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: $space-md;
+  }
+
+  &__card {
+    @include card-base;
+    display: flex;
+    align-items: center;
+    gap: $space-md;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-left: 3px solid var(--cat-color, #{$color-primary});
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.4);
+      border-left-color: var(--cat-color, #{$color-primary});
+    }
+  }
+
+  &__icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+
+  &__card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  &__label {
+    font-family: $font-ui;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: $color-text;
+  }
+
+  &__count {
+    font-size: 0.78rem;
+    color: $color-sub;
+    font-family: $font-ui;
+  }
+
+  &__mini-bar {
+    width: 100%;
+    height: 4px;
+    background: $color-surface-2;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  &__mini-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+
+  &__arrow {
+    font-family: $font-ui;
+    font-size: 1.4rem;
+    color: var(--cat-color, #{$color-primary});
+    flex-shrink: 0;
+  }
+}

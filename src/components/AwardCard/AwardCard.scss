@@ -1,0 +1,95 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.award-card {
+  @include card-base;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 3px solid var(--award-color, #{$color-primary});
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  &--done {
+    opacity: 0.6;
+    border-left-color: $color-success;
+
+    .award-card__title {
+      text-decoration: line-through;
+      opacity: 0.7;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__title-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: $font-ui;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $color-text;
+    flex: 1;
+    line-height: 1.3;
+  }
+
+  &__desc {
+    margin: 0;
+    font-size: 0.8rem;
+    color: $color-sub;
+    line-height: 1.5;
+  }
+
+  &__progress {
+    padding: 4px 0;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 8px;
+    border-top: 1px solid $color-border;
+    font-size: 0.78rem;
+  }
+
+  &__rp {
+    color: #a78bfa;
+    font-family: $font-ui;
+    letter-spacing: 0.04em;
+  }
+
+  &__cash {
+    color: #7ec850;
+    font-family: $font-ui;
+    letter-spacing: 0.04em;
+  }
+
+  &__detail-link {
+    margin-left: auto;
+    color: var(--award-color, #{$color-primary});
+    font-family: $font-ui;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

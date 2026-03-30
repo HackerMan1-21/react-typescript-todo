@@ -1,0 +1,168 @@
+{
+  "category": "heists",
+  "label": "強盗",
+  "icon": "💰",
+  "color": "#f59e0b",
+  "awards": [
+    {
+      "id": "heists-debut",
+      "name": "強盗デビュー",
+      "description": "初めてハイストをクリアした。ロスサントスで強盗の世界に踏み込め。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "任意のハイストを1回クリアする。フレンドまたは見知らぬプレイヤーと組んで挑戦しよう。",
+        "steps": [
+          "ハイストリーダーになるには高級アパートが必要（Maze Bank Website で購入）",
+          "メニューから『ハイスト開始』を選択し、メンバーを募集する",
+          "または他プレイヤーのロビーに参加してメンバーとして参加する",
+          "すべてのセットアップミッションを完了後、本番ミッションをクリアする"
+        ],
+        "tips": [
+          "初心者は『地下室での一夜』（The Fleeca Job）が2人から挑戦でき最も手軽",
+          "ハイストリーダーは高い報酬を得られるが費用も負担する"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ハイスト", "強盗", "初回", "攻略"],
+        "description": "GTA Online 強盗デビューアワード攻略。初めてのハイストをクリアする方法。"
+      }
+    },
+    {
+      "id": "heists-original-complete",
+      "name": "オリジナル強盗コンプリート",
+      "description": "オリジナルの5つのハイストをすべて完了した。",
+      "requirement": { "type": "count", "target": 5 },
+      "progressMax": 5,
+      "reward": { "rp": 50000, "cash": 1000000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 5000, "cash": 0 },
+        { "tier": 2, "target": 2, "rp": 15000, "cash": 200000 },
+        { "tier": 3, "target": 4, "rp": 30000, "cash": 500000 },
+        { "tier": 4, "target": 5, "rp": 50000, "cash": 1000000 }
+      ],
+      "guide": {
+        "summary": "Fleeca Job・Prison Break・Humane Labs Raid・Series A Funding・Pacific Standard の5つすべてをクリアする。",
+        "steps": [
+          "高級アパート（10ガレージ付き）を購入してハイストリーダーになる",
+          "The Fleeca Job から順に開放されていく",
+          "各ハイストはセットアップミッション（2〜4本）→本番の流れ",
+          "Pacific Standard は最難関。プロのドライバーとシューターの役割分担が重要"
+        ],
+        "tips": [
+          "全ハイスト初回ボーナス：100万ドル",
+          "同じメンバーで全部クリアすると Loyalty ボーナス追加",
+          "Pacific Standard はバイク脱出ルートが速い"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["オリジナルハイスト", "5強盗", "コンプリート", "100万ドル"],
+        "description": "GTA Online オリジナルハイスト5つコンプリートアワード。全強盗のクリア方法と報酬。"
+      }
+    },
+    {
+      "id": "heists-doomsday",
+      "name": "ドゥームズデイ制覇",
+      "description": "ドゥームズデイ・ハイストの全3幕をクリアした。",
+      "requirement": { "type": "count", "target": 3 },
+      "progressMax": 3,
+      "reward": { "rp": 75000, "cash": 2000000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 20000, "cash": 500000 },
+        { "tier": 2, "target": 2, "rp": 40000, "cash": 1000000 },
+        { "tier": 3, "target": 3, "rp": 75000, "cash": 2000000 }
+      ],
+      "guide": {
+        "summary": "基地（Facility）を購入し、Act I〜III の各幕をクリアする。",
+        "steps": [
+          "Maze Bank Foreclosures サイトでファシリティを購入（1億〜2億ドル）",
+          "Act I: Apocalypse — 準備4本 → 本番1本",
+          "Act II: The Bogdan Problem — 準備4本 → 本番1本",
+          "Act III: The Doomsday Scenario — 準備5本 → 本番1本"
+        ],
+        "tips": [
+          "最大4人プレイ可能。役のコミュニケーションが重要",
+          "ハードモードでクリアすると追加ボーナス",
+          "Act I はヘリでターゲットを輸送するミッションが難関"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ドゥームズデイ", "ハイスト", "Act", "ファシリティ"],
+        "description": "GTA Online ドゥームズデイハイスト全3幕攻略。ファシリティからハードモード完全ガイド。"
+      }
+    },
+    {
+      "id": "heists-casino",
+      "name": "カジノ強盗マスター",
+      "description": "ダイヤモンドカジノ強盗を3つのアプローチすべてでクリアした。",
+      "requirement": { "type": "unique", "target": 3 },
+      "progressMax": 3,
+      "reward": { "rp": 60000, "cash": 1500000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 15000, "cash": 400000 },
+        { "tier": 2, "target": 2, "rp": 35000, "cash": 900000 },
+        { "tier": 3, "target": 3, "rp": 60000, "cash": 1500000 }
+      ],
+      "guide": {
+        "summary": "アーケード（Arcade）を購入し、Silent & Sneaky・Aggressive・Big Con の3アプローチを制覇する。",
+        "steps": [
+          "Maze Bank Foreclosures でアーケードを購入",
+          "リコン（下見）ミッションを完了して目標の情報を集める",
+          "サポートクルーとカットを交渉する",
+          "Silent & Sneaky: ステルスで金庫まで到達、音を立てない",
+          "Big Con: 変装して堂々と入場、内部で素早く行動",
+          "Aggressive: 正面突破、素早く金庫へ、脱出を急ぐ"
+        ],
+        "tips": [
+          "ダイヤモンドが出る期間は報酬が最大（約270万ドル）",
+          "優秀なアネシーサポートクルーを雇うと成功率が上がる",
+          "Silent & Sneaky でカメラをハックする際は焦らずゆっくり動く"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["カジノ強盗", "ダイヤモンド", "3アプローチ", "アーケード"],
+        "description": "GTA Online ダイヤモンドカジノ強盗全3アプローチ攻略。ダイヤ入手方法含む完全ガイド。"
+      }
+    },
+    {
+      "id": "heists-cayo",
+      "name": "カヨ・ぺリコ制覇",
+      "description": "カヨ・ぺリコ強盗をクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 30000, "cash": 1100000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 30000, "cash": 1100000 }
+      ],
+      "guide": {
+        "summary": "コスタ・デル・ソルのキオスクまたはKosatka潜水艦を購入し、ぺリコ島に潜入して任意の主要ターゲットを盗む。",
+        "steps": [
+          "Warstock Cache & Carry で Kosatka 潜水艦を購入（220万ドル〜）",
+          "パーヴォ・ハッカー（Miguel Madrazo）に連絡してスコープアウトミッションを開始",
+          "上陸して島内の主要ターゲットと副次ターゲットをスカウト",
+          "ツタ/下水/北桟橋など侵入経路を確認する",
+          "サポート機材（爆発物・水中装備など）を用意",
+          "本番: 単独または最大4人で潜入、ターゲットを奪い脱出"
+        ],
+        "tips": [
+          "ソロでも完全クリア可能。単独ボーナスあり",
+          "フィンガープリントデバイスをスカウト時に必ず確認",
+          "エル・鲁比オがいない日（ランダム）は警備が手薄"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["カヨ・ぺリコ", "ソロ強盗", "Kosatka", "高額報酬"],
+        "description": "GTA Online カヨ・ぺリコ強盗ソロ攻略。潜水艦購入から効率的な周回方法まで完全解説。"
+      }
+    }
+  ]
+}

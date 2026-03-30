@@ -22,6 +22,7 @@ export const MainLayout = ({ children }: Props) => (
         <nav className="main-layout__nav" aria-label="メインナビゲーション">
           <Link to="/" className="main-layout__nav-link">車両図鑑</Link>
           <Link to="/guide" className="main-layout__nav-link">攻略ガイド</Link>
+          <Link to="/awards" className="main-layout__nav-link">🏅 アワード</Link>
           <Link to="/career" className="main-layout__nav-link main-layout__nav-link--accent">
             🏆 キャリア進行
           </Link>
@@ -41,6 +42,7 @@ export const MainLayout = ({ children }: Props) => (
         <nav className="main-layout__footer-nav" aria-label="フッターナビゲーション">
           <Link to="/">車両図鑑</Link>
           <Link to="/guide">攻略ガイド</Link>
+          <Link to="/awards">アワード</Link>
           <Link to="/career">キャリア進行</Link>
         </nav>
       </div>

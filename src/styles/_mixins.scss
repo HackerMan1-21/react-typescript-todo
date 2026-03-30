@@ -12,8 +12,34 @@
 	}
 }
 
+// SA風カード：角ばった暗い背景、左オレンジボーダー
 @mixin card-base {
 	background: $color-surface;
 	border: 1px solid $color-border;
 	border-radius: $radius-md;
+	border-left: 3px solid $color-primary;
+}
+
+// SA風セクションタイトル
+@mixin section-title {
+	font-family: $font-heading;
+	font-style: italic;
+	text-transform: uppercase;
+	color: $color-primary;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7);
+}
+
+// SA HUDバー（GTA5 ヘルス/スタミナバー風）
+@mixin hud-bar {
+	height: 8px;
+	border-radius: 1px;
+	background: rgba(#000, 0.7);
+	border: 1px solid rgba(#fff, 0.08);
+}
+
+// テキストグロー
+@mixin text-glow($color: $color-primary) {
+	text-shadow:
+		0 0 4px rgba($color, 0.5),
+		0 0 12px rgba($color, 0.2);
 }

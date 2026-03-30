@@ -1,0 +1,25 @@
+@use '../../styles/variables' as *;
+
+.tier-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  height: 26px;
+  border-radius: 2px;
+  font-family: $font-ui;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #000;
+  background: var(--tier-color, #{$color-primary});
+  border: 1px solid rgba(#000, 0.3);
+
+  &--t1 { opacity: 0.5; }
+  &--t2 { opacity: 0.7; }
+  &--t3 { opacity: 0.88; }
+  &--t4 {
+    opacity: 1;
+    box-shadow: 0 0 8px var(--tier-color, #{$color-primary});
+  }
+}

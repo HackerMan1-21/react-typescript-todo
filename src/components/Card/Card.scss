@@ -4,6 +4,13 @@
 .card {
 	@include card-base;
 	overflow: hidden;
+	transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+
+	&:hover {
+		transform: translateY(-2px);
+		border-color: $color-primary;
+		box-shadow: 0 4px 20px rgba($color-primary, 0.2);
+	}
 
 	&__image-link {
 		position: relative;
@@ -16,27 +23,39 @@
 		aspect-ratio: 4 / 3;
 		object-fit: cover;
 		display: block;
+		transition: transform 0.3s;
+
+		.card:hover & {
+			transform: scale(1.03);
+		}
 	}
 
 	&__title-wrap {
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 0;
+		bottom: 0;
 		display: flex;
 		justify-content: space-between;
-		padding: $space-xs;
-		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		align-items: flex-end;
+		padding: $space-sm $space-xs $space-xs;
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.92), transparent);
 	}
 
+	// SA HUD風：大文字 + Bebas Neue
 	&__title-en {
+		font-family: $font-ui;
 		font-weight: 700;
-		font-size: 12px;
+		font-size: 13px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: $color-primary;
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
 	}
 
 	&__title-jp {
-		color: #d8e4ff;
-		font-size: 12px;
+		font-size: 11px;
+		color: $color-sub;
 	}
 
 	&__actions {
@@ -44,5 +63,6 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: $space-xs;
+		background: $color-surface;
 	}
 }

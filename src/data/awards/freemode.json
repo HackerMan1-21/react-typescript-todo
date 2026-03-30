@@ -1,0 +1,140 @@
+{
+  "category": "freemode",
+  "label": "フリーモード",
+  "icon": "🌍",
+  "color": "#8b5cf6",
+  "awards": [
+    {
+      "id": "freemode-survival",
+      "name": "サバイバリスト",
+      "description": "フリーモードで長時間生き延びた。",
+      "requirement": { "type": "cumulative", "target": 600 },
+      "progressMax": 600,
+      "reward": { "rp": 8000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 1000 },
+        { "tier": 2, "target": 60, "rp": 3000 },
+        { "tier": 3, "target": 240, "rp": 6000 },
+        { "tier": 4, "target": 600, "rp": 8000 }
+      ],
+      "guide": {
+        "summary": "単純なフリーモード接続時間の合計。デス後も継続カウントされる。通常のプレイを続けることで自然と達成できる。",
+        "steps": [
+          "オンラインセッションに参加するだけでカウントが進む",
+          "死なずに長く生存するとボーナスRP",
+          "銃撃戦を避けて安全な場所（アパートの屋上等）で待機も有効",
+          "パッシブモードをONにすると他プレイヤーに攻撃されない"
+        ],
+        "tips": [
+          "イーグルアイ（鷹の目）スキルを上げると敵が見やすくなる",
+          "サバイバル時間は統計画面で確認できる",
+          "長時間接続する際はAFKセーバーツールの使用は規約違反"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["フリーモード", "生存時間", "サバイバル", "統計"],
+        "description": "GTA Online サバイバリストアワード。フリーモードでの生存時間を積み上げる方法。"
+      }
+    },
+    {
+      "id": "freemode-hunting",
+      "name": "ハンター",
+      "description": "動物（シカ・コヨーテ等）を狩った。",
+      "requirement": { "type": "cumulative", "target": 250 },
+      "progressMax": 250,
+      "reward": { "rp": 6000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 800 },
+        { "tier": 2, "target": 25, "rp": 2500 },
+        { "tier": 3, "target": 100, "rp": 4500 },
+        { "tier": 4, "target": 250, "rp": 6000 }
+      ],
+      "guide": {
+        "summary": "マップ北部（ブレイン郡・チリアド山周辺）でシカ・コヨーテ・猪などを狩ることでカウントが増える。",
+        "steps": [
+          "ボリトという狩猟ツールを使うと動物を発見しやすい",
+          "スナイパーライフルやショットガンで動物を確実に仕留める",
+          "夜明けや夕方の時間帯に動物が活発に動く",
+          "マップ北西（チリアド付近）は野生動物が多い"
+        ],
+        "tips": [
+          "特定の動物（ピューマ等）は出現場所が固定されている",
+          "動物を撃つと時々プレイヤーに反撃することがある",
+          "ハンティングショップでハンティング用品を購入可能"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ハンティング", "狩猟", "動物", "チリアド"],
+        "description": "GTA Online ハンターアワード。効率的な動物狩りのスポットと方法。"
+      }
+    },
+    {
+      "id": "freemode-robbery",
+      "name": "コンビニ強盗師",
+      "description": "コンビニを強盗した。",
+      "requirement": { "type": "cumulative", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 5, "rp": 1500 },
+        { "tier": 3, "target": 20, "rp": 3500 },
+        { "tier": 4, "target": 50, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "マップ上のコンビニ（Robs Liquor, 24/7 等）に入り、店員に銃を向けてレジを空にする。",
+        "steps": [
+          "コンビニのアイコン（マップ上の青い鍵）を目指す",
+          "店内で銃を抜いてレジに向ける（または店員に銃口を向ける）",
+          "レジに近づき金を奪う。合計数千ドル程度",
+          "警察が来る前に素早く逃走する"
+        ],
+        "tips": [
+          "シルエンティ（消音付き拳銃）で店員を脅すと静かに進められる",
+          "バイクで素早くエリア外まで逃げると★が下がりやすい",
+          "一定時間後に同じコンビニを再度強盗できる（リセット待ち）"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["コンビニ強盗", "ロブズリキュール", "フリーモード", "現金"],
+        "description": "GTA Online コンビニ強盗師アワード。効率的な強盗回数の稼ぎ方。"
+      }
+    },
+    {
+      "id": "freemode-events",
+      "name": "フリーモードイベント常連",
+      "description": "フリーモードイベント（King of the Castle, Hunt the Beast等）に参加した。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 12000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 },
+        { "tier": 2, "target": 10, "rp": 4000 },
+        { "tier": 3, "target": 40, "rp": 8000 },
+        { "tier": 4, "target": 100, "rp": 12000 }
+      ],
+      "guide": {
+        "summary": "定期的に発生するフリーモードイベントに参加し、ボーナスと共にアワードが進む。",
+        "steps": [
+          "フリーモードで一定時間ごとにNPCからイベント招待が届く",
+          "イベント通知が来たらYでメニューを開き参加を選択",
+          "King of the Castle：指定エリアの制圧が目標",
+          "Hunt the Beast：巨大な野獣（Hunt the Beast）からの逃走または討伐"
+        ],
+        "tips": [
+          "人数の多いセッションほどイベントが頻繁に発生する",
+          "フリーモードイベント勝利時は追加RP・キャッシュボーナス",
+          "特殊なイベント（Hunting Pack等）は時限公開で登場する"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["フリーモードイベント", "King of the Castle", "イベント参加", "ボーナス"],
+        "description": "GTA Online フリーモードイベント攻略。各イベントの参加方法と報酬。"
+      }
+    }
+  ]
+}

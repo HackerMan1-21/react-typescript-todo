@@ -1,0 +1,69 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.award-category {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  &__header {
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--cat-color, #{$color-primary});
+    padding-left: 1rem;
+  }
+
+  &__breadcrumb {
+    font-family: $font-body;
+    font-size: 0.8rem;
+    color: $color-sub;
+    margin-bottom: 0.75rem;
+
+    a {
+      color: $color-primary;
+      text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
+  }
+
+  &__title-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.9rem;
+  }
+
+  &__icon {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: 1.8rem;
+    color: $color-text;
+    margin: 0;
+    letter-spacing: 0.03em;
+  }
+
+  &__progress-wrap {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__count {
+    font-family: $font-body;
+    font-size: 0.85rem;
+    color: $color-sub;
+    white-space: nowrap;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

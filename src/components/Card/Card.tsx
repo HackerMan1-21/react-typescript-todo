@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import { Item } from '../../types/item';
 import './Card.scss';
 
@@ -9,8 +8,6 @@ type Props = {
 };
 
 export const Card = ({ item, onSave }: Props) => {
-	const gallery = item.images && item.images.length ? item.images : (item.image ? [{ url: item.image, comment: '' }] : []);
-
 	return (
 		<article className="card">
 			<Link className="card__image-link" to={`/detail/${item.id}`} aria-label={`${item.name} の詳細へ`}>

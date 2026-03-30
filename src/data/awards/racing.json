@@ -1,0 +1,140 @@
+{
+  "category": "racing",
+  "label": "レース",
+  "icon": "🏁",
+  "color": "#ec4899",
+  "awards": [
+    {
+      "id": "racing-wins",
+      "name": "レース王者",
+      "description": "サーキットレースで優勝した。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 15000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1500 },
+        { "tier": 2, "target": 10, "rp": 5000 },
+        { "tier": 3, "target": 40, "rp": 10000 },
+        { "tier": 4, "target": 100, "rp": 15000 }
+      ],
+      "guide": {
+        "summary": "マルチプレイのレースイベントで1位フィニッシュするたびにカウントが増える。",
+        "steps": [
+          "クイックジョブ → レース を選択してロビーに参加（またはホスト）",
+          "高性能な車（Pariah・Krieger・Issi Classic）を用意する",
+          "カスタムショップでエンジン・トランスミッション・タイヤを最高レベルにアップグレード",
+          "コースの覚え方：コーナー手前でブレーキ、立ち上がりでアクセル全開"
+        ],
+        "tips": [
+          "ラップレース（Lap Races）より Point-to-Point の方が逆転しにくく安定",
+          "スリップストリームを使って後続からの加速を逃げる",
+          "雨天時はトラクションが落ちるので早めのブレーキング"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["レース", "優勝", "1位", "サーキット"],
+        "description": "GTA Online レース王者アワード。レース勝利率を上げるコツとおすすめ車種。"
+      }
+    },
+    {
+      "id": "racing-stunt",
+      "name": "スタントパイロット",
+      "description": "スタントレースをクリアした。",
+      "requirement": { "type": "count", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 12000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1500 },
+        { "tier": 2, "target": 5, "rp": 4000 },
+        { "tier": 3, "target": 20, "rp": 8000 },
+        { "tier": 4, "target": 50, "rp": 12000 }
+      ],
+      "guide": {
+        "summary": "スタントレース（Stunt Race）はジャンプ・ループ・急斜面を組み込んだ特殊コースのレース。",
+        "steps": [
+          "クイックジョブ → スタントレースを選択",
+          "各コースに合わせた車種（バイク/車/飛行機）を選ぶ",
+          "ジャンプ時はニトロ（ブースト）で速度を維持",
+          "コーナーはドリフトではなく速度コントロールが重要"
+        ],
+        "tips": [
+          "Shotaro や Akula はスタントレースで高いパフォーマンス",
+          "空中系スタントレースはアラコス（JATO）装備が有利",
+          "初見コースは1周目はコース把握に集中して2周目以降で攻める"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["スタントレース", "ジャンプ", "ループ", "特殊コース"],
+        "description": "GTA Online スタントレースアワード。ジャンプや複雑なコースを攻略するコツ。"
+      }
+    },
+    {
+      "id": "racing-street",
+      "name": "ストリートレーサー",
+      "description": "ストリートレース（Street Race Series）で優勝した。",
+      "requirement": { "type": "count", "target": 30 },
+      "progressMax": 30,
+      "reward": { "rp": 10000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1500 },
+        { "tier": 2, "target": 5, "rp": 3500 },
+        { "tier": 3, "target": 15, "rp": 7000 },
+        { "tier": 4, "target": 30, "rp": 10000 }
+      ],
+      "guide": {
+        "summary": "ロスサントスの公道を走るストリートレースシリーズ。スーパーカー・スポーツ等好みのクラスで参加できる。",
+        "steps": [
+          "メニュー → ジョブ → ロックスタークリエイテッドから Street Race Series を選ぶ",
+          "クラスを統一して公平な競争を楽しめる",
+          "タコマなどの公道はバリア・一般車があるので要注意",
+          "チェックポイントを見落とさないようにミニマップを常に確認"
+        ],
+        "tips": [
+          "夜レースはビジュアルは派手だが視界が限られる",
+          "Pariah（スーパーカー）は加速・最高速ともに最上位クラス",
+          "ストリートレースのコースは公道を使うため、サードパーティツールでライン練習も有効"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ストリートレース", "公道", "スーパーカー", "夜間"],
+        "description": "GTA Online ストリートレーサーアワード。公道レースで勝つための車種選びと走法。"
+      }
+    },
+    {
+      "id": "racing-air",
+      "name": "エアレース マスター",
+      "description": "空中レース（Aerial / Plane Race）を完走した。",
+      "requirement": { "type": "count", "target": 20 },
+      "progressMax": 20,
+      "reward": { "rp": 9000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 },
+        { "tier": 2, "target": 5, "rp": 3000 },
+        { "tier": 3, "target": 10, "rp": 6000 },
+        { "tier": 4, "target": 20, "rp": 9000 }
+      ],
+      "guide": {
+        "summary": "飛行機やヘリコプターを使った空中レース。旋回性能と最高速度が鍵。",
+        "steps": [
+          "クイックジョブ → エアレースで参加",
+          "P-996 Lazer（戦闘機）・Pyro・Howard NX-25 などの高速機を用意",
+          "レース中の急旋回は失速に注意",
+          "チェックポイントの輪を通り続けることを最優先にする"
+        ],
+        "tips": [
+          "Hydra（VTOL機）はホバリングが難しいが直線でトップ速度が高い",
+          "予め Warstock Cache & Carry で高速機を購入しておく",
+          "エアレースは機体の安定性がカギ。スタント機より巡航機が安定して走れる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["エアレース", "飛行機", "空中レース", "Lazer"],
+        "description": "GTA Online エアレースマスターアワード。空中レースで完走・優勝するための機体と操作。"
+      }
+    }
+  ]
+}

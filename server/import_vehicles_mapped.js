@@ -75,6 +75,21 @@ for (let i = 1; i < lines.length; i++) {
   if (row.release_date) descriptionParts.push(`release_date: ${row.release_date}`);
   if (row.notes) descriptionParts.push(`notes: ${row.notes}`);
 
+  const price = row.purchase_price ? row.purchase_price.trim() : '';
+  const tradePr = row.trade_price ? row.trade_price.trim() : '';
+  const saleStatusParts = [];
+  if (price) saleStatusParts.push(`定価: $${price}`);
+  if (tradePr) saleStatusParts.push(`トレード: $${tradePr}`);
+  if (row.is_removed_from_store === 'true') saleStatusParts.push('販売停止');
+
+  const customDiffParts = [];
+  if (row.is_weaponized === 'true') customDiffParts.push('武装');
+  if (row.is_armored === 'true') customDiffParts.push('装甲');
+  if (row.is_electric === 'true') customDiffParts.push('EV');
+  if (row.is_hsw === 'true') customDiffParts.push('HSW');
+  if (row.is_bennys === 'true') customDiffParts.push("Benny's");
+  if (row.is_convertible === 'true') customDiffParts.push('コンバーチブル');
+
   const item = {
     id,
     name,
@@ -83,7 +98,23 @@ for (let i = 1; i < lines.length; i++) {
     image: '',
     description: descriptionParts.join(' | '),
     images: [],
-    _raw: row,
+    vehicleData: {
+      internalModelName: row.internal_name ? row.internal_name.trim() : '',
+      internalId: row.game_model_hash ? row.game_model_hash.trim() : '',
+      vehicleType: row.vehicle_type_key ? row.vehicle_type_key.trim() : '',
+      dlc: row.release_dlc ? row.release_dlc.trim() : '',
+      saleStatus: saleStatusParts.join(' / ') || '',
+      spawnType: row.vehicle_subclass ? row.vehicle_subclass.trim() : '',
+      customDiff: customDiffParts.join(', ') || '',
+      specialVersion: (row.is_limited_stock === 'true' ? '限定在庫' : '') + (row.game_build_added ? ` (Build ${row.game_build_added.trim()})` : ''),
+      colorInfo: row.default_color_set_id ? row.default_color_set_id.trim() : '',
+    },
+    acquisition: {
+      method: row.purchase_site ? row.purchase_site.trim() : '',
+      storable: row.storage_location ? row.storage_location.trim() : '',
+      spawnLocation: '',
+      spawnTime: '',
+    },
   };
 
   try {

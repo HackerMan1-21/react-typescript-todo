@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+  font-family: 'Noto Sans JP', 'Meiryo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #10131a;
+  background: #0d0d0d;
 }
 
 * {
