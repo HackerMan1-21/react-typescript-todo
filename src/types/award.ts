@@ -50,10 +50,26 @@ export type AwardCategory = {
 };
 
 export type AwardCategoryKey =
-  | 'heists'
-  | 'combat'
+  | 'wins'
+  | 'general'
+  | 'crime'
   | 'vehicles'
-  | 'business'
-  | 'freemode'
-  | 'jobs'
-  | 'racing';
+  | 'combat'
+  | 'weapons'
+  | 'heists'
+  | 'doomsday'
+  | 'nightclub'
+  | 'arena-wars'
+  | 'casino'
+  | 'casino-heist'
+  | 'summer-special'
+  | 'cayo-perico'
+  | 'ls-tuners'
+  | 'the-contract'
+  | 'drug-wars'
+  | 'chop-shop'
+  | 'bottom-dollar'
+  | 'agents-of-sabotage'
+  | 'money-fronts'
+  | 'knoway'
+  | 'rewards';

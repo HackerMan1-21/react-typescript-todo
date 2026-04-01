@@ -1,0 +1,82 @@
+{
+  "category": "rewards",
+  "label": "報酬",
+  "icon": "🎁",
+  "color": "#ca8a04",
+  "awards": [
+    {
+      "id": "rewards-tattoo-1",
+      "name": "記念タトゥー I",
+      "description": "アワードの達成報酬として最初のタトゥーを獲得した。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 0, "cash": 0, "item": "タトゥー（腕）" },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 0 }
+      ],
+      "guide": {
+        "summary": "指定のアワードを達成すると自動的に解放される報酬タトゥー。タトゥーパーラーで無料適用できる。",
+        "steps": [
+          "対応するアワードを達成する",
+          "タトゥーパーラー（Mirror Park など）で解放済みタトゥーを選択・適用"
+        ],
+        "tips": [
+          "アワード報酬タトゥーは購入不要で、達成後すぐに適用可能"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["報酬", "タトゥー", "アワード", "記念"],
+        "description": "GTA Online 記念タトゥーIアワード。アワード達成報酬の解放方法。"
+      }
+    },
+    {
+      "id": "rewards-tattoo-2",
+      "name": "記念タトゥー II",
+      "description": "複数のアワード達成で2つ目の報酬タトゥーを獲得した。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 0, "cash": 0, "item": "タトゥー（胸）" },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 0 }
+      ],
+      "guide": {
+        "summary": "特定のアワード群の達成で解放される胸部タトゥー。",
+        "steps": [
+          "対応するアワードを達成",
+          "タトゥーパーラーで胸部タトゥーとして適用"
+        ],
+        "tips": []
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["報酬", "タトゥー", "アワード", "胸"],
+        "description": "GTA Online 記念タトゥーIIアワード。"
+      }
+    },
+    {
+      "id": "rewards-tattoo-3",
+      "name": "記念タトゥー III",
+      "description": "多くのアワードを達成し3つ目の報酬タトゥーを獲得した。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 0, "cash": 0, "item": "タトゥー（背中）" },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 0 }
+      ],
+      "guide": {
+        "summary": "高難易度アワードの達成で解放される背中タトゥー。",
+        "steps": [
+          "対応する上位アワードを達成",
+          "タトゥーパーラーで背中タトゥーとして適用"
+        ],
+        "tips": []
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["報酬", "タトゥー", "アワード", "背中"],
+        "description": "GTA Online 記念タトゥーIIIアワード。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,971 @@
+{
+  "category": "wins",
+  "label": "勝利",
+  "icon": "🏆",
+  "color": "#f59e0b",
+  "awards": [
+    {
+      "id": "wins-slayer",
+      "name": "スレイヤー",
+      "description": "デスマッチでキル数1位になった。",
+      "requirement": { "type": "count", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 10, "rp": 1500 },
+        { "tier": 3, "target": 25, "rp": 3000 },
+        { "tier": 4, "target": 50, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "デスマッチ（DM または TDM）でそのセッション内のキル数1位を獲得するごとにカウントされる。",
+        "steps": [
+          "クイックジョブ → デスマッチ でロビーに参加",
+          "マップを覚え、高い場所やカバーポイントを確保する",
+          "スナイパーや自動小銃でキルを継続し、他のプレイヤーより多くキルする",
+          "チームDMの場合はチームが勝利かつ自分がチーム全体でキル1位であること"
+        ],
+        "tips": [
+          "ソロDMなら1位＝最多キルで達成しやすい",
+          "Mk II 改造武器で火力を上げて安定したキルを狙う",
+          "ヘビーアーマー装備で生存率を上げる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["スレイヤー", "デスマッチ", "キル1位", "アワード"],
+        "description": "GTA Online スレイヤーアワード。デスマッチでキル数1位を50回達成する方法。"
+      }
+    },
+    {
+      "id": "wins-tdm-team",
+      "name": "死神集団",
+      "description": "チームデスマッチ（TDM）で勝利チームになった。",
+      "requirement": { "type": "count", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 4000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 400 },
+        { "tier": 2, "target": 10, "rp": 1200 },
+        { "tier": 3, "target": 25, "rp": 2500 },
+        { "tier": 4, "target": 50, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "TDMで勝利チームのメンバーになるごとにカウントされる。個人キル数は問わない。",
+        "steps": [
+          "クイックジョブ → チームデスマッチ でロビーに参加",
+          "チームで連携して敵を倒し、チーム総キル数を上回ることを目指す",
+          "自分は援護・回復役でもよい。チームが勝てばカウント加算"
+        ],
+        "tips": [
+          "フレンドと組んで参加すると勝率が上がりやすい",
+          "カバーを活用して無駄に死なないことが重要",
+          "人数の多いTDMはチームで動きやすい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["死神集団", "TDM", "チームデスマッチ", "勝利"],
+        "description": "GTA Online 死神集団アワード。チームデスマッチを50回勝利する方法。"
+      }
+    },
+    {
+      "id": "wins-tdm-mvp",
+      "name": "大黒柱",
+      "description": "チームデスマッチで勝利かつ全チーム内キル数1位になった。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 6000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 },
+        { "tier": 2, "target": 3, "rp": 2500 },
+        { "tier": 3, "target": 6, "rp": 4500 },
+        { "tier": 4, "target": 10, "rp": 6000 }
+      ],
+      "guide": {
+        "summary": "TDMでチーム勝利 + 参加プレイヤー全員の中でキル数1位という厳しい条件。",
+        "steps": [
+          "TDMにフレンドと参加して味方の数的優位を確保する",
+          "序盤にアグレッシブにキルを稼いで他チームに差をつける",
+          "終盤は生き延びてキルリードを守る"
+        ],
+        "tips": [
+          "人数の少ないTDMほど達成しやすい",
+          "スナイパーで安全にキルを積むのも有効"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["大黒柱", "TDM", "MVPキル", "アワード"],
+        "description": "GTA Online 大黒柱アワード。TDM勝利かつ全チーム内キル数1位を達成する方法。"
+      }
+    },
+    {
+      "id": "wins-sea-race",
+      "name": "波の申し子",
+      "description": "シーレースを1位でゴールした。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 6, "rp": 2000 },
+        { "tier": 4, "target": 10, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "ボートや水上バイクを使ったシーレースで1位フィニッシュするとカウントされる。",
+        "steps": [
+          "クイックジョブ → レース → シーレース を選択",
+          "操作に慣れた高速ボートを用意する（Speeder, Tug 等）",
+          "コーナーは早めに内側に寄って速度ロスを減らす"
+        ],
+        "tips": [
+          "Dinghy や Speeder など軽量高速艇は扱いやすい",
+          "チェックポイントの前後で速度を維持する"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["波の申し子", "シーレース", "ボートレース", "勝利"],
+        "description": "GTA Online 波の申し子アワード。シーレース優勝の方法。"
+      }
+    },
+    {
+      "id": "wins-gta-race",
+      "name": "過激なクルーズ",
+      "description": "GTAレースに勝利した（武器使用可のレース）。",
+      "requirement": { "type": "count", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 10, "rp": 1500 },
+        { "tier": 3, "target": 25, "rp": 3000 },
+        { "tier": 4, "target": 50, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "GTAレースは武器を使用しながら走るレース。接触・爆破で相手を妨害しつつ1位を目指す。",
+        "steps": [
+          "クイックジョブ → GTAレース を選択",
+          "Heavy Sniper や Sticky Bomb で前方の車を排除する",
+          "爆発物をチェックポイント付近に仕掛けて接近した相手を撃破"
+        ],
+        "tips": [
+          "防弾タイヤ装着で後方からの攻撃に耐えやすくなる",
+          "序盤はポジションより武器でのキル優先",
+          "後半はリードを守りながらゴールを目指す"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["過激なクルーズ", "GTAレース", "武器レース", "勝利"],
+        "description": "GTA Online 過激なクルーズアワード。武器使用レースで50回勝利する方法。"
+      }
+    },
+    {
+      "id": "wins-gta-race-killer",
+      "name": "凶悪ドライバー",
+      "description": "GTAレースで3キル以上して1位でゴールした。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 },
+        { "tier": 2, "target": 3, "rp": 2000 },
+        { "tier": 3, "target": 6, "rp": 3500 },
+        { "tier": 4, "target": 10, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "GTAレース中に3人以上をキルしつつ1位ゴールという二重条件。同じプレイヤーへの複数キルもカウントされる。",
+        "steps": [
+          "GTAレースに参加し、序盤から積極的に爆発物や武器で相手を倒す",
+          "3キル達成後はゴールに集中する",
+          "Explosive Ammo や Sticky Bomb が最も効率的"
+        ],
+        "tips": [
+          "人数の多いロビーほど3キルは達成しやすい",
+          "ゴール直前まで追撃してキルを稼ぐのも有効"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["凶悪ドライバー", "GTAレース", "3キル1位", "アワード"],
+        "description": "GTA Online 凶悪ドライバーアワード。GTAレースで3キル以上かつ1位を達成する方法。"
+      }
+    },
+    {
+      "id": "wins-race-all-types",
+      "name": "レース網羅",
+      "description": "ランドレース・GTAレース・エアレース・シーレース・ラリーレースで各1回優勝した。",
+      "requirement": { "type": "unique", "target": 5 },
+      "progressMax": 5,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "5種類のレース（ランド・GTA・エア・シー・ラリー）で各1回ずつ1位になる必要がある。",
+        "steps": [
+          "まずクイックジョブから各レースタイプを1回ずつプレイして勝利を目指す",
+          "エアレース：高速機（Pyro、P-996 Lazer）を使って安定したゴールを狙う",
+          "ラリーレース：ドライバーとナビゲーターに分かれるコーオプレース"
+        ],
+        "tips": [
+          "各レースでペアを組めるフレンドがいると攻略しやすい",
+          "ラリーレースは2人必須（1人がドライバー、1人がナビゲーター）"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["レース網羅", "5種類レース", "エアレース", "ラリーレース"],
+        "description": "GTA Online レース網羅アワード。5種レース全て優勝の方法。"
+      }
+    },
+    {
+      "id": "wins-survival",
+      "name": "生存者",
+      "description": "サバイバルモードを完全クリア（10ウェーブ）した。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 4000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 },
+        { "tier": 2, "target": 3, "rp": 2000 },
+        { "tier": 3, "target": 6, "rp": 3000 },
+        { "tier": 4, "target": 10, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "サバイバルモードでウェーブ1〜10を全てクリアするとカウントされる。",
+        "steps": [
+          "クイックジョブ → サバイバル からロビーに参加",
+          "守りやすいコーナーや壁際でカバーを取る",
+          "Heavy Armor と大量の弾薬を持ち込む",
+          "ウェーブ8〜10は敵が増강するので慎重に進める"
+        ],
+        "tips": [
+          "2〜4人で挑むと生存率が大幅に上がる",
+          "ヘッドショットで弾薬消費を抑える",
+          "最終ウェーブは NOOSE が出現するため RPG や重火器が有効"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["生存者", "サバイバル", "10ウェーブ", "クリア"],
+        "description": "GTA Online 生存者アワード。サバイバル10ウェーブ完全クリアの方法。"
+      }
+    },
+    {
+      "id": "wins-lta",
+      "name": "生き残り",
+      "description": "ラスト・チーム・アライブ（LTA）で勝利した。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 5, "rp": 1500 },
+        { "tier": 3, "target": 12, "rp": 3000 },
+        { "tier": 4, "target": 25, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "LTA は一度デスすると復活できないバトルロイヤル形式のモード。最後まで生き残ったチームが勝利。",
+        "steps": [
+          "クイックジョブ → ラスト・チーム・アライブ でロビーに参加",
+          "序盤は積極的に戦わず、他チームを消耗させる",
+          "最終局面で残った敵を確実に仕留める",
+          "チームで固まって行動し孤立しないようにする"
+        ],
+        "tips": [
+          "パッシブにプレイして敵同士を戦わせる戦略が有効",
+          "弾薬を大量に持ち込む（復活がないため温存不要）",
+          "フレンドと組んで入るとチームワークが取りやすい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["生き残り", "LTA", "ラストチームアライブ", "バトルロイヤル"],
+        "description": "GTA Online 生き残りアワード。LTAで25回勝利する方法。"
+      }
+    },
+    {
+      "id": "wins-lma",
+      "name": "唯一無二",
+      "description": "ラスト・マン・アライブ（LMA）で勝利した。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 },
+        { "tier": 2, "target": 3, "rp": 2000 },
+        { "tier": 3, "target": 6, "rp": 3500 },
+        { "tier": 4, "target": 10, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "LMA はソロバトルロイヤル。全プレイヤーの中で最後の1人として生き残ると勝利。",
+        "steps": [
+          "クイックジョブ → ラスト・マン・アライブ でロビーに参加",
+          "序盤は高い場所や隠れやすい場所で様子を見る",
+          "敵が減ったら積極的に行動して残敵を倒す"
+        ],
+        "tips": [
+          "こちらへの攻撃が来たらすぐカバーを取ること",
+          "Heavy Sniper で遠距離からキルすると安全"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["唯一無二", "LMA", "ラストマンアライブ", "ソロバトルロイヤル"],
+        "description": "GTA Online 唯一無二アワード。LMAで10回勝利する方法。"
+      }
+    },
+    {
+      "id": "wins-instant-champion",
+      "name": "インスタント・チャンピオン",
+      "description": "インスタントレースを1位でゴールした。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 6, "rp": 2000 },
+        { "tier": 4, "target": 10, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "通常の陸上レース（インスタントレース）で1位フィニッシュするとカウントされる。",
+        "steps": [
+          "クイックジョブ → レース からインスタントレースに参加",
+          "チューンナップ済みの車で参加して1位を目指す"
+        ],
+        "tips": [
+          "エンジンのMkIIアップグレードと最高クラスタイヤを装着しておく"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["インスタント・チャンピオン", "インスタントレース", "1位", "アワード"],
+        "description": "GTA Online インスタント・チャンピオンアワード。インスタントレース優勝の方法。"
+      }
+    },
+    {
+      "id": "wins-class-top",
+      "name": "クラスの頂点",
+      "description": "カスタムカーでレースに勝利した。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "ロスサントス・カスタムでチューンナップした車を使ってレースに1回でも勝利すれば達成。",
+        "steps": [
+          "ロスサントス・カスタムで任意の車をチューンナップする",
+          "その車をレースで使って1位を獲得する"
+        ],
+        "tips": [
+          "エンジンMkII・タイヤ・ブレーキは必ずアップグレード済みにする"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["クラスの頂点", "カスタムカー", "レース勝利", "アワード"],
+        "description": "GTA Online クラスの頂点アワード。カスタムカーでレース勝利の方法。"
+      }
+    },
+    {
+      "id": "wins-gobou-nuki",
+      "name": "ごぼう抜き",
+      "description": "レース開始時に最下位から1位でゴールした。",
+      "requirement": { "type": "count", "target": 5 },
+      "progressMax": 5,
+      "reward": { "rp": 4000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 },
+        { "tier": 2, "target": 2, "rp": 2000 },
+        { "tier": 3, "target": 3, "rp": 3000 },
+        { "tier": 4, "target": 5, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "スタート時に最下位でもゴールで1位を取ればカウントされる。",
+        "steps": [
+          "わざとスタートを少し遅らせて最下位からレースを始める",
+          "全員を抜いて1位でゴールする"
+        ],
+        "tips": [
+          "参加人数が少ない（2〜3人）レースで試すと達成しやすい",
+          "高性能車と下位クラス車を混在させたロビーを狙う"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ごぼう抜き", "最下位から1位", "レース", "アワード"],
+        "description": "GTA Online ごぼう抜きアワード。最下位から1位でゴールする方法。"
+      }
+    },
+    {
+      "id": "wins-arm-wrestler",
+      "name": "アームレスラー",
+      "description": "アームレスリングで勝利した。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 800 },
+        { "tier": 3, "target": 6, "rp": 1400 },
+        { "tier": 4, "target": 10, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "アームレスリングはフリーモードで別のプレイヤーと対面して行うミニゲーム。指定のボタンを素早く連打して相手に勝利する。",
+        "steps": [
+          "フリーモード中に他のプレイヤーに近づきアームレスリングを挑む",
+          "画面の指示に従いボタンを素早く連打する"
+        ],
+        "tips": [
+          "コントローラーのトリガーを交互に素早く引くと速い"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["アームレスラー", "アームレスリング", "ミニゲーム", "アワード"],
+        "description": "GTA Online アームレスラーアワード。アームレスリングで勝利する方法。"
+      }
+    },
+    {
+      "id": "wins-stroke-master",
+      "name": "ストロークマスター",
+      "description": "テニスで勝利した。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 800 },
+        { "tier": 3, "target": 6, "rp": 1400 },
+        { "tier": 4, "target": 10, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "GTAオンラインのテニスコートで他プレイヤーと対戦して勝利するとカウントされる。",
+        "steps": [
+          "テニスコートに向かい別のプレイヤーとテニスを開始する",
+          "セットを取りきって試合に勝利する"
+        ],
+        "tips": [
+          "タイミングよくボタンを押してショットの強さと方向を調節する"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ストロークマスター", "テニス", "ミニゲーム", "アワード"],
+        "description": "GTA Online ストロークマスターアワード。テニスで勝利する方法。"
+      }
+    },
+    {
+      "id": "wins-out-of-five",
+      "name": "アウト・オブ・ファイブ",
+      "description": "テニスの5セットマッチ（3セット先取）に勝利した。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "テニスの5セットマッチ（3セット先取）で勝利するとカウントされる。",
+        "steps": [
+          "テニスを5セットマッチで設定する",
+          "3セット先取して試合に勝利する"
+        ],
+        "tips": [
+          "フレンドと対戦して協力してもらうと達成しやすい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["アウト・オブ・ファイブ", "テニス", "5セットマッチ", "アワード"],
+        "description": "GTA Online アウト・オブ・ファイブアワード。テニス5セットマッチ勝利の方法。"
+      }
+    },
+    {
+      "id": "wins-straight-set",
+      "name": "ストレートセット",
+      "description": "テニスで1セットを相手に1ゲームも取らせず勝利した（6-0等）。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "テニスで1セットを相手に1ゲームも取らせない（6-0）で勝利するとカウントされる。",
+        "steps": [
+          "テニスで相手に1ゲームも取らせずにセット勝利する"
+        ],
+        "tips": [
+          "フレンドにわざと負けてもらうと手軽に達成できる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ストレートセット", "テニス", "6-0", "アワード"],
+        "description": "GTA Online ストレートセットアワード。テニスを相手に1ゲームも取らせず勝利する方法。"
+      }
+    },
+    {
+      "id": "wins-grandma",
+      "name": "おばあちゃん",
+      "description": "射撃場の「ターゲットグリッド」でパーフェクトを達成した。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "射撃場のターゲットグリッドモードで全ターゲットをヒットしパーフェクトスコアを出すと達成。",
+        "steps": [
+          "クイックジョブ → 射撃場 → ターゲットグリッドを選択",
+          "表示される全てのターゲットを1発ずつ正確に撃つ"
+        ],
+        "tips": [
+          "焦らず一つずつ丁寧に狙うのがコツ"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["おばあちゃん", "射撃場", "ターゲットグリッド", "パーフェクト"],
+        "description": "GTA Online おばあちゃんアワード。射撃場ターゲットグリッドでパーフェクト達成の方法。"
+      }
+    },
+    {
+      "id": "wins-shooter",
+      "name": "射手",
+      "description": "射撃場の「ランダムターゲット」のマッチで勝利した。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 800 },
+        { "tier": 3, "target": 6, "rp": 1400 },
+        { "tier": 4, "target": 10, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "射撃場のランダムターゲットマッチで他プレイヤーに勝利するとカウントされる。",
+        "steps": [
+          "射撃場でランダムターゲットモードを選択する",
+          "他プレイヤーより高いスコアを出して勝利する"
+        ],
+        "tips": [
+          "素早い照準移動が鍵。練習して反射神経を磨く"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["射手", "射撃場", "ランダムターゲット", "アワード"],
+        "description": "GTA Online 射手アワード。射撃場ランダムターゲットマッチで勝利する方法。"
+      }
+    },
+    {
+      "id": "wins-all-rounder",
+      "name": "オールラウンダー",
+      "description": "射撃場の全種目でスコアを記録した。",
+      "requirement": { "type": "unique", "target": 4 },
+      "progressMax": 4,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 4, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "射撃場の全種目（ランダムターゲット、ターゲットグリッド、マルチターゲット等）それぞれでプレイしてスコアを記録するとカウントされる。",
+        "steps": [
+          "射撃場で全ての種目を1回ずつプレイする"
+        ],
+        "tips": [
+          "勝つ必要はなく全種目プレイするだけでよい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["オールラウンダー", "射撃場", "全種目", "アワード"],
+        "description": "GTA Online オールラウンダーアワード。射撃場全種目でスコアを出す方法。"
+      }
+    },
+    {
+      "id": "wins-golf-birdie",
+      "name": "バーディー",
+      "description": "ゴルフでバーディー（規定打数より1打少なくホールアウト）を達成した。",
+      "requirement": { "type": "count", "target": 18 },
+      "progressMax": 18,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 5, "rp": 800 },
+        { "tier": 3, "target": 10, "rp": 1400 },
+        { "tier": 4, "target": 18, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "ゴルフでバーディー（規定より1打少なくカップイン）を達成するごとにカウントされる。",
+        "steps": [
+          "クイックジョブ → ゴルフ でロビーに参加",
+          "Par3・Par4ホールでパーより1打少なくカップイン"
+        ],
+        "tips": [
+          "Par3ホールは距離が短くバーディーが狙いやすい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["バーディー", "ゴルフ", "アワード"],
+        "description": "GTA Online バーディーアワード達成の方法。"
+      }
+    },
+    {
+      "id": "wins-golf-ace",
+      "name": "エース",
+      "description": "ゴルフでホールインワンを達成した。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "ゴルフでティーショットから1打でカップインするとアワード達成。",
+        "steps": [
+          "短いPar3ホールでティーショットを狙った方向に打つ",
+          "パワーバーの調整と風補正を合わせて発射"
+        ],
+        "tips": [
+          "幸運の要素が強いため根気よく繰り返す"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["エース", "ゴルフ", "ホールインワン", "アワード"],
+        "description": "GTA Online エースアワード。ゴルフホールインワン達成の方法。"
+      }
+    },
+    {
+      "id": "wins-golf-round",
+      "name": "チャンピオンゴルファー",
+      "description": "ゴルフの18ホールラウンドで勝利した。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 6, "rp": 2000 },
+        { "tier": 4, "target": 10, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "ゴルフの18ホールラウンドで総打数が最も少ないプレイヤーとして勝利するとカウントされる。",
+        "steps": [
+          "ゴルフのフルラウンドに参加する",
+          "各ホールで丁寧にショットを決めスコアを最小化する"
+        ],
+        "tips": [
+          "フレンドと対戦してわざと負けてもらうと達成しやすい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["チャンピオンゴルファー", "ゴルフ", "18ホール勝利", "アワード"],
+        "description": "GTA Online ゴルフ18ホール勝利アワード達成の方法。"
+      }
+    },
+    {
+      "id": "wins-dart-win",
+      "name": "ダーツの名手",
+      "description": "ダーツのマッチで勝利した。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 800 },
+        { "tier": 3, "target": 6, "rp": 1400 },
+        { "tier": 4, "target": 10, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "ダーツのミニゲームで相手に勝利するとカウントされる。",
+        "steps": [
+          "クイックジョブ → ダーツ もしくはバーでダーツをプレイ",
+          "501からカウントダウンして先に0にする"
+        ],
+        "tips": [
+          "スローの照準はできるだけ静止させてから投げる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ダーツの名手", "ダーツ", "勝利", "アワード"],
+        "description": "GTA Online ダーツ勝利アワード達成の方法。"
+      }
+    },
+    {
+      "id": "wins-capture",
+      "name": "キャプチャーマスター",
+      "description": "キャプチャーのマッチで勝利した。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 4000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 5, "rp": 1500 },
+        { "tier": 3, "target": 12, "rp": 2500 },
+        { "tier": 4, "target": 25, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "キャプチャーモードで相手チームに勝利するとカウントされる。",
+        "steps": [
+          "クイックジョブ → キャプチャー でロビーに参加",
+          "チームで連携して敵のパッケージを奪い自陣に届ける"
+        ],
+        "tips": [
+          "攻撃役と拠点防衛役に分担するとよい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["キャプチャーマスター", "キャプチャー", "勝利", "アワード"],
+        "description": "GTA Online キャプチャー勝利アワード達成の方法。"
+      }
+    },
+    {
+      "id": "wins-adversary-win",
+      "name": "敵対モードの申し子",
+      "description": "敵対モードで勝利した。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 4000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 5, "rp": 1500 },
+        { "tier": 3, "target": 12, "rp": 2500 },
+        { "tier": 4, "target": 25, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "敵対モード（Sumo、Hunt the Beast等）で勝利するとカウントされる。",
+        "steps": [
+          "クイックジョブ → 敵対モード でロビーに参加",
+          "各モードのルールに従いゲームに勝利する"
+        ],
+        "tips": [
+          "得意なモードを見つけて集中的にプレイするとカウントが積みやすい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["敵対モードの申し子", "敵対モード", "勝利", "アワード"],
+        "description": "GTA Online 敵対モード勝利アワード達成の方法。"
+      }
+    },
+    {
+      "id": "wins-air-race",
+      "name": "エースパイロット",
+      "description": "エアレースで1位でゴールした。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 6, "rp": 2000 },
+        { "tier": 4, "target": 10, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "航空機を使ったエアレースで1位フィニッシュするとカウントされる。",
+        "steps": [
+          "クイックジョブ → レース → エアレース を選択",
+          "Pyro や P-996 Lazer など高性能機で参加する"
+        ],
+        "tips": [
+          "フライトスクールで操縦技術を磨いておく"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["エースパイロット", "エアレース", "1位", "アワード"],
+        "description": "GTA Online エアレース優勝アワード達成の方法。"
+      }
+    },
+    {
+      "id": "wins-stunt-race",
+      "name": "スタント王",
+      "description": "スタントレースで1位でゴールした。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 3500, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 5, "rp": 1000 },
+        { "tier": 3, "target": 12, "rp": 2000 },
+        { "tier": 4, "target": 25, "rp": 3500 }
+      ],
+      "guide": {
+        "summary": "スタントライダーズ追加のジャンプ・ループ・チューブコースを使ったスタントレースで1位ゴールするとカウントされる。",
+        "steps": [
+          "スタントレースのマップに参加する",
+          "ジャンプ・ループ等の障害物を素早く通過して1位を目指す"
+        ],
+        "tips": [
+          "速度を維持しながら各障害物を通過するのがコツ"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["スタント王", "スタントレース", "1位", "アワード"],
+        "description": "GTA Online スタントレース優勝アワード達成の方法。"
+      }
+    },
+    {
+      "id": "wins-open-wheel-race",
+      "name": "F1チャンピオン",
+      "description": "オープンホイールレースで1位でゴールした。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 6, "rp": 2000 },
+        { "tier": 4, "target": 10, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "オープンホイール（F1型）レースで1位ゴールするとカウントされる。",
+        "steps": [
+          "オープンホイールレースのマップに参加する",
+          "デルグリーやR88などの高性能オープンホイール車を使用する"
+        ],
+        "tips": [
+          "タイヤのグリップ特性をつかんでコーナリングを磨く"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["F1チャンピオン", "オープンホイールレース", "1位", "アワード"],
+        "description": "GTA Online オープンホイールレース優勝アワード達成の方法。"
+      }
+    },
+    {
+      "id": "wins-land-race",
+      "name": "ロードレーサー",
+      "description": "ランドレースで1位でゴールした。",
+      "requirement": { "type": "count", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 10, "rp": 1500 },
+        { "tier": 3, "target": 25, "rp": 3000 },
+        { "tier": 4, "target": 50, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "通常の陸上レースで1位フィニッシュするとカウントされる。最も基本的なレースカテゴリ。",
+        "steps": [
+          "クイックジョブ → レース → ランドレース を選択",
+          "チューンナップ済みの高性能車で参加して1位を目指す"
+        ],
+        "tips": [
+          "エンジンアップグレード・タイヤ・ブレーキの改良が特に効果的"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ロードレーサー", "ランドレース", "1位", "アワード"],
+        "description": "GTA Online ランドレース優勝アワード達成の方法。"
+      }
+    },
+    {
+      "id": "wins-rally-race",
+      "name": "ラリードライバー",
+      "description": "ラリーレースを1位でゴールした。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 6, "rp": 2000 },
+        { "tier": 4, "target": 10, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "ラリーレースはドライバーとナビゲーターに分かれる2人コーオプレース。チームで1位ゴールするとカウントされる。",
+        "steps": [
+          "2人でラリーレースに参加する（1人がドライバー、1人がナビゲーター）",
+          "ナビゲーターの指示に素早く対応してゴールを目指す"
+        ],
+        "tips": [
+          "フレンドと息の合ったコミュニケーションが重要"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ラリードライバー", "ラリーレース", "1位", "アワード"],
+        "description": "GTA Online ラリーレース優勝アワード達成の方法。"
+      }
+    },
+    {
+      "id": "wins-moto-race",
+      "name": "バイクレーサー",
+      "description": "バイクのレースで1位でゴールした。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 3500, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 5, "rp": 1000 },
+        { "tier": 3, "target": 12, "rp": 2000 },
+        { "tier": 4, "target": 25, "rp": 3500 }
+      ],
+      "guide": {
+        "summary": "バイクレースで1位フィニッシュするとカウントされる。",
+        "steps": [
+          "バイクレースのマップに参加する",
+          "BF400やS80RRなど高性能バイクをチューンナップして参加"
+        ],
+        "tips": [
+          "傾くタイミングを習得するとコーナリングが速くなる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["バイクレーサー", "バイクレース", "1位", "アワード"],
+        "description": "GTA Online バイクレース優勝アワード達成の方法。"
+      }
+    },
+    {
+      "id": "wins-transform-race",
+      "name": "トランスフォーマー",
+      "description": "トランスフォームレース（乗り物の種類が途中で変わるレース）で1位でゴールした。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 6, "rp": 2000 },
+        { "tier": 4, "target": 10, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "トランスフォームレースはコース中に車・バイク・ボート・航空機など乗り物種類が切り替わるレース形式。1位ゴールするとカウントされる。",
+        "steps": [
+          "トランスフォームレースのマップに参加する",
+          "乗り物種類の切り替わりタイミングを事前に把握しておく"
+        ],
+        "tips": [
+          "各区間の乗り物特性を把握しておくと切り替え後も安定する"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["トランスフォーマー", "トランスフォームレース", "1位", "アワード"],
+        "description": "GTA Online トランスフォームレース優勝アワード達成の方法。"
+      }
+    }
+  ]
+}

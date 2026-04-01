@@ -5,9 +5,9 @@
   "color": "#f59e0b",
   "awards": [
     {
-      "id": "heists-debut",
-      "name": "強盗デビュー",
-      "description": "初めてハイストをクリアした。ロスサントスで強盗の世界に踏み込め。",
+      "id": "heists-first-finish",
+      "name": "大強盗 in GTA オンライン",
+      "description": "ハイストのフィナーレを初めて成功させた。",
       "requirement": { "type": "count", "target": 1 },
       "progressMax": 1,
       "reward": { "rp": 5000, "cash": 0, "item": null },
@@ -15,154 +15,498 @@
         { "tier": 1, "target": 1, "rp": 5000 }
       ],
       "guide": {
-        "summary": "任意のハイストを1回クリアする。フレンドまたは見知らぬプレイヤーと組んで挑戦しよう。",
+        "summary": "オリジナルのハイスト（Fleeca Job〜Pacific Standard）いずれかのフィナーレを一度でもクリアするとカウントされる。",
         "steps": [
-          "ハイストリーダーになるには高級アパートが必要（Dynasty 8 Real Estate サイトで購入。Tinsel Towers 等 10ガレージ付き物件）",
-          "インタラクションメニュー → ハイスト → ハイストを計画する で開始",
-          "または他プレイヤーのハイストロビーに参加してメンバーとして参加する",
-          "各ハイストのセットアップミッションを全て完了後、フィナーレミッションをクリアする"
+          "高級アパート（10台ガレージ付き）を Dynasty8 で購入してハイストリーダーになる",
+          "The Fleeca Job は2人から始められる最初のハイスト",
+          "セットアップミッションを全て終えたら、レスターから『強盗開始』のメッセージが届く",
+          "フィナーレをクリアすればアワード達成"
         ],
         "tips": [
-          "初心者は『The Fleeca Job（フリーサジョブ）』が2人から挑戦でき最も手軽。ドライブの担当とハックの担当に分かれる",
-          "ハイストリーダーはセットアップ費用を負担するが、フィナーレの分配率を調整できる"
+          "まずは Fleeca Job から始めると手軽。2人でドライバーとハッカーに分かれるだけ",
+          "リーダー（ホスト）はセットアップ費用を全額負担するが、分配率を自由に設定できる"
         ]
       },
       "media": { "images": [], "videos": [] },
       "seo": {
-        "keywords": ["ハイスト", "強盗", "初回", "攻略"],
-        "description": "GTA Online 強盗デビューアワード攻略。初めてのハイストをクリアする方法。"
+        "keywords": ["強盗フィナーレ", "ハイスト初達成", "Fleeca Job"],
+        "description": "GTA Online 大強盗アワード。初めてハイストフィナーレを成功させる方法。"
       }
     },
     {
-      "id": "heists-original-complete",
-      "name": "オリジナル強盗コンプリート",
-      "description": "オリジナルの5つのハイストをすべて完了した。",
-      "requirement": { "type": "count", "target": 5 },
-      "progressMax": 5,
-      "reward": { "rp": 50000, "cash": 1000000, "item": null },
+      "id": "heists-prep",
+      "name": "万全を期せ",
+      "description": "ハイストの準備ミッションに参加した。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
       "tiers": [
-        { "tier": 1, "target": 1, "rp": 5000, "cash": 0 },
-        { "tier": 2, "target": 2, "rp": 15000, "cash": 200000 },
-        { "tier": 3, "target": 4, "rp": 30000, "cash": 500000 },
-        { "tier": 4, "target": 5, "rp": 50000, "cash": 1000000 }
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 6, "rp": 1500 },
+        { "tier": 4, "target": 10, "rp": 2000 }
       ],
       "guide": {
-        "summary": "Fleeca Job・Prison Break・Humane Labs Raid・Series A Funding・Pacific Standard の5つすべてをクリアする。",
+        "summary": "ハイストの本番前に行うセットアップ（準備）ミッションに参加するたびにカウントされる。リーダーでもメンバーでも対象。",
         "steps": [
-          "高級アパート（10ガレージ付き）を購入してハイストリーダーになる",
-          "The Fleeca Job から順に開放されていく",
-          "各ハイストはセットアップミッション（2〜4本）→本番の流れ",
-          "Pacific Standard は最難関。プロのドライバーとシューターの役割分担が重要"
+          "他プレイヤーのハイストロビーに参加してクルーメンバーとして加わる",
+          "リーダーがセットアップを開始したら準備ミッションに参加する",
+          "ミッションクリアでカウントが加算される"
         ],
         "tips": [
-          "全ハイスト初回ボーナス：100万ドル",
-          "同じメンバーで全部クリアすると Loyalty ボーナス追加",
-          "Pacific Standard はバイク脱出ルートが速い"
+          "クルーメンバー側はセットアップ費用がかからず、参加するだけで RP が得られる",
+          "レポップやポースで繰り返し参加できる"
         ]
       },
       "media": { "images": [], "videos": [] },
       "seo": {
-        "keywords": ["オリジナルハイスト", "5強盗", "コンプリート", "100万ドル"],
-        "description": "GTA Online オリジナルハイスト5つコンプリートアワード。全強盗のクリア方法と報酬。"
+        "keywords": ["万全を期せ", "ハイスト準備", "セットアップ", "クルー"],
+        "description": "GTA Online 万全を期せアワード。ハイスト準備ミッションに10回参加する方法。"
       }
     },
     {
-      "id": "heists-doomsday",
-      "name": "ドゥームズデイ制覇",
-      "description": "ドゥームズデイ・ハイストの全3幕をクリアした。",
-      "requirement": { "type": "count", "target": 3 },
-      "progressMax": 3,
-      "reward": { "rp": 75000, "cash": 2000000, "item": null },
-      "tiers": [
-        { "tier": 1, "target": 1, "rp": 20000, "cash": 500000 },
-        { "tier": 2, "target": 2, "rp": 40000, "cash": 1000000 },
-        { "tier": 3, "target": 3, "rp": 75000, "cash": 2000000 }
-      ],
-      "guide": {
-        "summary": "Maze Bank Foreclosures サイトでファシリティ（Facility）を購入し、Act I〜III の各幕をクリアする。",
-        "steps": [
-          "Maze Bank Foreclosures でファシリティを購入（約125万〜295万ドル。場所により異なる）",
-          "Act I: Data Breaches（データ流出）— セットアップ3本 → フィナーレ1本",
-          "Act II: The Bogdan Problem — セットアップ3本 → フィナーレ1本",
-          "Act III: The Doomsday Scenario — セットアップ3本 → フィナーレ1本"
-        ],
-        "tips": [
-          "最大4人プレイ可能。ハッカー・シューター・支援など役割分担がカギ",
-          "ハードモード（Elite Challenge 達成）でクリアすると追加ボーナス",
-          "Act II フィナーレ The Bogdan Problem はリプレイグリッチの対象として有名"
-        ]
-      },
-      "media": { "images": [], "videos": [] },
-      "seo": {
-        "keywords": ["ドゥームズデイ", "ハイスト", "Act", "ファシリティ"],
-        "description": "GTA Online ドゥームズデイハイスト全3幕攻略。ファシリティからハードモード完全ガイド。"
-      }
-    },
-    {
-      "id": "heists-casino",
-      "name": "カジノ強盗マスター",
-      "description": "ダイヤモンドカジノ強盗を3つのアプローチすべてでクリアした。",
-      "requirement": { "type": "unique", "target": 3 },
-      "progressMax": 3,
-      "reward": { "rp": 60000, "cash": 1500000, "item": null },
-      "tiers": [
-        { "tier": 1, "target": 1, "rp": 15000, "cash": 400000 },
-        { "tier": 2, "target": 2, "rp": 35000, "cash": 900000 },
-        { "tier": 3, "target": 3, "rp": 60000, "cash": 1500000 }
-      ],
-      "guide": {
-        "summary": "Maze Bank Foreclosures でアーケード（Arcade）を購入し、Silent & Sneaky・Aggressive・The Big Con の3アプローチを制覇する。",
-        "steps": [
-          "Maze Bank Foreclosures でアーケードを購入（約120万〜340万ドル）",
-          "ヘイスト計画ボードからスコープアウト（下見）ミッションで金庫・入口・出口などの情報を収集する",
-          "サポートクルー（ハッカー・ガンマン・ドライバー）を各自雇用し、分配率を設定する",
-          "Silent & Sneaky: ステルスで金庫まで到達。カメラとガードを無力化しながら進む",
-          "The Big Con: 偽の身分証（Gruppe Sechs 等）で変装して堂々と潜入する",
-          "Aggressive: 正面突破。素早く金庫を割り、警察の包囲を突破して脱出する"
-        ],
-        "tips": [
-          "ダイヤモンドがターゲットに設定される週は報酬が最大（ハード難易度で約340万ドル）",
-          "ハッカーは Avi Schwartzman（最高レベル）または Paige Harris が最長ハック時間を確保できる",
-          "Silent & Sneaky でカメラをループさせる際は、カメラが横を向いた瞬間に通過する"
-        ]
-      },
-      "media": { "images": [], "videos": [] },
-      "seo": {
-        "keywords": ["カジノ強盗", "ダイヤモンド", "3アプローチ", "アーケード"],
-        "description": "GTA Online ダイヤモンドカジノ強盗全3アプローチ攻略。ダイヤ入手方法含む完全ガイド。"
-      }
-    },
-    {
-      "id": "heists-cayo",
-      "name": "カヨ・ぺリコ制覇",
-      "description": "カヨ・ぺリコ強盗をクリアした。",
+      "id": "heists-no-damage",
+      "name": "ノーダメージ",
+      "description": "ダメージを一切受けずにハイストフィナーレをクリアした。",
       "requirement": { "type": "count", "target": 1 },
       "progressMax": 1,
-      "reward": { "rp": 30000, "cash": 1100000, "item": null },
+      "reward": { "rp": 10000, "cash": 0, "item": null },
       "tiers": [
-        { "tier": 1, "target": 1, "rp": 30000, "cash": 1100000 }
+        { "tier": 1, "target": 1, "rp": 10000 }
       ],
       "guide": {
-        "summary": "Warstock Cache & Carry で Kosatka（潜水艦）を購入し、ミュージックラウンジ The Music Locker で Miguel Madrazo と会って依頼を受け、ぺリコ島に潜入する。",
+        "summary": "ハイストのフィナーレを1ダメージも受けずにクリアすると達成される。難易度は高い。",
         "steps": [
-          "Warstock Cache & Carry で Kosatka 潜水艦を購入（約220万ドル〜）",
-          "The Music Locker（Diamond Casino の地下クラブ）で Miguel Madrazo と会い、依頼を受ける",
-          "Kosatka のヘイスト計画ボードから El Rubio の島をスコープアウト（下見）する",
-          "島内で主要ターゲット・副次ターゲット・武器キャッシュ・侵入経路（ツタ/下水/海岸/北桟橋等）を偵察",
-          "準備ミッション（フィンガープリントデバイス・通信妨害電波等）を完了する",
-          "本番: ソロまたは最大4人で潜入し、主要ターゲットを奪って脱出する"
+          "難易度が低めな Fleeca Job（2人）でチャレンジするのがおすすめ",
+          "フィナーレ中は敵から完全に距離を取りながら目標だけに集中する",
+          "Fleeca Job フィナーレはハック完了後にドライブするだけなので比較的安全"
         ],
         "tips": [
-          "ソロでも完全クリア可能。ソロは分配ゼロで報酬が全額自分に入る",
-          "主要ターゲットは『エル・ルビオのコレクション』が最高額（約220万ドル程度）",
-          "クールダウンタイマー（連続挑戦制限）が緩和されているため周回効率が高い"
+          "ヘビーアーマーを装備したとしても被弾するとカウントがリセットされる",
+          "チームメンバー全員が被弾ゼロである必要はなく、自分だけで OK の場合がある（ハイストによる）",
+          "遮蔽物をフル活用してステルス通過する方法も有効"
         ]
       },
       "media": { "images": [], "videos": [] },
       "seo": {
-        "keywords": ["カヨ・ぺリコ", "ソロ強盗", "Kosatka", "高額報酬"],
-        "description": "GTA Online カヨ・ぺリコ強盗ソロ攻略。潜水艦購入から効率的な周回方法まで完全解説。"
+        "keywords": ["ノーダメージ", "ハイスト", "無被弾", "Fleeca"],
+        "description": "GTA Online ノーダメージアワード。ハイストフィナーレを無被弾でクリアする方法。"
       }
+    },
+    {
+      "id": "heists-leader",
+      "name": "リーダー格",
+      "description": "ハイストのリーダー（ホスト）として全ての準備+フィナーレをクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 10000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 10000 }
+      ],
+      "guide": {
+        "summary": "ハイストリーダーとして自分でセットアップ費用を負担し、全ての準備ミッション＋フィナーレをホストとしてクリアすると達成。",
+        "steps": [
+          "高級アパートを購入し、インタラクションメニュー → ハイスト → ハイストを計画する でホストになる",
+          "全セットアップミッション＋フィナーレを自分がホストの状態でクリアする",
+          "クルーメンバーを募って挑戦する"
+        ],
+        "tips": [
+          "リーダーは分配率を設定できるため、フィナーレ報酬を多く受け取ることも可能",
+          "Fleeca Job はセットアップ数が少なく最もコスパが高い"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["リーダー格", "ハイストホスト", "リーダー", "強盗"],
+        "description": "GTA Online リーダー格アワード。ハイストリーダーとして全クリアする方法。"
+      }
+    },
+    {
+      "id": "heists-equal-split",
+      "name": "4等分",
+      "description": "ハイストフィナーレで全員に報酬を25%ずつ均等分配した（リーダーとして）。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "4人ハイストで全員の分配率を25%（4等分）に設定してフィナーレをクリアすると達成される。",
+        "steps": [
+          "4人参加のハイスト（Prison Break / Humane Labs / Series A / Pacific Standard）を準備",
+          "フィナーレ設定画面で全メンバーの報酬を 25% に設定",
+          "フィナーレをクリアする"
+        ],
+        "tips": [
+          "リーダーは通常自分の取り分をより多く設定できるが、このアワードは均等分配が条件",
+          "Pacific Standard のフィナーレなら 4 人 25% で大きな総報酬を得られる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["4等分", "均等分配", "ハイスト", "25%"],
+        "description": "GTA Online 4等分アワード。ハイストフィナーレで報酬を25%ずつ分配する方法。"
+      }
+    },
+    {
+      "id": "heists-fleeca",
+      "name": "強盗実践",
+      "description": "The Fleeca Job（フリーサ強盗）のフィナーレをクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "最初のオリジナルハイスト「The Fleeca Job」のフィナーレをクリアするアワード。",
+        "steps": [
+          "2人でロビーを作りセットアップミッション（2本）を完了する",
+          "フィナーレ：ドライバーがフリーサ銀行へ向かい、ハッカーが金庫をハックする",
+          "タイム内に脱出するとクリア"
+        ],
+        "tips": [
+          "フィナーレはほぼ銃撃戦なしで完了できるため初心者向け",
+          "ドライバーは速い車で安全運転、ハッカーはコントローラーで正確にボタン入力する"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["強盗実践", "Fleeca Job", "フリーサ", "2人ハイスト"],
+        "description": "GTA Online 強盗実践アワード。Fleeca Jobフィナーレをクリアする方法。"
+      }
+    },
+    {
+      "id": "heists-prison-break",
+      "name": "刑務所ツアー",
+      "description": "Prison Break（脱獄大作戦）のフィナーレをクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 10000, "cash": 200000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 10000, "cash": 200000 }
+      ],
+      "guide": {
+        "summary": "第2のオリジナルハイスト「Prison Break」で4人クルーが役割分担をしながら刑務所から VIP を脱出させる。",
+        "steps": [
+          "4人でロビーを作りセットアップミッション（4本）を完了",
+          "フィナーレ：デモリッション（爆弾設置）・パイロット（飛行機調達）・パイロット（護衛機）・刑務所チームの4役割",
+          "VIP を乗せた輸送機を無事南部まで飛ばして着陸させるとクリア"
+        ],
+        "tips": [
+          "パイロットは飛行技術が必要。Lazer 戦闘機に慣れていると有利",
+          "刑務所チームはナイフ/銃撃戦があるので強い武器を持ち込む",
+          "通信をとりながら4役割がタイミングを合わせることが重要"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["刑務所ツアー", "Prison Break", "脱獄", "4人ハイスト"],
+        "description": "GTA Online 刑務所ツアーアワード。Prison Breakフィナーレをクリアする方法。"
+      }
+    },
+    {
+      "id": "heists-humane-labs",
+      "name": "研究所レポート",
+      "description": "Humane Labs Raid（ヒューメイン研究所）のフィナーレをクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 10000, "cash": 540000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 10000, "cash": 540000 }
+      ],
+      "guide": {
+        "summary": "第4のオリジナルハイスト。ヒューメイン研究所の地下から実験データを持ち出す潜入ミッション。",
+        "steps": [
+          "4人でセットアップミッション（5本）を終える",
+          "フィナーレ：スキューバダイバー2人が海中から研究所に潜入。サポート2人はヘリで外を守る",
+          "2人が研究所内をステルスまたは戦闘で進み、データを取得して脱出"
+        ],
+        "tips": [
+          "相棒と（Pair Up）アワード：2人でキーカードをタイミングよく操作すると別途アワードが取れる",
+          "ヒューメイン研究所のマップを覚えてステルス通過するとダメージを避けられる",
+          "外を守るヘリ担当はジェット機との交戦があるため高い操縦技術が必要"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["研究所レポート", "Humane Labs", "ヒューメイン", "ステルス"],
+        "description": "GTA Online 研究所レポートアワード。Humane Labs Raidをクリアする方法。"
+      }
+    },
+    {
+      "id": "heists-in-order",
+      "name": "模範手順",
+      "description": "全ての（オリジナル）ハイストを順番通りにクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 50000, "cash": 1000000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 50000, "cash": 1000000 }
+      ],
+      "guide": {
+        "summary": "Fleeca → Prison Break → Humane Labs → Series A → Pacific Standard の順にクリアすると達成される。$1,000,000 の大型ボーナスあり。",
+        "steps": [
+          "Fleeca Job から順に開始し、各ハイストを順番通りにクリアする",
+          "メンバーを変えない場合はさらに Loyalty ボーナスが追加される",
+          "全5ハイストを同じキャラクターで順番にクリアすることが条件"
+        ],
+        "tips": [
+          "同じフレンドと全部回ると忠誠心ボーナス（+100万ドル）も获得できる",
+          "Pacific Standard は最終幕でありながら最高難易度。事前準備をしっかり"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["模範手順", "ハイスト順番", "コンプリート", "100万ドル"],
+        "description": "GTA Online 模範手順アワード。全ハイストを順番通りにクリアする方法。"
+      }
+    },
+    {
+      "id": "heists-loyalty",
+      "name": "忠誠心",
+      "description": "難易度ハードで全員メンバーを変えずに全ハイストを順番通りにクリアした（リーダー）。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 100000, "cash": 10000000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 100000, "cash": 10000000 }
+      ],
+      "guide": {
+        "summary": "最高難易度の達成条件。ハード難易度・全クルーメンバー固定・順番通りクリアの3条件を全て満たすと$1,000万の特大ボーナスが入る。",
+        "steps": [
+          "信頼できる4人のグループ（フレンド）を用意する",
+          "Fleeca から Pacific Standard まで全員メンバーを変えずに挑戦",
+          "各ハイストを難易度ハード（Hard）で設定してクリアする"
+        ],
+        "tips": [
+          "メンバーが途中で抜けたり変わったりするとボーナスが無効になる",
+          "Pacific Standard のフィナーレはバイク脱出が最速ルート",
+          "$1,000万ボーナスはリーダーのみ獲得。メンバーは別途忠誠心メンバーボーナスあり"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["忠誠心", "ハード", "メンバー固定", "1000万ドル"],
+        "description": "GTA Online 忠誠心アワード。全ハイストをハード難易度・メンバー固定でクリアする方法。"
+      }
+    },
+    {
+      "id": "heists-platinum",
+      "name": "優秀な働き",
+      "description": "ハイストのジョブをプラチナ評価で完了した。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 4000, "cash": 0, "item": "Tシャツ" },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 10, "rp": 1000 },
+        { "tier": 3, "target": 15, "rp": 2500 },
+        { "tier": 4, "target": 25, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "ハイストのセットアップ・フィナーレをプラチナ評価（制限時間内クリア・無損害など）で達成するとカウント。",
+        "steps": ["ハイストのジョブに参加", "プラチナ条件（時間・ノーデス・精度など）を満たしてクリア"],
+        "tips": ["各ジョブのプラチナ条件はジョブ開始画面で確認可能"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["プラチナ", "ハイスト評価"], "description": "GTA Online ハイストプラチナ評価達成方法。" }
+    },
+    {
+      "id": "heists-for-hire",
+      "name": "傭兵",
+      "description": "雇われメンバーとしてハイストのジョブをクリアした。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 4000, "cash": 0, "item": "Tシャツ" },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 10, "rp": 1000 },
+        { "tier": 3, "target": 15, "rp": 2500 },
+        { "tier": 4, "target": 25, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "ハイストのホスト（リーダー）ではなく、メンバー（クルー）として参加してジョブをクリアするとカウント。",
+        "steps": ["フレンドまたは公開ハイストに参加リクエスト", "メンバーとしてジョブをクリア"],
+        "tips": ["クイックジョインでハイストを探すと早い"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["傭兵", "ハイストメンバー"], "description": "GTA Online ハイストメンバーアワード達成方法。" }
+    },
+    {
+      "id": "heists-shot-caller",
+      "name": "リーダーの資質",
+      "description": "ハイストのホストとしてジョブをクリアした。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 4000, "cash": 0, "item": "Tシャツ" },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 10, "rp": 1000 },
+        { "tier": 3, "target": 15, "rp": 2500 },
+        { "tier": 4, "target": 25, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "ハイストのホスト（リーダー）としてセットアップ・フィナーレをクリアするとカウント。",
+        "steps": ["高級アパートの計画ボードからハイストを開始", "ホストとしてジョブをクリア"],
+        "tips": ["ホストは セットアップ費用を負担するが分配率を 0〜100% で設定できる"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["リーダー", "ホスト", "ハイスト"], "description": "GTA Online ハイストホストアワード達成方法。" }
+    },
+    {
+      "id": "heists-it-takes-two",
+      "name": "二人三脚",
+      "description": "ヒューマンラボ強盗フィナーレでグラウンドチームが鍵を使ってセキュリティドアを開けた。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 8000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 8000 }
+      ],
+      "guide": {
+        "summary": "The Humane Labs Raid フィナーレで、グラウンドチームのメンバーが鍵コードでセキュリティドアを解錠するとカウント。",
+        "steps": ["Humane Labs Raid のフィナーレをグラウンドチームとして参加", "鍵コードでセキュリティドアを開ける"],
+        "tips": ["ホストがグラウンドチームの割り当てを行うため、事前にコミュニティと調整しておく"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["ヒューマンラボ", "鍵コード", "二人三脚"], "description": "GTA Online ヒューマンラボアワード達成方法。" }
+    },
+    {
+      "id": "heists-in-control",
+      "name": "コントロール担当",
+      "description": "Pacific Standard またはFleeca Bank でクラウドコントロール役をこなした。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 10, "rp": 1000 },
+        { "tier": 3, "target": 15, "rp": 2000 },
+        { "tier": 4, "target": 25, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "Pacific Standard Heist や Fleeca Bank Heist で、クラウドコントロール役（群衆をコントロールする担当）としてフィナーレをクリアするとカウント。",
+        "steps": ["Fleeca Job または Pacific Standard フィナーレを開始", "クラウドコントロール役を担当してクリア"],
+        "tips": ["Fleeca Job はドライバーとハッカーの2人のみなので固定役割ではない"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["クラウドコントロール", "Pacific Standard", "Fleeca"], "description": "GTA Online コントロール担当アワード。" }
+    },
+    {
+      "id": "heists-jack-of-all",
+      "name": "万能役者",
+      "description": "Prison Break・Humane Labs・Series A・Pacific Standard の全役職をクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 20000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 20000 }
+      ],
+      "guide": {
+        "summary": "Prison Break(4役)・Humane Labs(4役)・Series A Funding(4役)・Pacific Standard(4役)を全員分の役職でクリアする。",
+        "steps": [
+          "各ハイストのセットアップ＋フィナーレを全ての役職で挑戦",
+          "Prison Break：Prisoner / Guard / Pilot / Demolitions",
+          "Humane Labs：Pilot / Gunman / Ground Team",
+          "Series A：各ミッション担当",
+          "Pacific Standard：Hacker / Crowd Control / Getaway Driver / Gunman"
+        ],
+        "tips": ["フレンドと全役職を交替で挑むのが最も効率的", "同じハイストを何度もプレイする必要がある"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["万能役者", "全役職", "ハイスト"], "description": "GTA Online ハイスト全役職クリアアワード。" }
+    },
+    {
+      "id": "heists-product-placement",
+      "name": "商品調達",
+      "description": "Series A Funding のフィナーレを初めてクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 10000, "cash": 100000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 10000 }
+      ],
+      "guide": {
+        "summary": "Series A Funding の全セットアップ（5本）＋フィナーレをクリアすると達成。$100,000 ボーナスも獲得。",
+        "steps": [
+          "高級アパートの計画ボードで Series A Funding を選択",
+          "セットアップ5本をクリア",
+          "フィナーレ「Series A - Freeway / Bikers / Trash Truck / Bus / Weed」をクリア"
+        ],
+        "tips": ["4人構成が比較的難しいのでコミュニティと連携推奨"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["Series A", "商品調達"], "description": "GTA Online Series A Funding フィナーレアワード。" }
+    },
+    {
+      "id": "heists-smooth-sailing",
+      "name": "完璧な航海",
+      "description": "Pacific Standard Job のフィナーレを初めてクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 10000, "cash": 100000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 10000 }
+      ],
+      "guide": {
+        "summary": "Pacific Standard Job の全セットアップ＋フィナーレをクリアすると達成。$100,000 ボーナス付き。",
+        "steps": [
+          "高級アパートの計画ボードで Pacific Standard を選択",
+          "セットアップジョブをクリア",
+          "フィナーレ（銀行強盗→バイク脱出）をクリア"
+        ],
+        "tips": ["フィナーレでデスしないとエリートチャレンジも同時達成できる"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["Pacific Standard", "完璧な航海"], "description": "GTA Online Pacific Standard フィナーレアワード。" }
+    },
+    {
+      "id": "heists-criminal-mastermind",
+      "name": "犯罪の天才",
+      "description": "全26ジョブを順番どおり・同じクルーで・ハード・無デスでクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 50000, "cash": 10000000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 50000 }
+      ],
+      "guide": {
+        "summary": "Fleeca → Prison Break → Humane Labs → Series A → Pacific Standard の全26ジョブを同じ4人で順番通りにハード難易度・全員無デスでクリアすると $10,000,000 獲得。",
+        "steps": [
+          "4人の固定クルーを確保",
+          "Fleecaから順に全ハイストを開始",
+          "ハード難易度に設定",
+          "誰一人デスしないよう慎重にクリア",
+          "全26ジョブをノーデスで完走"
+        ],
+        "tips": [
+          "一人でもデスするとリセット（最初からやり直し）",
+          "最難関は Pacific Standard フィナーレのバイク逃走",
+          "事前に各ジョブを練習してルートを頭に入れておく"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["犯罪の天才", "クリミナルマスターマインド", "ノーデス", "1000万"], "description": "GTA Online Criminal Mastermind チャレンジ達成方法。" }
+    },
+    {
+      "id": "heists-supporting-role",
+      "name": "縁の下の力持ち",
+      "description": "メンバー（クルー）として全26ハイストジョブをクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 20000, "cash": 100000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 20000 }
+      ],
+      "guide": {
+        "summary": "全5つのハイストの全26ジョブ（セットアップ＋フィナーレ）をホストではなくメンバーとしてクリアすると達成。",
+        "steps": ["各ハイストをメンバーとして参加", "全26ジョブをクリア"],
+        "tips": ["ホストは計算されない。必ずメンバー（invited）として参加すること"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["縁の下の力持ち", "全ジョブクリア", "メンバー"], "description": "GTA Online ハイスト全ジョブメンバークリアアワード。" }
     }
   ]
 }

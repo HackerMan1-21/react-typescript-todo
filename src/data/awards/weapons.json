@@ -1,0 +1,259 @@
+{
+  "category": "weapons",
+  "label": "武器",
+  "icon": "🔫",
+  "color": "#dc2626",
+  "awards": [
+    {
+      "id": "weapons-pistol-kills",
+      "name": "ピストルキラー",
+      "description": "ピストル（Pistol）でプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 500 },
+      "progressMax": 500,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 25, "rp": 500 },
+        { "tier": 2, "target": 100, "rp": 1500 },
+        { "tier": 3, "target": 250, "rp": 3000 },
+        { "tier": 4, "target": 500, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "通常のピストルで他プレイヤーをキルすることで累積カウント。PCキルのみ対象でNPCはカウント外。",
+        "steps": [
+          "ピストルを武器として装備する",
+          "デスマッチや TDM などのジョブに参加してピストルのみでキルを稼ぐ",
+          "アドバンスドピストル（Advanced Pistol）も対象の「ピストル」カテゴリに含まれる場合がある"
+        ],
+        "tips": [
+          "ヘッドショットを狙うとキルが速く効率が上がる",
+          "接近戦に持ち込んでピストルで確実に倒す"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ピストルキラー", "ピストル", "500キル", "武器"],
+        "description": "GTA Online ピストルキラーアワード。ピストルで500キル達成する方法。"
+      }
+    },
+    {
+      "id": "weapons-smg-kills",
+      "name": "SMGの使い手",
+      "description": "SMG（短機関銃）でプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 500 },
+      "progressMax": 500,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 25, "rp": 500 },
+        { "tier": 2, "target": 100, "rp": 1500 },
+        { "tier": 3, "target": 250, "rp": 3000 },
+        { "tier": 4, "target": 500, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "Micro SMG / SMG / Assault SMG などのサブマシンガン・カテゴリ武器でのキルがカウントされる。",
+        "steps": [
+          "アンバサダーで SMG または Micro SMG を購入",
+          "デスマッチ等で SMG のみを使ってキルを積む",
+          "近〜中距離でサイドに回り込んでフルオートで制圧するのが基本"
+        ],
+        "tips": [
+          "SMG は移動しながら射撃でき機動力が高い",
+          "Mk II アップグレード済みの Combat PDW はタマが多く安定している",
+          "ドライブバイにも使える"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["SMGの使い手", "サブマシンガン", "500キル", "武器"],
+        "description": "GTA Online SMGの使い手アワード。SMGで500キル達成する方法。"
+      }
+    },
+    {
+      "id": "weapons-shotgun-kills",
+      "name": "ショットガン・ブルース",
+      "description": "ショットガン（散弾銃）でプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 500 },
+      "progressMax": 500,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 25, "rp": 500 },
+        { "tier": 2, "target": 100, "rp": 1500 },
+        { "tier": 3, "target": 250, "rp": 3000 },
+        { "tier": 4, "target": 500, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "Pump Shotgun / Bullpup Shotgun などのショットガン種でキルすると累積される。",
+        "steps": [
+          "Pump Shotgun または Sawed-Off Shotgun を装備しデスマッチに参加",
+          "近距離戦が基本なので屋内マップや狭い路地に誘い込む",
+          "1ショットで倒せるほど接近してから撃つ"
+        ],
+        "tips": [
+          "Bullpup Shotgun Mk II は装弾数が多く安定している",
+          "ヘビーショットガンは1撃の威力が高いが連射が遅い"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ショットガン・ブルース", "ショットガン", "500キル", "武器"],
+        "description": "GTA Online ショットガン・ブルースアワード。ショットガンで500キル達成する方法。"
+      }
+    },
+    {
+      "id": "weapons-rocket-kills",
+      "name": "ロケット男",
+      "description": "ロケットランチャーでプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 25, "rp": 1500 },
+        { "tier": 3, "target": 50, "rp": 3000 },
+        { "tier": 4, "target": 100, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "RPG または Homing Launcher などのロケット系武器でのキルが対象。",
+        "steps": [
+          "RPG を購入・装備してデスマッチや TDM でキルを重ねる",
+          "車両や建物の影に隠れている敵を爆発範囲で巻き込む",
+          "Homing Launcher は車両への誘導ができて便利"
+        ],
+        "tips": [
+          "Oppressor Mk II などの空飛ぶ車を使って上空から爆撃",
+          "爆発ダメージで近くにいる複数の敵も巻き込めてキルが増えやすい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ロケット男", "ロケットランチャー", "RPG", "キル"],
+        "description": "GTA Online ロケット男アワード。ロケットランチャーで100キル達成する方法。"
+      }
+    },
+    {
+      "id": "weapons-sticky-bomb-kills",
+      "name": "車両爆弾魔",
+      "description": "スティッキーボムで車両を25台破壊した。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 3000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 10, "rp": 1000 },
+        { "tier": 3, "target": 20, "rp": 2000 },
+        { "tier": 4, "target": 25, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "Sticky Bomb を車両（プレイヤーまたはNPCの自動車・バイク等）に貼り付けて爆発させると1件カウント。",
+        "steps": [
+          "Sticky Bomb を購入（インターネット → Ammu-Nation）",
+          "フリーロームで道路を走るNPC車両に Sticky Bomb を投げる / 貼り付ける",
+          "離れてリモート爆破（右方向パッド）を起動"
+        ],
+        "tips": [
+          "NPCの車が密集する交差点で一度に複数を爆破するのが効率的",
+          "フリーロームでは無限にNPC車両が出現するので稼ぎやすい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["車両爆弾魔", "スティッキーボム", "車破壊", "爆発物"],
+        "description": "GTA Online 車両爆弾魔アワード。スティッキーボムで車25台を破壊する方法。"
+      }
+    },
+    {
+      "id": "weapons-grenade-kills",
+      "name": "爆弾屋",
+      "description": "手榴弾（グレネード）でプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 4000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 30, "rp": 1500 },
+        { "tier": 3, "target": 60, "rp": 3000 },
+        { "tier": 4, "target": 100, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "通常の Grenade / Proximity Mine / Tear Gas 等の投擲物爆発でキルするとカウント。",
+        "steps": [
+          "Grenade を購入・装備してデスマッチに参加",
+          "敵が密集している場所に向けて投擲する",
+          "爆発範囲内の複数敵を一挙に倒すと効率が良い"
+        ],
+        "tips": [
+          "Grenade Launcher は連投できるため単発手投げより効率が高い",
+          "Sticky Bomb との扱いの違いに注意（本アワードは投擲グレネード）"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["爆弾屋", "手榴弾", "グレネード", "100キル"],
+        "description": "GTA Online 爆弾屋アワード。グレネードで100キルする方法。"
+      }
+    },
+    {
+      "id": "weapons-knife-kills",
+      "name": "切り裂き魔",
+      "description": "ナイフ（Knife）でプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 1000 },
+        { "tier": 2, "target": 15, "rp": 2000 },
+        { "tier": 3, "target": 35, "rp": 3500 },
+        { "tier": 4, "target": 50, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "近接武器のナイフで他プレイヤーをキルした回数がカウントされる。",
+        "steps": [
+          "Knife を装備して近距離DMに参加",
+          "敵の背後から近づきスニークアタックを仕掛ける",
+          "または接近戦を誘い込んでナイフコンボを当てる"
+        ],
+        "tips": [
+          "背後から攻撃すると裏切りスネーク攻撃になりダメージが増大する",
+          "ステルス地形（低照度・茂み）を活用して気づかれずに近づく",
+          "相手が近接武器でないと脅威を感じにくいため奇襲が成立しやすい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["切り裂き魔", "ナイフ", "近接", "50キル"],
+        "description": "GTA Online 切り裂き魔アワード。ナイフで50キル達成する方法。"
+      }
+    },
+    {
+      "id": "weapons-sniper-kills",
+      "name": "スナイパー",
+      "description": "スナイパーライフルでプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 200 },
+      "progressMax": 200,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 50, "rp": 1500 },
+        { "tier": 3, "target": 100, "rp": 3000 },
+        { "tier": 4, "target": 200, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "Sniper Rifle / Heavy Sniper / Marksman Rifle 等のスナイパー系武器でのキルが対象。",
+        "steps": [
+          "Heavy Sniper（Mk II 推奨）を購入・装備",
+          "建物の屋上や高台に陣取る",
+          "スコープをのぞいて頭を狙いヘッドショットで素早くキル"
+        ],
+        "tips": [
+          "Heavy Sniper Mk II は最長射程でほぼ全員を一撃で仕留められる",
+          "弾速修正（Explosive Rounds) は車両撃破に使うと近接キルは難しい",
+          "移動している相手はリードを取って少し前を狙う"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["スナイパー", "スナイパーライフル", "200キル", "ヘッドショット"],
+        "description": "GTA Online スナイパーアワード。スナイパーライフルで200キル達成する方法。"
+      }
+    }
+  ]
+}

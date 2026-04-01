@@ -1,0 +1,61 @@
+{
+  "category": "summer-special",
+  "label": "ロスサントスサマースペシャル",
+  "icon": "🌊",
+  "color": "#06b6d4",
+  "awards": [
+    {
+      "id": "summer-special-aquatic",
+      "name": "海の男",
+      "description": "ロスサントスサマースペシャルのアクアティックイベントをクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "ロスサントスサマースペシャルのイベント（カニ・ダッシュや水上レースなど）に参加してクリアする。",
+        "steps": [
+          "イベントプレイリストか特別イベント枠でロスサントスサマースペシャルを探す",
+          "ミッションをクリアする"
+        ],
+        "tips": [
+          "期間限定イベントのため、出現時に積極的に参加しておくこと"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ロスサントスサマースペシャル", "夏", "アクアティック"],
+        "description": "GTA Online ロスサントスサマースペシャル・アクアティックイベントアワード。"
+      }
+    },
+    {
+      "id": "summer-special-sumo",
+      "name": "水上相撲王",
+      "description": "ロスサントスサマースペシャルの水上相撲モードで勝利した。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 15000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 3, "rp": 5000 },
+        { "tier": 2, "target": 10, "rp": 15000 }
+      ],
+      "guide": {
+        "summary": "ウォータースポーツ系のオーバードライブやスイムラインレースで他プレイヤーを水上で撃破・制圧する。",
+        "steps": [
+          "水上相撲（スモー）イベントに参加",
+          "他プレイヤーをプラットフォームから落とす"
+        ],
+        "tips": [
+          "相手の動きを誘ってカウンター気味に押し出すのが基本戦術"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["水上相撲", "ロスサントスサマースペシャル", "スモー"],
+        "description": "GTA Online 水上相撲王アワード。ロスサントスサマースペシャルで10勝達成。"
+      }
+    }
+  ]
+}

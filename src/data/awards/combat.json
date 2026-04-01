@@ -5,169 +5,630 @@
   "color": "#ef4444",
   "awards": [
     {
-      "id": "combat-kills",
-      "name": "大量殺戮",
-      "description": "フリーモードで他のプレイヤーを倒した。",
-      "requirement": { "type": "cumulative", "target": 500 },
+      "id": "combat-headbanger",
+      "name": "ヘッドバンギング",
+      "description": "他のプレイヤーをヘッドショットでキルした。",
+      "requirement": { "type": "count", "target": 500 },
       "progressMax": 500,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 25, "rp": 500 },
+        { "tier": 2, "target": 100, "rp": 1500 },
+        { "tier": 3, "target": 250, "rp": 3000 },
+        { "tier": 4, "target": 500, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "PCへのヘッドショットキルのみがカウントされる。NPCや車両へのヘッドショットは対象外。",
+        "steps": [
+          "デスマッチや TDM に参加してヘッドショット狙いでプレイする",
+          "スナイパーライフルやピストルを使い、頭部をロックオンして狙い撃つ",
+          "自動エイムを活用しつつ手動補正で頭に向ける"
+        ],
+        "tips": [
+          "Heavy Sniper Mk II はほぼ確実にヘッドショットキルが決まる",
+          "距離が遠いほど弾道補正が必要だが、逆に相手の回避を難しくできる",
+          "近接ではピストルのヘッドエイムが安定しやすい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ヘッドバンギング", "ヘッドショット", "500キル", "PvP"],
+        "description": "GTA Online ヘッドバンギングアワード。ヘッドショットで500キル達成する方法。"
+      }
+    },
+    {
+      "id": "combat-widow-maker",
+      "name": "ウィドウメーカー",
+      "description": "他のプレイヤーを一定時間に複数キルした（キルストリーク）。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 4000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 3, "rp": 500 },
+        { "tier": 2, "target": 8, "rp": 1500 },
+        { "tier": 3, "target": 15, "rp": 2500 },
+        { "tier": 4, "target": 25, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "短時間に連続してプレイヤーをキルするとカウントされる（キルストリーク）。",
+        "steps": [
+          "DM などキル機会が多いモードに参加",
+          "ヘビー武器・爆発物を使って複数のプレイヤーをまとめて倒す",
+          "Oppressor Mk II や Buzzard から地上のプレイヤーを集中攻撃"
+        ],
+        "tips": [
+          "爆発物（Sticky Bomb / RPG）は広範囲を巻き込めてキルストリーク狙いに最適",
+          "防衛力が低い敵集団を狙う方が成功しやすい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ウィドウメーカー", "キルストリーク", "連続キル", "多重キル"],
+        "description": "GTA Online ウィドウメーカーアワード。キルストリークを25回達成する方法。"
+      }
+    },
+    {
+      "id": "combat-triple-kill",
+      "name": "3倍返し",
+      "description": "短時間に3人連続でプレイヤーをキルした（トリプルキル）。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
       "reward": { "rp": 5000, "cash": 0, "item": null },
       "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 },
+        { "tier": 2, "target": 3, "rp": 2000 },
+        { "tier": 3, "target": 6, "rp": 3500 },
+        { "tier": 4, "target": 10, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "一定時間内（数秒）に3人を連続でキルすると「トリプルキル」判定となりカウントされる。",
+        "steps": [
+          "爆発物（RPG・Sticky Bomb）で密集した敵グループを巻き込む",
+          "GTA レースでの複数車両爆破でも成立するケースがある",
+          "チームで固まった敵に爆発攻撃するのが最も確実"
+        ],
+        "tips": [
+          "Orbital Cannon（軌道砲）は広範囲を一瞬で破壊できるため複数キルに有効",
+          "ヘリや飛行機から機銃でグループを一掃する方法も有効",
+          "DM/TDMのような高密度モードをプレイするのがおすすめ"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["3倍返し", "トリプルキル", "連続3キル", "PvP"],
+        "description": "GTA Online 3倍返しアワード。短時間に3人連続キルを10回達成する方法。"
+      }
+    },
+    {
+      "id": "combat-intercept",
+      "name": "横取り",
+      "description": "他のプレイヤーが仕掛けた（賞金）ターゲットを横から奪ってキルした。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 6, "rp": 2000 },
+        { "tier": 4, "target": 10, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "賞金首（Bounty）プレイヤーを追っている別のプレイヤーの「その前に」倒すことでカウント。",
+        "steps": [
+          "フリーロームで賞金首（黄色頭アイコン）を見つける",
+          "他のプレイヤーがその賞金首を追っている状況で先にキルする",
+          "高速車やヘリで素早く移動して横から奪う"
+        ],
+        "tips": [
+          "ヘリや Oppressor Mk II で空中から先回りするのが効果的",
+          "セッション人数が多いほど横取りの機会が増える"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["横取り", "賞金首", "割り込みキル", "フリーローム"],
+        "description": "GTA Online 横取りアワード。賞金首を横取りキルする方法。"
+      }
+    },
+    {
+      "id": "combat-dm-kills",
+      "name": "死の番人",
+      "description": "デスマッチ内でプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 500 },
+      "progressMax": 500,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 25, "rp": 500 },
+        { "tier": 2, "target": 100, "rp": 1500 },
+        { "tier": 3, "target": 250, "rp": 3000 },
+        { "tier": 4, "target": 500, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "デスマッチ（DM/TDM）内でのキルが累積カウントされる。フリーロームのキルは対象外。",
+        "steps": [
+          "クイックジョブ → デスマッチ でロビーに参加",
+          "毎回積極的にキルを積む",
+          "Mk II 武器や改造銃を使って有利に戦う"
+        ],
+        "tips": [
+          "デスマッチは安定してキルを稼げる最も効率的なモード",
+          "Micro SMG Mk II や Battle Rifle が連続キルに向いている",
+          "大型 DM マップでスナイパーを駆使するのも有効"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["死の番人", "デスマッチ", "500キル", "DM"],
+        "description": "GTA Online 死の番人アワード。デスマッチで500キル達成する方法。"
+      }
+    },
+    {
+      "id": "combat-kill-streak",
+      "name": "キルストリーカー",
+      "description": "ひとつのラウンドで多数のキルを続けた（デス無しのキル連続）。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 6000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1500 },
+        { "tier": 2, "target": 3, "rp": 2500 },
+        { "tier": 3, "target": 6, "rp": 4000 },
+        { "tier": 4, "target": 10, "rp": 6000 }
+      ],
+      "guide": {
+        "summary": "デスマッチで一度もデスしないまま複数回キルを続けるとキルストリークとしてカウントされる。",
+        "steps": [
+          "ヘビーアーマーを装備してから DM に参加",
+          "高台や遮蔽物を確保して安全な位置から敵を狙い打つ",
+          "デスを避けながらキルを継続する"
+        ],
+        "tips": [
+          "スナイパーポジション（屋上や崖）を活用",
+          "体力が減ったら遮蔽物に隠れてヘルスを回復（メディキット・自動回復）"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["キルストリーカー", "デス無しキル", "連続キル", "DM"],
+        "description": "GTA Online キルストリーカーアワード。デス無しキルストリークを10回達成する方法。"
+      }
+    },
+    {
+      "id": "combat-gang-attack-top",
+      "name": "摘発",
+      "description": "ギャングアタックで参加プレイヤー内の最多キルを達成してクリアした。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 6, "rp": 2000 },
+        { "tier": 4, "target": 10, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "フリーロームのギャングアタックに参加し、そのセッション内で最多キルを記録しつつアタックを完了するとカウント。ソロでも達成可能。",
+        "steps": [
+          "地図上でギャングアタックスポット（黄色点滅）を見つけてエリアに入る",
+          "重機関銃やグレネードランチャーで素早くギャングメンバーを次々倒す",
+          "他プレイヤーが参加していない限りソロの方が達成しやすい"
+        ],
+        "tips": [
+          "Combat MG Mk II や Heavy Sniper で効率よくギャングを排除",
+          "フリーロームで早朝や深夜に入ると他プレイヤーが少なくソロになりやすい",
+          "Buzzard のガトリングガンで空中から掃射するのも有効"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["摘発", "ギャングアタック", "最多キル", "フリーローム"],
+        "description": "GTA Online 摘発アワード。ギャングアタックで最多キルを10回達成する方法。"
+      }
+    },
+    {
+      "id": "combat-revenge",
+      "name": "復讐者",
+      "description": "自分をキルしたプレイヤーにリベンジキルした。",
+      "requirement": { "type": "count", "target": 20 },
+      "progressMax": 20,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 3, "rp": 500 },
+        { "tier": 2, "target": 7, "rp": 1000 },
+        { "tier": 3, "target": 13, "rp": 2000 },
+        { "tier": 4, "target": 20, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "自分がキルされた後、同一セッション内で同じプレイヤーにキルをお返しするとカウントされる。",
+        "steps": [
+          "DM/TDM やフリーローム PvP に参加",
+          "デスした直後、キルしたプレイヤーの位置を把握してすぐ向かう",
+          "自分をキルした相手を倒すとリベンジキル判定"
+        ],
+        "tips": [
+          "デス後のリスポーン位置が相手に近い場合は素早く動いてリベンジ",
+          "相手の位置はマップ上の赤点で追跡できる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["復讐者", "リベンジキル", "お返しキル", "PvP"],
+        "description": "GTA Online 復讐者アワード。リベンジキルを20回達成する方法。"
+      }
+    },
+    {
+      "id": "combat-bounty-hunter",
+      "name": "バウンティハンター",
+      "description": "賞金首（Bounty）プレイヤーをキルして賞金を回収した。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 4000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 400 },
+        { "tier": 2, "target": 5, "rp": 1200 },
+        { "tier": 3, "target": 12, "rp": 2500 },
+        { "tier": 4, "target": 25, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "マップ上で黄色の頭部マーカーが出ている賞金首プレイヤーを倒し、設定された賞金を受け取るとカウントされる。",
+        "steps": [
+          "フリーロームマップで賞金首マーカーを確認",
+          "高速移動手段（Oppressor Mk II / ヘリ）で素早く接近",
+          "確実にキルして賞金を回収する"
+        ],
+        "tips": [
+          "賞金が高いほど多くのプレイヤーが競合するので素早さが重要",
+          "スナイパーや爆発物で遠距離から奇襲するのが安全"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["バウンティハンター", "賞金首", "Bounty", "キル"],
+        "description": "GTA Online バウンティハンターアワード。賞金首を25回倒す方法。"
+      }
+    },
+    {
+      "id": "combat-melee",
+      "name": "肉弾勝負",
+      "description": "素手（格闘）や近接武器でプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 4000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 15, "rp": 1500 },
+        { "tier": 3, "target": 30, "rp": 2500 },
+        { "tier": 4, "target": 50, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "素手・ナイフ・バット・ハンマー等の近接武器でのキルが累積カウントされる。",
+        "steps": [
+          "拳・ナイフ・バットなどを装備してデスマッチに参加",
+          "敵の背後から近づき近接攻撃でキルする",
+          "コンボ（連打）で素早く体力を削る"
+        ],
+        "tips": [
+          "背後からの攻撃はボーナスダメージが入る",
+          "近接武器専用の DM マップを探すと効率が上がる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["肉弾勝負", "近接", "格闘", "50キル"],
+        "description": "GTA Online 肉弾勝負アワード。近接武器で50キル達成する方法。"
+      }
+    },
+    {
+      "id": "combat-streaker",
+      "name": "キルストリーク",
+      "description": "デスマッチでキルストリークを達成した。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
         { "tier": 1, "target": 10, "rp": 500 },
-        { "tier": 2, "target": 50, "rp": 1500 },
+        { "tier": 2, "target": 25, "rp": 1000 },
+        { "tier": 3, "target": 50, "rp": 2000 },
+        { "tier": 4, "target": 100, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "デスマッチ中に連続キルストリークを達成するたびカウント。短時間に複数キルすればOK。",
+        "steps": ["デスマッチに参加", "連続キルを狙う", "累計100回達成"],
+        "tips": ["SMGやショットガンは近距離連続キルに有効"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["キルストリーク", "デスマッチ"], "description": "GTA Online キルストリークアワード達成方法。" }
+    },
+    {
+      "id": "combat-bloodiest",
+      "name": "生存最強",
+      "description": "サバイバル中に最多キルを記録した。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "サバイバルモードで最も多くの敵をキルした状態でウェーブを最後まで生き残るとカウント。",
+        "steps": ["サバイバルに参加", "積極的に敵をキルする", "全10ウェーブを最多キルで生き残る"],
+        "tips": ["重火器や爆発物を積極活用", "RPG やミニガンが効率的"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["サバイバル", "最多キル"], "description": "GTA Online サバイバル最多キルアワード。" }
+    },
+    {
+      "id": "combat-no-you-dont",
+      "name": "渡さない",
+      "description": "キャプチャーで荷物を持つプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 3000, "cash": 0, "item": "リム" },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 25, "rp": 1000 },
+        { "tier": 3, "target": 50, "rp": 2000 },
+        { "tier": 4, "target": 100, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "キャプチャーモードで荷物（オブジェクティブ）を運んでいる敵プレイヤーをキルするとカウント。",
+        "steps": ["キャプチャーモードに参加", "荷物マーカーを持つ敵プレイヤーを優先的に狙う"],
+        "tips": ["ミニマップの明るいマーカーが荷物を持つプレイヤー"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["キャプチャー", "荷物キル"], "description": "GTA Online キャプチャー荷物持ちキルアワード。" }
+    },
+    {
+      "id": "combat-lights-out",
+      "name": "暗闘",
+      "description": "ナイトビジョンゴーグル装備中に敵をキルした。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 3000, "cash": 0, "item": "バイクリム" },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 25, "rp": 1000 },
+        { "tier": 3, "target": 50, "rp": 2000 },
+        { "tier": 4, "target": 100, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "ナイトビジョンゴーグルをアクティブにした状態で敵をキルするとカウント。",
+        "steps": ["インベントリからナイトビジョンゴーグルを装備・起動", "起動した状態で敵をキル"],
+        "tips": ["夜間の暗闇マップで特に有効"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["ナイトビジョン", "暗闘"], "description": "GTA Online ナイトビジョンキルアワード。" }
+    },
+    {
+      "id": "combat-psycho-killer",
+      "name": "サイコキラー",
+      "description": "サイコパス状態（赤レーダー）のプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 3000, "cash": 0, "item": "Tシャツ" },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 25, "rp": 1000 },
+        { "tier": 3, "target": 50, "rp": 2000 },
+        { "tier": 4, "target": 100, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "ミニマップで赤くなっている（サイコパス状態）プレイヤーをキルするとカウント。",
+        "steps": ["フリーローム中にサイコパス状態（ウォンテッドが高い）の赤プレイヤーを探す", "近づいてキル"],
+        "tips": ["赤マーカーは他のプレイヤーを多くキルしたプレイヤー"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["サイコキラー", "サイコパス状態"], "description": "GTA Online サイコキラーアワード達成方法。" }
+    },
+    {
+      "id": "combat-pistol-whipped",
+      "name": "ピストル使い",
+      "description": "ピストル系武器でプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 500 },
+      "progressMax": 500,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 100, "rp": 1500 },
         { "tier": 3, "target": 200, "rp": 3000 },
         { "tier": 4, "target": 500, "rp": 5000 }
       ],
       "guide": {
-        "summary": "フリーモードで他プレイヤーを倒すたびにカウントが進む。賞金首ターゲットをとると効率よく稼げる。",
-        "steps": [
-          "セッションに参加し、マップ上の赤点（プレイヤー）に近づく",
-          "賞金ターゲット（黄色のマーカー）は倒すと賞金と共にカウント加算",
-          "デスマッチモードに参加するとKill数が安定して増える",
-          "エアーサポート（軌道砲など）を使えばランク差があっても倒しやすい"
-        ],
-        "tips": [
-          "パッシブモードをOFFにして積極的に参加する",
-          "スナイパーライフルやヘビーウェポンは高Killが取りやすい",
-          "ヘリ・飛行機から地上のプレイヤーを狙うのが効率的"
-        ]
+        "summary": "ピストル、ピストル Mk II、コンバットピストルなどのピストル系でPCをキルするとカウント。",
+        "steps": ["ピストル系武器を装備", "PCにキルを決める"],
+        "tips": ["ピストル Mk II 炸裂弾が最も効率的"]
       },
       "media": { "images": [], "videos": [] },
-      "seo": {
-        "keywords": ["キル", "PvP", "フリーモード", "戦闘"],
-        "description": "GTA Online 大量殺戮アワード攻略。PvPキルを効率よく積む方法を解説。"
-      }
+      "seo": { "keywords": ["ピストル", "Gun kills"], "description": "GTA Online ピストルキルアワード。" }
     },
     {
-      "id": "combat-headshots",
-      "name": "ヘッドショット マスター",
-      "description": "ヘッドショットでプレイヤーやNPCを倒した。",
-      "requirement": { "type": "cumulative", "target": 500 },
+      "id": "combat-smg-head",
+      "name": "SMGヘッド",
+      "description": "SMG系武器でプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 500 },
       "progressMax": 500,
-      "reward": { "rp": 6000, "cash": 0, "item": null },
+      "reward": { "rp": 4000, "cash": 0, "item": null },
       "tiers": [
-        { "tier": 1, "target": 10, "rp": 600 },
-        { "tier": 2, "target": 50, "rp": 2000 },
-        { "tier": 3, "target": 200, "rp": 4000 },
-        { "tier": 4, "target": 500, "rp": 6000 }
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 100, "rp": 1500 },
+        { "tier": 3, "target": 200, "rp": 2500 },
+        { "tier": 4, "target": 500, "rp": 4000 }
       ],
       "guide": {
-        "summary": "スナイパーライフルや拳銃で敵の頭部を狙って倒す。NPCも対象に含まれるのでミッションでも稼ぐことができる。",
-        "steps": [
-          "スナイパーライフル（Heavy Sniper Mk II推奨）を用意する",
-          "エイムアシストを活用して頭部をロックオンする",
-          "Police Station の前に立つとNPCが沸き続けるので手軽にヘッドショットが稼げる",
-          "サバイバルモードでも多数の敵が来るので効率よく稼げる"
-        ],
-        "tips": [
-          "Heavy Sniper Mk II にサーマルスコープを付けると見やすい",
-          "コンタクトミッションをソロで周回するとNPCヘッドショットが稼ぎやすい",
-          "照準感度を下げて頭部を狙いやすくする設定が有効"
-        ]
+        "summary": "SMG、アサルトSMG、コンバットPDW、ミニSMGなどのSMG系でPCをキルするとカウント。",
+        "steps": ["SMG系武器を装備", "PCにキルを決める"],
+        "tips": ["SMG Mk II はマガジンも多く連続戦闘向き"]
       },
       "media": { "images": [], "videos": [] },
-      "seo": {
-        "keywords": ["ヘッドショット", "スナイパー", "狙撃", "アワード"],
-        "description": "GTA Online ヘッドショットマスターアワード。効率的なヘッドショットの稼ぎ方。"
-      }
+      "seo": { "keywords": ["SMG", "サブマシンガン"], "description": "GTA Online SMGキルアワード。" }
     },
     {
-      "id": "combat-bounties",
-      "name": "賞金稼ぎ",
-      "description": "賞金のかかったプレイヤーを倒して賞金を稼いだ。",
-      "requirement": { "type": "cumulative", "target": 50 },
-      "progressMax": 50,
-      "reward": { "rp": 8000, "cash": 0, "item": null },
+      "id": "combat-shotgun-blues",
+      "name": "ショットガンブルース",
+      "description": "ショットガン系武器でプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 500 },
+      "progressMax": 500,
+      "reward": { "rp": 4000, "cash": 0, "item": null },
       "tiers": [
-        { "tier": 1, "target": 1, "rp": 1000 },
-        { "tier": 2, "target": 5, "rp": 3000 },
-        { "tier": 3, "target": 20, "rp": 6000 },
-        { "tier": 4, "target": 50, "rp": 8000 }
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 100, "rp": 1500 },
+        { "tier": 3, "target": 200, "rp": 2500 },
+        { "tier": 4, "target": 500, "rp": 4000 }
       ],
       "guide": {
-        "summary": "マップ上の黄色の星マーカーがある賞金首プレイヤーを倒して賞金を受け取る。",
-        "steps": [
-          "接触者メニューや他プレイヤーへのインタラクションで賞金が設定される",
-          "賞金をかけるには Lester（レスター）に電話し、『「[%プレイヤー名%]に賞金をかける』』を選択する",
-          "地図上の黄色マーカーを追いかけて賞金首を倒す",
-          "賞金は $1,000～$10,000（$1,000 小刈米）の範囲で設定可能"
-        ],
-        "tips": [
-          "賞金ターゲットが車移動中は Sticky Bomb や爆発物が効率的",
-          "セッション参加者が多いほど賞金が設定されやすい",
-          "自分に賞金がかかった状態で時間切れまで生き延びると賞金が自分に入る"
-        ]
+        "summary": "アサルトショットガン、ソードオフショットガンなどのショットガン系でPCをキルするとカウント。",
+        "steps": ["ショットガン系武器を装備", "近距離戦でPCをキル"],
+        "tips": ["アサルトショットガンは連射が速くデスマッチ向き"]
       },
       "media": { "images": [], "videos": [] },
-      "seo": {
-        "keywords": ["賞金", "バウンティ", "賞金稼ぎ", "PvP"],
-        "description": "GTA Online 賞金稼ぎアワード攻略。賞金首の倒し方と効率的な稼ぎ方。"
-      }
+      "seo": { "keywords": ["ショットガン", "近距離"], "description": "GTA Online ショットガンキルアワード。" }
     },
     {
-      "id": "combat-deathmatch",
-      "name": "デスマッチ制覇",
-      "description": "デスマッチモードで勝利した。",
+      "id": "combat-looking-down-barrel",
+      "name": "銃口を向けて",
+      "description": "アサルトライフル系武器でプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 500 },
+      "progressMax": 500,
+      "reward": { "rp": 4000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 100, "rp": 1500 },
+        { "tier": 3, "target": 200, "rp": 2500 },
+        { "tier": 4, "target": 500, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "アサルトライフル、カービンライフル Mk II、コンバットライフルなどでPCをキルするとカウント。",
+        "steps": ["アサルトライフル系武器を装備", "PCにキルを決める"],
+        "tips": ["カービンライフル Mk II はバランスが良く汎用性が高い"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["アサルトライフル", "ライフル"], "description": "GTA Online アサルトライフルキルアワード。" }
+    },
+    {
+      "id": "combat-scoping-out",
+      "name": "狙撃手",
+      "description": "スナイパーライフル系武器でプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 4000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 25, "rp": 1500 },
+        { "tier": 3, "target": 50, "rp": 2500 },
+        { "tier": 4, "target": 100, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "スナイパーライフル、重スナイパー Mk II などでPCをキルするとカウント。",
+        "steps": ["スナイパーライフルを装備して高所に陣取る", "遠距離からPCをキル"],
+        "tips": ["Heavy Sniper Mk II は一発キルができるため効率的"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["スナイパー", "遠距離"], "description": "GTA Online スナイパーキルアワード。" }
+    },
+    {
+      "id": "combat-rapid-fire",
+      "name": "ラピッドファイア",
+      "description": "マシンガン系武器でプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 500 },
+      "progressMax": 500,
+      "reward": { "rp": 4000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 100, "rp": 1500 },
+        { "tier": 3, "target": 200, "rp": 2500 },
+        { "tier": 4, "target": 500, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "MG、コンバットMG Mk II、Unholy Hellbringerなどのマシンガン系でPCをキルするとカウント。",
+        "steps": ["マシンガン系武器を装備", "PCにキルを決める"],
+        "tips": ["コンバット MG Mk II 炸裂弾は高範囲ダメージで効率的"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["マシンガン", "MG"], "description": "GTA Online マシンガンキルアワード。" }
+    },
+    {
+      "id": "combat-sticky-bomb",
+      "name": "粘着地獄",
+      "description": "粘着爆弾（スティッキーボム）でプレイヤーをキルした。",
       "requirement": { "type": "count", "target": 50 },
       "progressMax": 50,
-      "reward": { "rp": 10000, "cash": 0, "item": null },
+      "reward": { "rp": 3000, "cash": 0, "item": null },
       "tiers": [
-        { "tier": 1, "target": 1, "rp": 1000 },
-        { "tier": 2, "target": 5, "rp": 3000 },
-        { "tier": 3, "target": 20, "rp": 7000 },
-        { "tier": 4, "target": 50, "rp": 10000 }
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 10, "rp": 1000 },
+        { "tier": 3, "target": 25, "rp": 2000 },
+        { "tier": 4, "target": 50, "rp": 3000 }
       ],
       "guide": {
-        "summary": "チームデスマッチまたはフリーデスマッチに参加して勝利する。",
-        "steps": [
-          "クイックジョブメニューまたはマップのDMアイコンからロビーに参加",
-          "マップを覚えてハイグラウンド（高い場所）を確保する",
-          "チーム戦では指定エリアをカバーして味方をサポートする",
-          "ヘビーウェポン（ミニガン等）は使用制限があるマップが多い"
-        ],
-        "tips": [
-          "Mk II 改造銃（Weapons Workshop で改造）を使うと接近戦・中距離戦で強力",
-          "デスマッチの勝率は武器精度よりポジション取りが重要",
-          "ヘビーアーマーで耐久力を上げ、スナイパーで遠距離から狙うのが基本"
-        ]
+        "summary": "スティッキーボムでPCをキルするとカウント。車に貼り付けても、直接当てても有効。",
+        "steps": ["スティッキーボムを用意", "敵や敵車両に貼り付けて起爆"],
+        "tips": ["車のボンネットに貼ると確実にキルしやすい"]
       },
       "media": { "images": [], "videos": [] },
-      "seo": {
-        "keywords": ["デスマッチ", "DM", "勝利", "PvP"],
-        "description": "GTA Online デスマッチ制覇アワード。勝率を上げる戦術とコツを解説。"
-      }
+      "seo": { "keywords": ["スティッキーボム", "爆弾"], "description": "GTA Online スティッキーボムキルアワード。" }
     },
     {
-      "id": "combat-adversary",
-      "name": "アドバーサリー戦士",
-      "description": "アドバーサリーモードで勝利した。",
-      "requirement": { "type": "count", "target": 30 },
-      "progressMax": 30,
-      "reward": { "rp": 9000, "cash": 0, "item": null },
+      "id": "combat-grenade-fiend",
+      "name": "グレネード狂",
+      "description": "手榴弾またはグレネードランチャーでプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
       "tiers": [
-        { "tier": 1, "target": 1, "rp": 1000 },
-        { "tier": 2, "target": 5, "rp": 3000 },
-        { "tier": 3, "target": 15, "rp": 6000 },
-        { "tier": 4, "target": 30, "rp": 9000 }
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 10, "rp": 1000 },
+        { "tier": 3, "target": 25, "rp": 2000 },
+        { "tier": 4, "target": 50, "rp": 3000 }
       ],
       "guide": {
-        "summary": "Sumo・Deadline・Power Play・Slasherなどのアドバーサリーモードをプレイして勝利を目指す。",
-        "steps": [
-          "クイックジョブ → Adversary Mode を選択しロビーに参加",
-          "Sumo: 相手の車をエリア外に弾き出すか、自分が最後までエリア内で生き残る",
-          "Deadline: ライトサイクルの軌跡を使って相手を倒すモード。軌跡に触れると死亡",
-          "Power Play: エリア内のアイテムを制消しながらチームの得点を稼ぐ"
-        ],
-        "tips": [
-          "Sumo は車両操作とポジショニングが勝敗を左右する",
-          "Deadline は軌跡を意図的に相手の届きそうな場所に育てるのが基本戦術",
-          "友人と組んで参加すると連携しやすい"
-        ]
+        "summary": "グレネードまたはグレネードランチャーでPCをキルするとカウント。",
+        "steps": ["グレネードまたはグレネードランチャーを用意", "密集した敵やカバー中の敵に投げる"],
+        "tips": ["グレネードランチャーのほうが命中精度が高い"]
       },
       "media": { "images": [], "videos": [] },
-      "seo": {
-        "keywords": ["アドバーサリー", "特殊モード", "勝利", "PvP"],
-        "description": "GTA Online アドバーサリーモード攻略。各モードの勝ち方を解説。"
-      }
+      "seo": { "keywords": ["グレネード", "爆発物"], "description": "GTA Online グレネードキルアワード。" }
+    },
+    {
+      "id": "combat-rocket-man",
+      "name": "ロケット男",
+      "description": "RPGやホーミングロケットでプレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 4000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 25, "rp": 1500 },
+        { "tier": 3, "target": 50, "rp": 2500 },
+        { "tier": 4, "target": 100, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "RPGまたはホーミングランチャーのロケットでPCをキルするとカウント。直撃・爆風どちらも有効。",
+        "steps": ["RPGまたはホーミングランチャーを用意", "敵プレイヤーの近くや車両を直撃"],
+        "tips": ["ホーミングランチャーは車両への誘導ロックが可能で命中率が高い"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["RPG", "ロケット"], "description": "GTA Online RPGキルアワード。" }
+    },
+    {
+      "id": "combat-car-bomber",
+      "name": "カーボマー",
+      "description": "車両に仕掛けた爆発物で敵プレイヤーをキルした。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 3000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 10, "rp": 1000 },
+        { "tier": 3, "target": 15, "rp": 2000 },
+        { "tier": 4, "target": 25, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "車両に取り付けたスティッキーボムやリモートボムなどの爆発物を起爆してPCをキルするとカウント。",
+        "steps": ["スティッキーボムを相手の車に貼り付ける", "相手が乗ったタイミングでL1/LBで起爆"],
+        "tips": ["フリーローム中に駐車された車に仕掛けるのが簡単"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["カーボム", "車両爆弾"], "description": "GTA Online カーボムキルアワード達成方法。" }
     }
   ]
 }

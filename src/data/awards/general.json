@@ -1,0 +1,813 @@
+{
+  "category": "general",
+  "label": "一般",
+  "icon": "⭐",
+  "color": "#6366f1",
+  "awards": [
+    {
+      "id": "general-dm-variety",
+      "name": "戦いの虜",
+      "description": "異なるデスマッチマップに参加した。",
+      "requirement": { "type": "unique", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 10, "rp": 1000 },
+        { "tier": 3, "target": 20, "rp": 2000 },
+        { "tier": 4, "target": 25, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "同じマップを何度プレイしても1回しかカウントされない。異なる25種のDMマップに参加する必要がある。",
+        "steps": [
+          "クイックジョブ → デスマッチ で様々なマップを選択・参加する",
+          "プレイするたびに違うマップに切り替えてカウントを増やす",
+          "ソーシャルクラブから特定のDMマップを選択するとコントロールしやすい"
+        ],
+        "tips": [
+          "カスタムジョブから未プレイのマップを選んで効率よく進める",
+          "自分でマップを作成して参加してもカウントされる可能性がある"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["戦いの虜", "デスマッチ", "マップ種類", "アワード"],
+        "description": "GTA Online 戦いの虜アワード。25種のDMマップに参加する方法。"
+      }
+    },
+    {
+      "id": "general-race-variety",
+      "name": "ベテランレーサー",
+      "description": "異なるレースマップに参加した。",
+      "requirement": { "type": "unique", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 10, "rp": 1000 },
+        { "tier": 3, "target": 20, "rp": 2000 },
+        { "tier": 4, "target": 25, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "異なる25種のレースコースに参加（完走や完全なゴールは必須でない場合も）する。",
+        "steps": [
+          "クイックジョブ → レース で様々なコースに参加する",
+          "ランド・GTA・エア・シーなど全タイプを幅広くプレイ",
+          "コミュニティ制作のコースでもカウントされる"
+        ],
+        "tips": [
+          "友人と遊ぶ際に毎回異なるコースを選ぶと自然に達成できる",
+          "レース系のアワードと並行して進めると効率的"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ベテランレーサー", "レース", "マップ種類", "アワード"],
+        "description": "GTA Online ベテランレーサーアワード。25種のレースコースに参加する方法。"
+      }
+    },
+    {
+      "id": "general-parachute-low",
+      "name": "間一髪",
+      "description": "地面から高度40m以下でパラシュートを開いた。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 },
+        { "tier": 2, "target": 5, "rp": 1500 },
+        { "tier": 3, "target": 15, "rp": 2500 },
+        { "tier": 4, "target": 25, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "飛行機・ヘリから高度40m未満でパラシュートを開く必要がある。地面の高さも考慮される。",
+        "steps": [
+          "飛行機やヘリコプターに搭乗",
+          "低高度（地面から40m以下）に降下してからパラシュートを展開する（Fキー / 三角ボタン）",
+          "山や高い地形の近くではギリギリのタイミングでも問題ない"
+        ],
+        "tips": [
+          "Buzzard や Frogger ヘリから低空で飛び降りると安全に実施できる",
+          "海上や平地で行うと高度が把握しやすい",
+          "高度40m＝約4階建てビル相当。かなり低い位置で開く必要がある"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["間一髪", "パラシュート", "低高度", "40m以下"],
+        "description": "GTA Online 間一髪アワード。高度40m以下でパラシュートを25回開く方法。"
+      }
+    },
+    {
+      "id": "general-gangattack-5",
+      "name": "一網打尽",
+      "description": "同一セッション内でゲーム内1日に5つのギャングアタックをクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "フリーロームでギャングアタックを24ゲーム内時間（約48分）以内に5箇所こなすとカウントされる。",
+        "steps": [
+          "地図上の黄色い点滅マークがギャングアタックの目安",
+          "ヘリや高速車両で素早く移動して5箇所こなす",
+          "Mk II 重火器や自動照準でスピードクリアを心がける"
+        ],
+        "tips": [
+          "Buzzard Attack Chopper でマーカー間を高速移動",
+          "弾薬はたっぷり補充してから出発する",
+          "クリアしたら次のマーカーが出現するまで少し移動すると早い"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["一網打尽", "ギャングアタック", "5件", "フリーローム"],
+        "description": "GTA Online 一網打尽アワード。ゲーム内1日で5つのギャングアタックをクリアする方法。"
+      }
+    },
+    {
+      "id": "general-dart-checkout",
+      "name": "チェックアウト",
+      "description": "ダーツを6投で終了した（スコア501を6本でクリア）。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "ダーツゲームで501点を6投（6本のダーツ）以内でゼロにするという難易度の高い達成条件。",
+        "steps": [
+          "パブやリバースモーテルのダーツ台に向かう",
+          "ダーツを開始（501ゲーム）",
+          "3本投げでトリプル20（60点）を狙い、できる限り高得点ゾーンを連続ヒット",
+          "最後は必ずダブルでフィニッシュする必要がある（ルール：アウトダブル）"
+        ],
+        "tips": [
+          "6投でクリアするには平均83.5点/投が必要。トリプル20連続が前提",
+          "最終フィニッシュ候補：D20（40点）、D18（36点）など",
+          "コントローラーで狙いを定め、スローイングラインをまっすぐ引く練習をする"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["チェックアウト", "ダーツ", "6投", "501ゲーム"],
+        "description": "GTA Online チェックアウトアワード。ダーツゲーム501を6投でクリアする方法。"
+      }
+    },
+    {
+      "id": "general-bet-50k",
+      "name": "ハスラー",
+      "description": "ジョブの賭けで累計$50,000を獲得した。",
+      "requirement": { "type": "cash", "target": 50000 },
+      "progressMax": 50000,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10000, "rp": 500 },
+        { "tier": 2, "target": 25000, "rp": 1000 },
+        { "tier": 3, "target": 50000, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "ジョブ参加時に賭けをして、それに勝ち続けることで賭け金収益がカウントされる。",
+        "steps": [
+          "ジョブ（レース・DM 等）のロビーで Bet を選択してベット",
+          "勝利するとベット額が戻ってくる。その累積金額が目標 $50,000",
+          "少額でも積み重ねで達成可能"
+        ],
+        "tips": [
+          "1回 $2,000 賭けて勝つと $4,000 還元なので 25 回勝てば達成",
+          "確実に勝てるジョブ（フレンドと2人のレース等）で効率的に稼ぐ"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ハスラー", "賭け", "ベット", "$50000"],
+        "description": "GTA Online ハスラーアワード。ジョブの賭けで$50,000獲得する方法。"
+      }
+    },
+    {
+      "id": "general-hairstyle",
+      "name": "理髪店の友",
+      "description": "理髪店（バーバーショップ）で髪型を変えた。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 1500, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 300 },
+        { "tier": 2, "target": 5, "rp": 600 },
+        { "tier": 3, "target": 15, "rp": 1000 },
+        { "tier": 4, "target": 25, "rp": 1500 }
+      ],
+      "guide": {
+        "summary": "バーバーショップや美容室で異なる（または同じ）髪型に変えるたびにカウントされる。",
+        "steps": [
+          "地図でバーバーショップ（ハサミマーク）を探して訪問",
+          "Hair セクションから任意の髪型を選んで購入・適用する",
+          "1回変えたらまた別の髪型に変えてカウントを積み上げる"
+        ],
+        "tips": [
+          "無料の髪型があればコスト0で繰り返し変更できる",
+          "最安値の変更でもカウントが加算される"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["理髪店の友", "バーバーショップ", "髪型変更", "アワード"],
+        "description": "GTA Online 理髪店の友アワード。理髪店で25回髪型を変える方法。"
+      }
+    },
+    {
+      "id": "general-all-weapons",
+      "name": "誇り高き銃コレクター",
+      "description": "全ての武器を購入した。",
+      "requirement": { "type": "unique", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 10000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 10000 }
+      ],
+      "guide": {
+        "summary": "アンバサダー・ガン・ショップで販売している全ての武器を購入してコレクションを完成させる。",
+        "steps": [
+          "地図の武器アイコン（銃）からアンバサダー・ガン・ショップへGO",
+          "全カテゴリの武器をチェックして未購入のものを全て購入する",
+          "DLC 武器も含まれる場合があるが、基本的には標準販売の武器が対象"
+        ],
+        "tips": [
+          "在庫は有限（改造は別）なので購入済みかどうかは画面で確認できる",
+          "コレクターバンドル（Collectors Pack）があれば一括購入も可能"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["誇り高き銃コレクター", "全武器購入", "コレクション", "アワード"],
+        "description": "GTA Online 誇り高き銃コレクターアワード。全武器購入の達成方法。"
+      }
+    },
+    {
+      "id": "general-tattoo-all",
+      "name": "人間キャンバス",
+      "description": "タトゥーを全身に加えた。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "全身（頭・首・胸・腕・背中・腰・脚）のタトゥースロットを全て埋めることで達成される。",
+        "steps": [
+          "タトゥー・パーラーに訪問",
+          "全身の各部位に少なくとも1つのタトゥーを適用する",
+          "全スロットに適用できたら達成"
+        ],
+        "tips": [
+          "最安値のタトゥーで構わないので費用を節約できる",
+          "一部のタトゥーはアワード報酬として解除されるため、それを利用するのも手"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["人間キャンバス", "タトゥー", "全身", "アワード"],
+        "description": "GTA Online 人間キャンバスアワード。タトゥーを全身に施す方法。"
+      }
+    },
+    {
+      "id": "general-showroom",
+      "name": "ショールーム",
+      "description": "大型ガレージ（10台分）を3箇所全て車両で満たした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 10000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 10000 }
+      ],
+      "guide": {
+        "summary": "10台分のガレージ3軒を全て車で埋めると達成（合計30台）。",
+        "steps": [
+          "まず1軒目の大型ガレージを購入してインターネット（Dynasty8）から物件取得",
+          "2〜3軒目の大型ガレージを追加購入",
+          "各10台のスロットに車を持ち込んで全スロットを埋める"
+        ],
+        "tips": [
+          "安価なスポーツカーやコンパクトを量産して枠を素早く埋めるのが経済的",
+          "購入済み車両をトラッカー登録して盗まれないようにすること"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ショールーム", "ガレージ", "10台", "3軒"],
+        "description": "GTA Online ショールームアワード。10台ガレージを3軒全て埋める方法。"
+      }
+    },
+    {
+      "id": "general-daily-100",
+      "name": "日常の職務",
+      "description": "デイリーミッションを100回クリアした。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 10000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 1000 },
+        { "tier": 2, "target": 30, "rp": 3000 },
+        { "tier": 3, "target": 60, "rp": 6000 },
+        { "tier": 4, "target": 100, "rp": 10000 }
+      ],
+      "guide": {
+        "summary": "毎日3つのデイリーチャレンジが与えられる。それらをクリアするたびにカウントが加算される。",
+        "steps": [
+          "ゲーム内で画面上部の「デイリー」通知を確認",
+          "指定された3つのチャレンジを毎日こなす",
+          "100回クリアで达成（約33日分）"
+        ],
+        "tips": [
+          "毎日ログインしてデイリーを消化するのが基本",
+          "デイリーボーナス（連続7日）も報酬が増えるので継続がお得",
+          "3つ全てクリアすると当日のボーナス報酬も獲得"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["日常の職務", "デイリーミッション", "100回", "毎日"],
+        "description": "GTA Online 日常の職務アワード。デイリーミッションを100回クリアする方法。"
+      }
+    },
+    {
+      "id": "general-lap-dance",
+      "name": "ラップパーティー",
+      "description": "ストリップクラブでプライベートダンスを楽しんだ。",
+      "requirement": { "type": "count", "target": 20 },
+      "progressMax": 20,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 300 },
+        { "tier": 2, "target": 5, "rp": 700 },
+        { "tier": 3, "target": 10, "rp": 1200 },
+        { "tier": 4, "target": 20, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "ストリップクラブ（ティタニア）のプライベートダンスルームを使用するごとにカウントされる。",
+        "steps": [
+          "ティタニア・ストリップクラブに入店する",
+          "ダンサーに話しかけてプライベートダンスを依頼する"
+        ],
+        "tips": [
+          "フリーモード中にいつでも利用可能"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ラップパーティー", "ストリップクラブ", "プライベートダンス", "アワード"],
+        "description": "GTA Online ラップパーティーアワード達成の方法。"
+      }
+    },
+    {
+      "id": "general-create-liked",
+      "name": "大好評",
+      "description": "自作のクリエイトジョブが多くのプレイヤーにいいねされた。",
+      "requirement": { "type": "count", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 15, "rp": 1000 },
+        { "tier": 3, "target": 30, "rp": 2000 },
+        { "tier": 4, "target": 50, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "クリエイターモードで作成したジョブに合計50件の高評価（いいね）が集まるとカウントされる。",
+        "steps": [
+          "クリエイターでレース・デスマッチなどを作成して公開する",
+          "他プレイヤーがプレイしてくれたら自動的に評価が集まる"
+        ],
+        "tips": [
+          "ユニークなコンセプトのジョブは高評価を得やすい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["大好評", "クリエイター", "いいね", "アワード"],
+        "description": "GTA Online 大好評アワード。自作ジョブに50件の高評価を集める方法。"
+      }
+    },
+    {
+      "id": "general-create-plays",
+      "name": "客引き",
+      "description": "自作のクリエイトジョブが延べ50人にプレイされた。",
+      "requirement": { "type": "count", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 15, "rp": 1000 },
+        { "tier": 3, "target": 30, "rp": 2000 },
+        { "tier": 4, "target": 50, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "クリエイターで作ったジョブに延べ50人がプレイすると達成。",
+        "steps": [
+          "面白いジョブを作成してフレンドや公開でシェアする",
+          "フレンドに繰り返しプレイしてもらうと早く到達できる"
+        ],
+        "tips": [
+          "SNSで共有してより多くのプレイヤーに知ってもらう"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["客引き", "クリエイター", "プレイ数", "アワード"],
+        "description": "GTA Online 客引きアワード。自作ジョブを延べ50人にプレイさせる方法。"
+      }
+    },
+    {
+      "id": "general-capture-package",
+      "name": "ポストマン",
+      "description": "キャプチャーモードでパッケージを拠点に届けた。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 4000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 25, "rp": 1500 },
+        { "tier": 3, "target": 50, "rp": 2500 },
+        { "tier": 4, "target": 100, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "キャプチャーモードのコンテンツでパッケージを自陣に届けた回数が累計100回でカウントされる。",
+        "steps": [
+          "クイックジョブ → キャプチャー に参加",
+          "敵陣のパッケージを取り、自陣に届ける動作を繰り返す"
+        ],
+        "tips": [
+          "速い乗り物を使って素早く往復するのが効率的"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ポストマン", "キャプチャー", "パッケージ", "アワード"],
+        "description": "GTA Online ポストマンアワード。キャプチャーでパッケージ100回届達成の方法。"
+      }
+    },
+    {
+      "id": "general-property-trade",
+      "name": "引越し日",
+      "description": "所有物件を別の物件に下取り（トレードイン）に出した。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 1000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 }
+      ],
+      "guide": {
+        "summary": "現在持っている物件（アパート・社屋等）を売却または別物件の購入時に下取りに出せば達成。",
+        "steps": [
+          "Dynasty8 Realtyのウェブサイトまたはアプリから新しい物件を購入する",
+          "購入時に既存物件を下取りに出すオプションを選択する"
+        ],
+        "tips": [
+          "同種の物件に買い替えるときに下取りオプションが出る"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["引越し日", "物件", "下取り", "アワード"],
+        "description": "GTA Online 引越し日アワード。物件を下取りに出す方法。"
+      }
+    },
+    {
+      "id": "general-freemode-event",
+      "name": "イベントの達人",
+      "description": "フリーモードイベントに参加した。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 300 },
+        { "tier": 2, "target": 5, "rp": 800 },
+        { "tier": 3, "target": 12, "rp": 1800 },
+        { "tier": 4, "target": 25, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "フリーモードイベント（King of the Hill、Hunt the Beast等）に参加するごとにカウントされる。",
+        "steps": [
+          "フリーモード中にイベント通知が来たら参加ボタンを押す",
+          "セッション中に定期的に新しいイベントが開催される"
+        ],
+        "tips": [
+          "積極的に参加するだけでカウントされるので難易度は低い"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["イベントの達人", "フリーモードイベント", "参加", "アワード"],
+        "description": "GTA Online フリーモードイベント参加アワード達成の方法。"
+      }
+    },
+    {
+      "id": "general-bounty-placed",
+      "name": "懸賞金マスター",
+      "description": "他のプレイヤーに懸賞金をかけた。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 300 },
+        { "tier": 2, "target": 5, "rp": 700 },
+        { "tier": 3, "target": 12, "rp": 1400 },
+        { "tier": 4, "target": 25, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "インタラクションメニューからフリーモード中に他プレイヤーへ懸賞金をかけるごとにカウントされる。",
+        "steps": [
+          "インタラクションメニュー → お金と支払い → 懸賞金をかける を選択",
+          "対象プレイヤーを選んで金額を設定する"
+        ],
+        "tips": [
+          "懸賞金は最低9,000ドルから設定可能"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["懸賞金マスター", "懸賞金", "バウンティ", "アワード"],
+        "description": "GTA Online 懸賞金マスターアワード達成の方法。"
+      }
+    },
+    {
+      "id": "general-passive-mode",
+      "name": "平和主義者",
+      "description": "パッシブモードを使用した。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 500, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 }
+      ],
+      "guide": {
+        "summary": "インタラクションメニューからパッシブモードをオンにすると達成。",
+        "steps": [
+          "インタラクションメニュー → GTAオンライン → パッシブモード をオンにする"
+        ],
+        "tips": [
+          "パッシブモード中は他プレイヤーからのダメージを受けない（車両ダメージを除く）"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["平和主義者", "パッシブモード", "アワード"],
+        "description": "GTA Online 平和主義者アワード達成の方法。"
+      }
+    },
+    {
+      "id": "general-crew-join",
+      "name": "クルーへようこそ",
+      "description": "クルーに参加した。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 1000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 }
+      ],
+      "guide": {
+        "summary": "Rockstar Social Clubでクルーに参加するとアワードが達成される。",
+        "steps": [
+          "Social Club（またはゲーム内）でクルーを見つけて参加申請する",
+          "承認されたらアワード達成"
+        ],
+        "tips": [
+          "クルーに入ると各種ジョブでRP・現金ボーナスが加算される"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["クルーへようこそ", "クルー", "参加", "アワード"],
+        "description": "GTA Online クルー参加アワード達成の方法。"
+      }
+    },
+    {
+      "id": "general-heist-prep-general",
+      "name": "万全の準備",
+      "description": "ジョブ前の準備ミッションを完了した。",
+      "requirement": { "type": "count", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 15, "rp": 1000 },
+        { "tier": 3, "target": 30, "rp": 2000 },
+        { "tier": 4, "target": 50, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "強盗やビジネスの準備ミッション（セットアップ）を50回完了するとカウントされる。",
+        "steps": [
+          "強盗やMC/CEO事業の準備ミッションをこなす"
+        ],
+        "tips": [
+          "フレンドと協力してクリアするのが最も効率的"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["万全の準備", "準備ミッション", "セットアップ", "アワード"],
+        "description": "GTA Online 準備ミッション達成アワードの方法。"
+      }
+    },
+    {
+      "id": "general-import-export",
+      "name": "輸出入業者",
+      "description": "車両輸出ミッションを完了した。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 5, "rp": 1000 },
+        { "tier": 3, "target": 12, "rp": 2000 },
+        { "tier": 4, "target": 25, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "Special Vehicle Work / 車両輸出（Import/Export）のデリバリーミッションを完了するとカウントされる。",
+        "steps": [
+          "Special Cargo倉庫またはVehicle Warehouseを購入する",
+          "車両輸出デリバリーを完了する"
+        ],
+        "tips": [
+          "高級車ほど輸出額が高く効率的"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["輸出入業者", "車両輸出", "Import/Export", "アワード"],
+        "description": "GTA Online 車両輸出ミッション達成アワードの方法。"
+      }
+    },
+    {
+      "id": "general-contact-mission",
+      "name": "コンタクトミッションの達人",
+      "description": "コンタクトミッションを完了した。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 25, "rp": 1500 },
+        { "tier": 3, "target": 50, "rp": 3000 },
+        { "tier": 4, "target": 100, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "コンタクトキャラクター（マーティン、レスター等）から受けられるミッションを累計100回クリアするとカウントされる。",
+        "steps": [
+          "携帯電話のコンタクトリストからミッションを受ける",
+          "ミッションを完遂してクリアを繰り返す"
+        ],
+        "tips": [
+          "短時間でクリアできるミッションを繰り返すのが効率的"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["コンタクトミッション", "累計100回", "ミッション", "アワード"],
+        "description": "GTA Online コンタクトミッション累計100回達成アワードの方法。"
+      }
+    },
+    {
+      "id": "general-ceo-work",
+      "name": "CEO業務遂行",
+      "description": "VIP/CEO/MCのジョブを完了した。",
+      "requirement": { "type": "count", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 4000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 500 },
+        { "tier": 2, "target": 15, "rp": 1500 },
+        { "tier": 3, "target": 30, "rp": 2500 },
+        { "tier": 4, "target": 50, "rp": 4000 }
+      ],
+      "guide": {
+        "summary": "VIP/CEO/MCとしてジョブ（Sightseer、Haulageなど）を50回完了するとカウントされる。",
+        "steps": [
+          "SecuroServ/MC クラブハウスコンピューターからVIPワーク・CEOワーク・MCジョブを開始",
+          "ミッションをクリアする"
+        ],
+        "tips": [
+          "Sightseer は短時間でクリアできて稼ぎやすい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["CEO業務遂行", "VIPワーク", "CEOジョブ", "アワード"],
+        "description": "GTA Online VIP/CEOジョブ50回達成アワードの方法。"
+      }
+    },
+    {
+      "id": "general-car-meet",
+      "name": "カーミートの常連",
+      "description": "LSカーミートに参加した。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 300 },
+        { "tier": 2, "target": 5, "rp": 700 },
+        { "tier": 3, "target": 12, "rp": 1400 },
+        { "tier": 4, "target": 25, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "Los Santos Tuners DLCのカーミート施設に訪問するごとにカウントされる。",
+        "steps": [
+          "カーミートの場所（LSCM、Cypress Flats）に移動してエリアに入る"
+        ],
+        "tips": [
+          "カーミート会員証（月額費）があると全エリアにアクセスできる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["カーミートの常連", "LSカーミート", "Tuners", "アワード"],
+        "description": "GTA Online LSカーミート参加アワード達成の方法。"
+      }
+    },
+    {
+      "id": "general-online-time",
+      "name": "長時間プレイヤー",
+      "description": "GTAオンラインに100時間以上滞在した。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 25, "rp": 1500 },
+        { "tier": 3, "target": 50, "rp": 3000 },
+        { "tier": 4, "target": 100, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "GTAオンラインに合計100時間滞在するとカウントされる。プレイを続けていれば自然に達成できる。",
+        "steps": [
+          "GTAオンラインで様々なアクティビティを楽しみながら時間を重ねる"
+        ],
+        "tips": [
+          "放置AFKでも時間は積算される（ただし一定時間で強制退出になる場合あり）"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["長時間プレイヤー", "オンライン時間", "100時間", "アワード"],
+        "description": "GTA Online 100時間プレイアワード達成の方法。"
+      }
+    },
+    {
+      "id": "general-level-100",
+      "name": "レベルアップの申し子",
+      "description": "ランク100に達した。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 0, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 100, "rp": 0 }
+      ],
+      "guide": {
+        "summary": "GTAオンラインでランク100に達するとアワードが解禁される。",
+        "steps": [
+          "各種ジョブ・強盗・デイリーをこなしてRPを積み上げる"
+        ],
+        "tips": [
+          "強盗フィナーレはRP報酬が高くレベルアップに効率的"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["レベルアップ", "ランク100", "RP", "アワード"],
+        "description": "GTA Online ランク100達成アワードの方法。"
+      }
+    },
+    {
+      "id": "general-clothing-change",
+      "name": "ファッションリーダー",
+      "description": "自キャラクターの服装を変更した。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 300 },
+        { "tier": 2, "target": 25, "rp": 700 },
+        { "tier": 3, "target": 50, "rp": 1400 },
+        { "tier": 4, "target": 100, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "アパートやPDのクローゼットを開いて衣装変更するごとにカウントされる。",
+        "steps": [
+          "所有アパートのクローゼット、またはPD（警察署）の更衣室から衣装を変更する"
+        ],
+        "tips": [
+          "同じ服に切り替えを繰り返してもカウントされる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ファッションリーダー", "服装変更", "クローゼット", "アワード"],
+        "description": "GTA Online 服装変更100回アワード達成の方法。"
+      }
+    }
+  ]
+}

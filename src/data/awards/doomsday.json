@@ -1,0 +1,269 @@
+{
+  "category": "doomsday",
+  "label": "強盗：ドゥームズ・デイ",
+  "icon": "☢️",
+  "color": "#7c3aed",
+  "awards": [
+    {
+      "id": "doomsday-act1",
+      "name": "第1幕",
+      "description": "強盗：ドゥームズ・デイの第1幕（Act I: Data Breaches）を初めてクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 20000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 20000 }
+      ],
+      "guide": {
+        "summary": "ファシリティ（Facility）を購入し、Act I の全セットアップ（3本）＋フィナーレをクリアすると達成。",
+        "steps": [
+          "Maze Bank Foreclosures でファシリティを購入（最安値: Paleto Bay, $1,250,000）",
+          "ファシリティ内の計画ボードから Act I を開始する",
+          "セットアップミッション3本（Servers / Dead Courier / Avi Schwartzman）を全てクリア",
+          "フィナーレ「Data Breaches」をクリアする（2〜4人推奨）"
+        ],
+        "tips": [
+          "ハードモードで挑戦すると報酬が10%増加",
+          "Elite Challenge: 制限時間内・ヘリ1機撃墜・チームデス0 の3条件を同時達成でさらにボーナス",
+          "Act I フィナーレは潜水艦をハックする場面があり、ハッカー担当に腕利きが必要"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["第1幕", "ドゥームズデイ", "Act I", "Data Breaches"],
+        "description": "GTA Online 強盗ドゥームズデイ第1幕クリア方法。ファシリティ購入からフィナーレまで。"
+      }
+    },
+    {
+      "id": "doomsday-act2",
+      "name": "第2幕",
+      "description": "強盗：ドゥームズ・デイの第2幕（Act II: The Bogdan Problem）を初めてクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 25000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 25000 }
+      ],
+      "guide": {
+        "summary": "Act II は第2幕。潜水艦「Rüstungstransporter」への潜入が見どころ。",
+        "steps": [
+          "Act I クリア後に Act II が解放される",
+          "Act II セットアップ（3本）をクリアする",
+          "フィナーレ「The Bogdan Problem」を攻略する"
+        ],
+        "tips": [
+          "Act II フィナーレは通称「ボグダングリッチ」の対象として知られる。ホスト側が終了前にアプリを終了（バッドスポーツ回避）すると再プレイできる裏技があったが、現在は条件が厳しくなっている",
+          "フィナーレでは潜水艦内に侵入してボグダンを排除し、データを持ち出す"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["第2幕", "ドゥームズデイ", "Act II", "The Bogdan Problem"],
+        "description": "GTA Online 強盗ドゥームズデイ第2幕クリア方法。Bogdan Problem攻略。"
+      }
+    },
+    {
+      "id": "doomsday-act3",
+      "name": "第3幕",
+      "description": "強盗：ドゥームズ・デイの第3幕（Act III: The Doomsday Scenario）を初めてクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 30000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 30000 }
+      ],
+      "guide": {
+        "summary": "最終幕。Avon Hertz と Cliffford の計画を阻止するため核ミサイルを無力化する。",
+        "steps": [
+          "Act III セットアップ（4本）をクリアする",
+          "フィナーレ「The Doomsday Scenario」に挑戦",
+          "最終フェーズで Avon を倒して終了"
+        ],
+        "tips": [
+          "Act III フィナーレは全3幕の中で最難関。チームで適切に役割分担する",
+          "Elite Challenge 全3幕達成で専用のタイトルと追加報酬が獲得できる",
+          "Deluxos や Oppressors など飛行ユニットを用意しておくと楽になる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["第3幕", "ドゥームズデイ", "Act III", "Doomsday Scenario"],
+        "description": "GTA Online 強盗ドゥームズデイ第3幕クリア方法。最終幕のポイントと Elite Challenge解説。"
+      }
+    },
+    {
+      "id": "doomsday-loyalty-3",
+      "name": "忠誠心3",
+      "description": "3人チームでメンバーを変えずに全エピソードを順番通りにクリアした（RP800ボーナス）。",
+      "requirement": { "type": "count", "target": 29 },
+      "progressMax": 29,
+      "reward": { "rp": 800, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 29, "rp": 800 }
+      ],
+      "guide": {
+        "summary": "Act I → Act II → Act III を3人の同じメンバーで途中で変えずにクリアすると達成。セットアップ＋フィナーレ合計29ジョブ。",
+        "steps": [
+          "3人の信頼できるフレンドと固定クルーを組む",
+          "Act I〜III 全てのセットアップとフィナーレを3人で完走する",
+          "メンバーが抜けた場合はボーナスが失効する"
+        ],
+        "tips": [
+          "2人ではなく厳密に「3人」でプレイする必要がある",
+          "RP 800 は少ないが、このアワード達成自体がステータスになる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["忠誠心3", "ドゥームズデイ", "3人メンバー固定", "RP800"],
+        "description": "GTA Online ドゥームズデイ忠誠心3アワード。3人固定メンバーで全幕クリアする方法。"
+      }
+    },
+    {
+      "id": "doomsday-loyalty-4",
+      "name": "忠誠心4",
+      "description": "4人チームでメンバーを変えずに全エピソードを順番通りにクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 30000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 30000 }
+      ],
+      "guide": {
+        "summary": "Act I〜III を4人の固定メンバーで変えずにクリアする。最大人数での挑戦。",
+        "steps": [
+          "4人でロビーを作りセットアップからフィナーレまで全員で参加する",
+          "3幕ある全てを同じ4人メンバーでクリアする",
+          "メンバー交代は厳禁"
+        ],
+        "tips": [
+          "4人分の役割分担がしやすく戦闘力が安定する",
+          "フレンドリストから同士を誘って挑戦するのがおすすめ"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["忠誠心4", "ドゥームズデイ", "4人メンバー固定", "全幕クリア"],
+        "description": "GTA Online ドゥームズデイ忠誠心4アワード。4人固定メンバーで全幕クリアする方法。"
+      }
+    },
+    {
+      "id": "doomsday-support-role",
+      "name": "サポーティングロール2",
+      "description": "全エピソードをクルーメンバー（リーダー以外）としてクリアした（RP800ボーナス）。",
+      "requirement": { "type": "count", "target": 29 },
+      "progressMax": 29,
+      "reward": { "rp": 800, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 29, "rp": 800 }
+      ],
+      "guide": {
+        "summary": "自分はリーダーではなくクルーメンバーとして、全3幕（セットアップ含む合計29ジョブ）を完走すると達成。",
+        "steps": [
+          "リーダーのロビーに Join してクルーメンバーとして参加する",
+          "Act I〜III の全セットアップ＋フィナーレをメンバーとして完走する",
+          "自分がホストにならないことが条件"
+        ],
+        "tips": [
+          "クルーとして参加するとセットアップ費用が不要",
+          "RP 800 ボーナスがあるため、このアワードは積極的に狙う価値がある"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["サポーティングロール2", "クルーメンバー", "ドゥームズデイ", "全幕"],
+        "description": "GTA Online サポーティングロール2アワード。メンバーとしてドゥームズデイ全幕をクリアする方法。"
+      }
+    },
+    {
+      "id": "doomsday-in-order2",
+      "name": "全順序クリア II",
+      "description": "ドゥームズ・デイ・ハイストの全29ジョブを順番通りにクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 30000, "cash": 500000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 30000 }
+      ],
+      "guide": {
+        "summary": "Act I → Act II → Act III を全セットアップ・フィナーレ（計29ジョブ）を順番通りにクリアすると $500,000 ボーナス獲得。",
+        "steps": ["Act I をセットアップから開始", "Act I フィナーレをクリア", "Act II を順番通りにクリア", "Act III を順番通りにクリア"],
+        "tips": ["順番を絶対に飛ばさないこと。前の Act が完了してから次へ"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["全順序", "ドゥームズデイ", "29ジョブ"], "description": "GTA Online ドゥームズデイハイスト全29ジョブ順序クリアアワード。" }
+    },
+    {
+      "id": "doomsday-loyalty-2",
+      "name": "団結力 II（2人）",
+      "description": "同じ2人クルーでドゥームズ・デイ・ハイストの全29ジョブをクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 20000, "cash": 75000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 20000 }
+      ],
+      "guide": {
+        "summary": "同じ2人構成で全29ジョブをクリアすると $75,000 ボーナス獲得。",
+        "steps": ["2人パーティーで Act I 〜 III を全クリア"],
+        "tips": ["2人は最小人数のため難度が高い。事前の準備と通話必須"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["団結力", "2人", "ドゥームズデイ"], "description": "GTA Online ドゥームズデイ2人団結力アワード。" }
+    },
+    {
+      "id": "doomsday-criminal-mastermind-2",
+      "name": "犯罪の天才 II（2人）",
+      "description": "同じ2人で全29ジョブを順番通り・ハード・無デスでクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 50000, "cash": 750000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 50000 }
+      ],
+      "guide": {
+        "summary": "2人で全29ジョブをハード・無デス・順番通りにクリアすると $750,000 獲得。",
+        "steps": ["2人で全 Act をハード難易度でプレイ", "誰もデスしないようにクリア"],
+        "tips": ["2人は特に難しいため入念な準備と通話が必須"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["クリミナルマスターマインド", "2人", "ドゥームズデイ"], "description": "GTA Online ドゥームズデイ犯罪の天才2人アワード。" }
+    },
+    {
+      "id": "doomsday-criminal-mastermind-3",
+      "name": "犯罪の天才 III（3人）",
+      "description": "同じ3人で全29ジョブを順番通り・ハード・無デスでクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 50000, "cash": 1750000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 50000 }
+      ],
+      "guide": {
+        "summary": "3人で全29ジョブをハード・無デスでクリアすると $1,750,000 獲得。",
+        "steps": ["3人パーティーで全 Act を開始", "ハード難易度・無デスをキープしてクリア"],
+        "tips": ["2人より難度は下がるが3人のコーディネーションが必要"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["クリミナルマスターマインド", "3人", "ドゥームズデイ"], "description": "GTA Online ドゥームズデイ犯罪の天才3人アワード。" }
+    },
+    {
+      "id": "doomsday-criminal-mastermind-4",
+      "name": "犯罪の天才 IV（4人）",
+      "description": "同じ4人で全29ジョブを順番通り・ハード・無デスでクリアした。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 50000, "cash": 3750000, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 50000 }
+      ],
+      "guide": {
+        "summary": "4人で全29ジョブをハード・無デスでクリアすると $3,750,000 獲得。",
+        "steps": ["4人パーティーで全 Act を開始", "ハード難易度・無デスでクリア"],
+        "tips": ["4人が最大で最も報酬が高い。フルパーティーでの周到な準備が必要"]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": { "keywords": ["クリミナルマスターマインド", "4人", "ドゥームズデイ"], "description": "GTA Online ドゥームズデイ犯罪の天才4人アワード。" }
+    }
+  ]
+}

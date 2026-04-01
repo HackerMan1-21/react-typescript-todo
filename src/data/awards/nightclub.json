@@ -1,0 +1,243 @@
+{
+  "category": "nightclub",
+  "label": "ナイトクラブ",
+  "icon": "🎶",
+  "color": "#ec4899",
+  "awards": [
+    {
+      "id": "nightclub-solomon",
+      "name": "ソロモン25/8",
+      "description": "自分のナイトクラブで Solomun（ソロモン）のDJセットを流しながら踊った。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "ナイトクラブに Solomun が出演中（または出演設定中）のとき、フロアで踊るとカウントされる。",
+        "steps": [
+          "Maze Bank Foreclosures でナイトクラブを購入（約100万ドル〜）",
+          "ナイトクラブ管理パネルから Solomun を DJ として設定する（追加料金 $100,000）",
+          "フロアでキャラクターを踊らせる（スティックで動かすだけ）"
+        ],
+        "tips": [
+          "Solomun はデフォルト DJ の一人。他の DJ より先に設定されていることが多い",
+          "踊り続けるだけなのでパッドを倒し続けるだけで達成できる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ソロモン25/8", "ナイトクラブ", "Solomun", "踊る"],
+        "description": "GTA Online ソロモン25/8アワード。ナイトクラブでSolomunと踊る方法。"
+      }
+    },
+    {
+      "id": "nightclub-afterlife",
+      "name": "アフターライト",
+      "description": "自分のナイトクラブで Tale of Us（テイル・オブ・アス）のDJセットを流しながら踊った。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "Tale of Us（テイル・オブ・アス）が出演中のナイトクラブで踊ると達成。",
+        "steps": [
+          "ナイトクラブ管理パネルから Tale of Us を DJ として設定（$150,000）",
+          "ナイトクラブフロアに入りキャラクターを踊らせる"
+        ],
+        "tips": [
+          "Tale of Us は追加の DJ パック「After Hours」で解放される",
+          "踊るだけでよいので非常に簡単"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["アフターライト", "ナイトクラブ", "Tale of Us", "踊る"],
+        "description": "GTA Online アフターライトアワード。Tale of Usのナイトクラブで踊る方法。"
+      }
+    },
+    {
+      "id": "nightclub-wilderness",
+      "name": "ワイルダーネス",
+      "description": "自分のナイトクラブで Dixon（ディクソン）のDJセットを流しながら踊った。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "Dixon（ディクソン）が出演中のナイトクラブで踊ると達成。",
+        "steps": [
+          "ナイトクラブ管理パネルから Dixon を DJ として設定（$200,000）",
+          "ナイトクラブフロアに入りキャラクターを踊らせる"
+        ],
+        "tips": [
+          "Dixon は3番目の DJ。After Hours DLC で解放される",
+          "踊りのアニメーションは自然に続くのでスティック入力を保持するだけ"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ワイルダーネス", "ナイトクラブ", "Dixon", "踊る"],
+        "description": "GTA Online ワイルダーネスアワード。DixonのナイトクラブDJセットで踊る方法。"
+      }
+    },
+    {
+      "id": "nightclub-popular-spot",
+      "name": "人気スポット",
+      "description": "100人の異なるプレイヤーを自分のナイトクラブに来店させた。",
+      "requirement": { "type": "unique", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 10000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 1000 },
+        { "tier": 2, "target": 30, "rp": 3000 },
+        { "tier": 3, "target": 60, "rp": 6000 },
+        { "tier": 4, "target": 100, "rp": 10000 }
+      ],
+      "guide": {
+        "summary": "他のプレイヤー（同一セッション内の別人）が自分のナイトクラブに訪問するたびに1カウント。同じ人物は2回目以降カウントされない。",
+        "steps": [
+          "フリーロームで他のプレイヤーを自分のナイトクラブに招待する",
+          "ナイトクラブの評判（人気度）を高めると自然に顧客が増える",
+          "ソーシャルクラブのフレンドに来店を依頼するのが最速"
+        ],
+        "tips": [
+          "フレンドとセッションを繰り返し、100人に達するまでに数十セッション必要になることも",
+          "サブアカウントや複数プラットフォームからの訪問でもカウントされる場合がある（要確認）"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["人気スポット", "ナイトクラブ", "100人来店", "顧客"],
+        "description": "GTA Online 人気スポットアワード。100人の異なるプレイヤーをナイトクラブに招待する方法。"
+      }
+    },
+    {
+      "id": "nightclub-clubber",
+      "name": "クラバー",
+      "description": "自分のナイトクラブで全4組のDJ（Solomun / Tale of Us / Dixon / モービー）のプレイで踊った。",
+      "requirement": { "type": "unique", "target": 4 },
+      "progressMax": 4,
+      "reward": { "rp": 10000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 4, "rp": 10000 }
+      ],
+      "guide": {
+        "summary": "4人の DJ（Solomun・Tale of Us・Dixon・モービー）全員のセットで一度ずつ踊ると達成される。",
+        "steps": [
+          "ナイトクラブ管理パネルから各 DJ を順番に設定して踊る",
+          "DJ を変えるたびにコストがかかる（各 $100,000〜$250,000）",
+          "全4人分クリアするとアワード達成"
+        ],
+        "tips": [
+          "モービー（Moby）は最後の DJ パック「Expanded & Enhanced」で追加された",
+          "4人全員踊ったら総計で約$650,000〜の出費になるが、それだけの価値がある",
+          "各 DJ ごとにユニークな音楽テーマと演出を楽しめる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["クラバー", "ナイトクラブ", "全4DJ", "踊る"],
+        "description": "GTA Online クラバーアワード。ナイトクラブで全4組のDJと踊る方法。"
+      }
+    },
+    {
+      "id": "nightclub-drunk",
+      "name": "クラブの酔客",
+      "description": "ナイトクラブで飲み物を飲んで酔った状態になった。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 300 },
+        { "tier": 2, "target": 3, "rp": 600 },
+        { "tier": 3, "target": 6, "rp": 1200 },
+        { "tier": 4, "target": 10, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "ナイトクラブのバーカウンターでドリンクを注文して「酔い」エフェクトが発動するとカウントされる。",
+        "steps": [
+          "自分または誰かのナイトクラブに入る",
+          "バーカウンターに近づいてドリンクを注文する",
+          "酔い状態（画面がぼやける）になるとカウント加算"
+        ],
+        "tips": [
+          "ドリンクを複数飲み続けると酔いが増強される",
+          "酔い状態は自然回復するか、ガレージ入口で解除できる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["クラブの酔客", "ナイトクラブ", "飲酒", "酔い"],
+        "description": "GTA Online クラブの酔客アワード。ナイトクラブで酔い状態になる方法。"
+      }
+    },
+    {
+      "id": "nightclub-business",
+      "name": "ナイトライフ起業家",
+      "description": "ナイトクラブのウェアハウスで規定量の商品を売却した。",
+      "requirement": { "type": "count", "target": 5 },
+      "progressMax": 5,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 },
+        { "tier": 2, "target": 3, "rp": 3000 },
+        { "tier": 3, "target": 5, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "ナイトクラブのウェアハウスに貯めた各種商品（コカイン / 大麻 / 偽造通貨等）を一定量以上まとめて売却するとカウントされる。",
+        "steps": [
+          "ナイトクラブのテクニシャンを雇用してウェアハウスで商品生産を開始する",
+          "一定量（フルスタック）になるまで生産を続ける",
+          "管理パネルから「売却」を選択してデリバリーミッションをこなす"
+        ],
+        "tips": [
+          "ウェアハウスを利用するには対応するビジネス（MC クラブ等）を別途所有する必要がある",
+          "フルスタック（各カテゴリ最大量）で売ると最高報酬が得られる",
+          "近距離の買い手（バイヤー）を選ぶとデリバリーが楽"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ナイトライフ起業家", "ナイトクラブ", "ウェアハウス", "商品売却"],
+        "description": "GTA Online ナイトライフ起業家アワード。ナイトクラブウェアハウスで5回売却する方法。"
+      }
+    },
+    {
+      "id": "nightclub-security",
+      "name": "ボディガード",
+      "description": "ナイトクラブのセキュリティミッションをこなした。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 6, "rp": 2000 },
+        { "tier": 4, "target": 10, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "ナイトクラブのウェアハウスが敵から狙われる「セキュリティミッション」を受けてクリアするとカウントされる。",
+        "steps": [
+          "ナイトクラブ管理中、突然敵対勢力が商品を狙うミッションが発生する",
+          "倉庫に駆けつけて敵を全滅させ、商品を守る",
+          "ミッション成功でカウント加算"
+        ],
+        "tips": [
+          "セキュリティミッションは自動発生するため特別な準備は不要",
+          "自动ライフルや重火器で素早く敵を排除する"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ボディガード", "ナイトクラブ", "セキュリティ", "防衛"],
+        "description": "GTA Online ボディガードアワード。ナイトクラブのセキュリティミッションを10回こなす方法。"
+      }
+    }
+  ]
+}

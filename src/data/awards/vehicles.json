@@ -1,139 +1,313 @@
 {
   "category": "vehicles",
-  "label": "車両",
-  "icon": "🏎️",
+  "label": "乗り物",
+  "icon": "🚗",
   "color": "#3b82f6",
   "awards": [
     {
-      "id": "vehicles-collector",
-      "name": "コレクター",
-      "description": "車両をコレクションした。ガレージに車を収納するたびにカウントが進む。",
-      "requirement": { "type": "unique", "target": 100 },
+      "id": "vehicles-blast-maniac",
+      "name": "爆破マニア",
+      "description": "他プレイヤーの車を爆破した。",
+      "requirement": { "type": "count", "target": 500 },
+      "progressMax": 500,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 25, "rp": 500 },
+        { "tier": 2, "target": 100, "rp": 1500 },
+        { "tier": 3, "target": 250, "rp": 3000 },
+        { "tier": 4, "target": 500, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "他プレイヤーの乗っている車両を爆発させてキルするたびにカウントが加算される。PCが乗っていない車は対象外。",
+        "steps": [
+          "RPG / Homing Launcher / Sticky Bomb を装備する",
+          "フリーロームで相手の車両に爆発物を当てて倒す",
+          "Sticky Bomb は車に貼り付けてリモート起爆が確実"
+        ],
+        "tips": [
+          "Oppressor Mk II のミサイルでの爆破もカウントされる",
+          "GTA レースで他プレイヤーの車を爆破してもカウント",
+          "一番お手軽なのは Sticky Bomb でのフリーローム爆破"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["爆破マニア", "車爆破", "500回", "爆発物"],
+        "description": "GTA Online 爆破マニアアワード。他プレイヤーの車を500回爆破する方法。"
+      }
+    },
+    {
+      "id": "vehicles-delivery",
+      "name": "運び屋",
+      "description": "シミオン・ユエツェからの最優先配達依頼またはSlipscatter Emailの車両を届けた。",
+      "requirement": { "type": "count", "target": 25 },
+      "progressMax": 25,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 300 },
+        { "tier": 2, "target": 5, "rp": 900 },
+        { "tier": 3, "target": 15, "rp": 2000 },
+        { "tier": 4, "target": 25, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "フリーロームでシミオンからの依頼（テキスト）やコンタクトミッション「Simeon Yetarian」の車両を盗み、指定場所に届けるとカウントされる。",
+        "steps": [
+          "フリーロームでシミオンから「最優先リスト」のメールが届くのを待つ",
+          "指定の車種を盗んで、指定のドックや倉庫に持ち込む",
+          "損傷が少ないほど報酬が高い"
+        ],
+        "tips": [
+          "「シミオンの仕事」に選ばれた車はマップ上に黄色で表示される場合がある",
+          "車の損傷を抑えるため安全ルートで運ぶ",
+          "バキュームトラックや専用車など条件が変わるミッションもある"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["運び屋", "シミオン", "車両配達", "25回"],
+        "description": "GTA Online 運び屋アワード。シミオンの車両配達依頼を25回こなす方法。"
+      }
+    },
+    {
+      "id": "vehicles-airborne",
+      "name": "エアボーン",
+      "description": "車でジャンプして空中に浮いた（着地まで滞空）。",
+      "requirement": { "type": "count", "target": 100 },
       "progressMax": 100,
-      "reward": { "rp": 10000, "cash": 0, "item": null },
+      "reward": { "rp": 2000, "cash": 0, "item": null },
       "tiers": [
-        { "tier": 1, "target": 10, "rp": 2000 },
-        { "tier": 2, "target": 25, "rp": 4000 },
-        { "tier": 3, "target": 50, "rp": 7000 },
-        { "tier": 4, "target": 100, "rp": 10000 }
+        { "tier": 1, "target": 10, "rp": 200 },
+        { "tier": 2, "target": 30, "rp": 600 },
+        { "tier": 3, "target": 60, "rp": 1200 },
+        { "tier": 4, "target": 100, "rp": 2000 }
       ],
       "guide": {
-        "summary": "任意の車両を購入または窃取してガレージに保管することでカウントが増える。",
+        "summary": "ジャンプ台（スタント）や段差を利用して車が空中に浮くたびにカウントされる。",
         "steps": [
-          "所有車両はメニュー → 輸送・ガレージ → マイガレージで確認",
-          "スパロの中古車市場や各ディーラーサイトから多様な車を購入可能",
-          "フリーモードで放置されている高級車を盗んで保管する方法もある",
-          "ガレージが満杯になったら新しいガレージ物件を購入して収納先を増やす"
+          "LS 内にあるスタントジャンプスポットを探す（地図上のスタントジャンプマーカー）",
+          "高速で助走してジャンプ台を駆け上がる",
+          "または山の崖・段差から飛び越えるだけでもカウントされる"
         ],
         "tips": [
-          "複数ガレージを保有すると最大200台以上管理可能",
-          "週替わりセール対象の車は大幅割引で購入できる",
-          "コレクションの効率化にはロスサントス・カスタムズの近くのガレージが便利"
+          "スポーツカーや軽量車が安定したジャンプをしやすい",
+          "サンアンドレアスの丘陵地帯には自然のジャンプスポットが多い"
         ]
       },
       "media": { "images": [], "videos": [] },
       "seo": {
-        "keywords": ["車両コレクター", "ガレージ", "収集", "100台"],
-        "description": "GTA Online コレクターアワード。100台以上の車両を収集する方法。"
+        "keywords": ["エアボーン", "ジャンプ", "スタント", "100回"],
+        "description": "GTA Online エアボーンアワード。車でジャンプを100回達成する方法。"
       }
     },
     {
-      "id": "vehicles-tune-shop",
-      "name": "チューニング職人",
-      "description": "ロスサントス・カスタムズでカスタムを施した。",
-      "requirement": { "type": "cumulative", "target": 500000 },
-      "progressMax": 500000,
-      "reward": { "rp": 8000, "cash": 0, "item": null },
+      "id": "vehicles-flipper",
+      "name": "フリッパー",
+      "description": "1回のジャンプで車を4回フリップ（縦回転）させた。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
       "tiers": [
-        { "tier": 1, "target": 10000, "rp": 1000 },
-        { "tier": 2, "target": 50000, "rp": 3000 },
-        { "tier": 3, "target": 200000, "rp": 6000 },
-        { "tier": 4, "target": 500000, "rp": 8000 }
+        { "tier": 1, "target": 1, "rp": 3000 }
       ],
       "guide": {
-        "summary": "LS カスタムズで車両のカスタムやパーツ交換を繰り返すことで累計支出金額がカウントされる。",
+        "summary": "1回のジャンプで縦軸に4回転（フリップ）させると達成。スタントジャンプ台や急斜面から高速で飛ぶことで回転しやすくなる。",
         "steps": [
-          "LS カスタムズに車を持ち込み（自分の所有車またはフリーモードで盗んだ車）",
-          "エンジン・ブレーキ・タイヤ・外装など各種パーツをアップグレード",
-          "完全フルカスタムすると1台でも数十万ドル消費可能",
-          "安価な車でも繰り返しカスタムするとカウントが積まれる"
+          "軽量で高速な車（Elegy, Comet 等）を用意する",
+          "スタントジャンプ台から高速でジャンプし、空中で前後に傾けながら回転させる",
+          "コントローラーのアナログスティックで姿勢制御して回転数を維持する"
         ],
         "tips": [
-          "高級スポーツカーのフルカスタムは1回で数十万RP分の費用",
-          "平日の時間帯はLS カスタムズが無料開放されることがある（ロックスター週替り特典）",
-          "Benny's Original Motor Works は特定の車をマスタリー改造できる"
+          "Sticky Bomb で車を破壊試みながら跳ぶのは NG。滞空時間を長く保つことが重要",
+          "LS のスタントパークとも呼ばれる地下トラック（Fort Zancudo 北）が安定ポイント"
         ]
       },
       "media": { "images": [], "videos": [] },
       "seo": {
-        "keywords": ["カスタム", "チューニング", "LSカスタムズ", "カーモッド"],
-        "description": "GTA Online チューニング職人アワード。LS カスタムズでの費用累計。"
+        "keywords": ["フリッパー", "縦回転", "4フリップ", "ジャンプ"],
+        "description": "GTA Online フリッパーアワード。1ジャンプで車を4回縦回転させる方法。"
       }
     },
     {
-      "id": "vehicles-supercar",
-      "name": "スーパーカー オーナー",
-      "description": "スーパーカークラスの車両を購入した。",
-      "requirement": { "type": "unique", "target": 10 },
+      "id": "vehicles-spin-derella",
+      "name": "スピンデレラ",
+      "description": "1回のジャンプで車を4回スピン（横回転）させた。",
+      "requirement": { "type": "count", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "1回のジャンプで横軸に4回転（スピン）させると達成。フリッパーの横回転バージョン。",
+        "steps": [
+          "高速で大きなスタントジャンプ台にアプローチする",
+          "跳んだ直後に左右スティック（回転）を交互に傾けてスピンを誘発",
+          "4回転分の勢いが残る高さのジャンプが必要"
+        ],
+        "tips": [
+          "フリッパーより横回転の方が速度が乗りやすく達成しやすい場合もある",
+          "Banshee 900R などの低重心スポーツカーでの達成報告が多い"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["スピンデレラ", "横回転", "4スピン", "ジャンプ"],
+        "description": "GTA Online スピンデレラアワード。1ジャンプで車を4回横回転させる方法。"
+      }
+    },
+    {
+      "id": "vehicles-stunt-jump",
+      "name": "スタントマン",
+      "description": "スタントジャンプを成功させた。",
+      "requirement": { "type": "count", "target": 50 },
+      "progressMax": 50,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 5, "rp": 300 },
+        { "tier": 2, "target": 15, "rp": 900 },
+        { "tier": 3, "target": 30, "rp": 2000 },
+        { "tier": 4, "target": 50, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "マップ全土に散在するスタントジャンプスポット（紫色の弧型マーカー）で十分な距離・高度を伴ったジャンプを決めるとカウントされる。",
+        "steps": [
+          "地図上の紫色スタントジャンプマーカーに高速で進入",
+          "ジャンプ台を超えると「スタントジャンプ！」の表示が出る",
+          "LS 市内と郊外に合計50箇所以上のスポットが存在する"
+        ],
+        "tips": [
+          "スタントジャンプはグランドセフトオート V のソーシャルクラブの統計で進捗確認可能",
+          "高速な軽量車の方が成功率が高い"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["スタントマン", "スタントジャンプ", "50箇所", "車両"],
+        "description": "GTA Online スタントマンアワード。スタントジャンプ50回成功の方法。"
+      }
+    },
+    {
+      "id": "vehicles-wheelie",
+      "name": "ウィリー男",
+      "description": "バイクでウィリーを長距離続けた。",
+      "requirement": { "type": "cumulative", "target": 1000 },
+      "progressMax": 1000,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 50, "rp": 200 },
+        { "tier": 2, "target": 200, "rp": 600 },
+        { "tier": 3, "target": 500, "rp": 1200 },
+        { "tier": 4, "target": 1000, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "バイクに乗りアクセルを踏みながらウィリー（前輪を浮かせた走行）を続けた距離が累積カウントされる。",
+        "steps": [
+          "Akuma や Bati 801 などのスポーツバイクに搭乗",
+          "フルスロットルでアクセルを踏みながら前輪を持ち上げる（後ろ傾け）",
+          "高速道路や直線路で継続すると一度に大きな距離を稼げる"
+        ],
+        "tips": [
+          "ウィリー中は速度を維持してバランスを崩さないことが重要",
+          "高速道路1号（ベッカー橋付近の直線）が長距離に最適"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ウィリー男", "バイク", "ウィリー", "距離"],
+        "description": "GTA Online ウィリー男アワード。バイクでウィリー走行距離を稼ぐ方法。"
+      }
+    },
+    {
+      "id": "vehicles-near-miss",
+      "name": "ニアミス王",
+      "description": "「ニアミス」（車線をすれ違い）を多数記録した。",
+      "requirement": { "type": "count", "target": 500 },
+      "progressMax": 500,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 25, "rp": 200 },
+        { "tier": 2, "target": 100, "rp": 600 },
+        { "tier": 3, "target": 250, "rp": 1200 },
+        { "tier": 4, "target": 500, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "NPC や他プレイヤーの車に高速でギリギリすれ違うと「ニアミス！」と表示されカウントされる。",
+        "steps": [
+          "交通量の多い道路を高速で逆走する",
+          "NPC 車をギリギリかわしながら走行",
+          "速度が速いほどニアミスと判定されやすい"
+        ],
+        "tips": [
+          "フリーウェイを高速逆走するのが最も効率的",
+          "Super クラスの車（Krieger, Itali GTO 等）は最高速が高くニアミス判定が出やすい"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ニアミス王", "ニアミス", "逆走", "NPC"],
+        "description": "GTA Online ニアミス王アワード。ニアミスを500回記録する方法。"
+      }
+    },
+    {
+      "id": "vehicles-road-rage",
+      "name": "ロードレイジ",
+      "description": "走行中に他の車を撃った（ドライブバイ）。",
+      "requirement": { "type": "count", "target": 100 },
+      "progressMax": 100,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 200 },
+        { "tier": 2, "target": 30, "rp": 600 },
+        { "tier": 3, "target": 60, "rp": 1200 },
+        { "tier": 4, "target": 100, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "車・バイク走行中に武器を横方向に射撃（ドライブバイ）して別の車を攻撃するとカウントされる。",
+        "steps": [
+          "SMG などのドライブバイ対応武器を装備",
+          "車や バイクに乗りながら横方向のエイムを使って相手の車に射撃",
+          "NPC でも他プレイヤーでもカウントされる"
+        ],
+        "tips": [
+          "バイクはより広い射角でドライブバイが可能",
+          "GTAレース中に武器で相手を攻撃してもカウントされる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["ロードレイジ", "ドライブバイ", "走行射撃", "車両"],
+        "description": "GTA Online ロードレイジアワード。ドライブバイを100回達成する方法。"
+      }
+    },
+    {
+      "id": "vehicles-insurance",
+      "name": "ひき逃げ犯",
+      "description": "他プレイヤーの車を保険請求させた（相手の車を破壊した）。",
+      "requirement": { "type": "count", "target": 10 },
       "progressMax": 10,
-      "reward": { "rp": 12000, "cash": 0, "item": null },
+      "reward": { "rp": 3000, "cash": 0, "item": null },
       "tiers": [
-        { "tier": 1, "target": 1, "rp": 2000 },
-        { "tier": 2, "target": 3, "rp": 5000 },
-        { "tier": 3, "target": 6, "rp": 9000 },
-        { "tier": 4, "target": 10, "rp": 12000 }
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 6, "rp": 2000 },
+        { "tier": 4, "target": 10, "rp": 3000 }
       ],
       "guide": {
-        "summary": "Legendary Motorsport などのサイトでスーパーカークラスの車両を購入する。",
+        "summary": "フリーロームで他プレイヤーが所有する（トラッカー付き）車両を破壊するとカウントされる。相手には修理費が請求される。",
         "steps": [
-          "スマートフォン → ブラウザ → Legendary Motorsport サイトにアクセス",
-          "カテゴリ「Supercars」から購入したい車を選ぶ",
-          "購入後はガレージに自動格納される",
-          "人気モデル: Zentorno, T20, Adder, Nero Custom, Pariah"
+          "他プレイヤーが所有・乗車している車を強奪または爆破する",
+          "炎上・爆発で破壊が完了するとカウントが加算",
+          "自分の車・NPCの車・フリーローム車はカウント対象外"
         ],
         "tips": [
-          "週替わりポッドキャストやTwitter（X）でセール情報をチェック",
-          "Pariah（約160万ドル）はスーパーカークラス最速クラスでコスパ良好",
-          "Deluxo や Oppressor は特殊能力付きスーパーカーでおすすめ"
+          "Sticky Bomb や RPG で確実に破壊する",
+          "Auto Shop Robbery 等のミッションでは相手の車破壊がカウントされないことがある"
         ]
       },
       "media": { "images": [], "videos": [] },
       "seo": {
-        "keywords": ["スーパーカー", "Legendary Motorsport", "高級車", "購入"],
-        "description": "GTA Online スーパーカーオーナー。おすすめスーパーカーと購入方法。"
-      }
-    },
-    {
-      "id": "vehicles-distance",
-      "name": "ロングドライブ",
-      "description": "車両で長距離を走行した。",
-      "requirement": { "type": "cumulative", "target": 10000 },
-      "progressMax": 10000,
-      "reward": { "rp": 7000, "cash": 0, "item": null },
-      "tiers": [
-        { "tier": 1, "target": 100, "rp": 1000 },
-        { "tier": 2, "target": 500, "rp": 3000 },
-        { "tier": 3, "target": 2500, "rp": 5000 },
-        { "tier": 4, "target": 10000, "rp": 7000 }
-      ],
-      "guide": {
-        "summary": "フリーモードやミッション中に車両で走行した総距離がカウントされる（単位: マイル）。",
-        "steps": [
-          "通常のフリーモード活動で自然と増加する",
-          "ミッションの移動中も距離がカウントされる",
-          "高速道路（サンアンドレアス州間道路1号）を使うと長距離走行しやすい",
-          "遠距離のセットアップミッションを繰り返すと効率よく稼げる"
-        ],
-        "tips": [
-          "走行距離はキャリア統計から確認可能",
-          "自動車だけでなく、ボートや飛行機は別カウント",
-          "長時間セッションを続けることで自然と達成できる"
-        ]
-      },
-      "media": { "images": [], "videos": [] },
-      "seo": {
-        "keywords": ["走行距離", "ドライブ", "ロングドライブ", "マイル"],
-        "description": "GTA Online ロングドライブアワード。車両での総走行距離を伸ばす方法。"
+        "keywords": ["ひき逃げ犯", "車両破壊", "保険請求", "フリーローム"],
+        "description": "GTA Online ひき逃げ犯アワード。他プレイヤーの車両を10回破壊する方法。"
       }
     }
   ]

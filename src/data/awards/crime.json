@@ -1,0 +1,225 @@
+{
+  "category": "crime",
+  "label": "犯罪",
+  "icon": "🚔",
+  "color": "#ef4444",
+  "awards": [
+    {
+      "id": "crime-wanted-120",
+      "name": "逃亡者",
+      "description": "手配度5の状態で合計120分間逃げ続けた。",
+      "requirement": { "type": "time", "target": 120 },
+      "progressMax": 120,
+      "reward": { "rp": 5000, "cash": 0, "item": "タトゥー" },
+      "tiers": [
+        { "tier": 1, "target": 10, "rp": 500 },
+        { "tier": 2, "target": 30, "rp": 1500 },
+        { "tier": 3, "target": 60, "rp": 3000 },
+        { "tier": 4, "target": 120, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "手配度5（最大）の状態でカウントされ続けた累計時間が120分（2時間）に達すると完了。",
+        "steps": [
+          "軍事基地（Fort Zancudo）に侵入するか、警察を大量撃破して手配度5を取得",
+          "頑丈な車（Insurgent Pick-Up Custom や Kuruma 等）で乗り回す",
+          "追手をかわしながら可能な限り長時間維持する"
+        ],
+        "tips": [
+          "OffThe Radar（携帯→秘密サービス）を使うとレーダーが消えるが手配度はそのまま",
+          "Rockstar との接触が切れるとクリアになってしまうため街の中を走り続ける",
+          "Armored Kuruma は銃撃に強いうえスピードも速く最適"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["逃亡者", "手配度5", "120分", "逃走"],
+        "description": "GTA Online 逃亡者アワード。手配度5で120分逃げ続ける方法。"
+      }
+    },
+    {
+      "id": "crime-wanted-escape",
+      "name": "警察の天敵",
+      "description": "手配度5の状態から逃げ切った。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 5000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 1000 },
+        { "tier": 2, "target": 3, "rp": 2000 },
+        { "tier": 3, "target": 6, "rp": 3500 },
+        { "tier": 4, "target": 10, "rp": 5000 }
+      ],
+      "guide": {
+        "summary": "手配度5（最大）から「手配なし」状態になると1回カウントされる。",
+        "steps": [
+          "手配度5を取得する（軍事基地侵入・警官多数撃破等）",
+          "検索エリアから出て星が点滅状態になるまで待つ",
+          "その後完全に手配が消えるまでカバーや地下で待機"
+        ],
+        "tips": [
+          "海中に潜水すると捜索がしにくくなる（水中バイクや潜水艇が有効）",
+          "ペイン・スプレーショップに滑り込んでリペイントすると手配度がリセットされる",
+          "繰り返す場合は時間節約のため故意に星5を発生させる場所を固定する"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["警察の天敵", "手配度5", "逃げ切り", "アワード"],
+        "description": "GTA Online 警察の天敵アワード。手配度5から10回逃げ切る方法。"
+      }
+    },
+    {
+      "id": "crime-armored-car",
+      "name": "フルメタルジャケット",
+      "description": "輸送車を襲い、現金を強奪した。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 6, "rp": 2000 },
+        { "tier": 4, "target": 10, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "フリーローム中に出現する現金輸送車（Stockade）を破壊して装甲扉を開け、中の現金袋を強奪するとカウント。ただし高強化版以降（Enhanced版）では輸送車が出現しないため旧世代版のみ入手可能。",
+        "steps": [
+          "フリーマップで輸送車（Stockade）のアイコンが出現するまで動き回る",
+          "ロケットランチャーや C4 で輸送車を破壊",
+          "扉が吹き飛んで出てくる現金袋を拾う"
+        ],
+        "tips": [
+          "輸送車はランダム出現。高い場所からBlip を見つけて急行",
+          "Buzzard Attack Chopper のミサイルが破壊に最も便利",
+          "拾った後は高額の報酬が得られる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["フルメタルジャケット", "輸送車", "強奪", "現金"],
+        "description": "GTA Online フルメタルジャケットアワード。輸送車を強奪する方法。"
+      }
+    },
+    {
+      "id": "crime-all-stores",
+      "name": "武装強盗",
+      "description": "マップ上の全ての店舗を強盗した。",
+      "requirement": { "type": "unique", "target": 1 },
+      "progressMax": 1,
+      "reward": { "rp": 10000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 10000 }
+      ],
+      "guide": {
+        "summary": "ロスサントス・ブレイン郡にある全20箇所以上のコンビニや店舗を強盗すると達成される。",
+        "steps": [
+          "拳銃を構えてレジに近づき、店員を脅して金を要求（右スティック長押し）",
+          "店員が金を渡したらすぐに逃走（タイマー内に脱出しないと手配度が上がる）",
+          "地図を参考に全店舗を1つずつ回る。アイコンは Dollar（$）マーク"
+        ],
+        "tips": [
+          "速い車を用意して次の店舗へ素早く向かう",
+          "手配度が上がるので逃走ルートを予め把握すること",
+          "全店舗一覧はソーシャルクラブのマップやガイドサイトで確認できる"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["武装強盗", "全店舗", "コンビニ強盗", "アワード"],
+        "description": "GTA Online 武装強盗アワード。マップ上の全店舗を強盗する方法。"
+      }
+    },
+    {
+      "id": "crime-bounty-collect",
+      "name": "賞金稼ぎ",
+      "description": "賞金首プレイヤーをキルして賞金を獲得した。",
+      "requirement": { "type": "count", "target": 10 },
+      "progressMax": 10,
+      "reward": { "rp": 3000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 6, "rp": 2000 },
+        { "tier": 4, "target": 10, "rp": 3000 }
+      ],
+      "guide": {
+        "summary": "他のプレイヤーに賞金がかかった状態でその人物をキルすると、設定された賞金額を獲得できる。",
+        "steps": [
+          "フリーロームマップで金色の頭部アイコン（賞金首）を見つける",
+          "そのプレイヤーを倒すことで賞金+アワードカウントを獲得",
+          "賞金は最低$2,000から設定可能"
+        ],
+        "tips": [
+          "賞金首はフリーローム全体から確認できるので、位置を特定して近づく",
+          "ヘリで上空から奇襲するのが安全",
+          "Mugger や Bounty Hunter NPC より他プレイヤーへの賞金目的で参加する"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["賞金稼ぎ", "賞金首", "バウンティ", "キル"],
+        "description": "GTA Online 賞金稼ぎアワード。賞金首を10回倒す方法。"
+      }
+    },
+    {
+      "id": "crime-mugger",
+      "name": "路上強盗",
+      "description": "Mugger（ひったくり屋）を雇って他プレイヤーから金を強奪させた。",
+      "requirement": { "type": "count", "target": 5 },
+      "progressMax": 5,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 5, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "携帯電話の「Mugger（ひったくり屋）」サービスを呼んで他プレイヤーをターゲットにする。",
+        "steps": [
+          "携帯 → コンタクト → Lester → Mugger を選択",
+          "ターゲットにしたい他プレイヤーを指定（$1,000 かかる）",
+          "Mugger NPCが現れてターゲットから金を奪う"
+        ],
+        "tips": [
+          "ターゲットが動いていると Mugger が追いつかない場合がある",
+          "PvP禁止モード（Passive Mode）のプレイヤーは一部対象外の場合がある"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["路上強盗", "Mugger", "ひったくり屋", "アワード"],
+        "description": "GTA Online 路上強盗アワード。Muggerを5回雇って金を強奪する方法。"
+      }
+    },
+    {
+      "id": "crime-mission-giveup",
+      "name": "組織の一員",
+      "description": "他プレイヤーのミッションに乱入（Barge In）して妨害した。",
+      "requirement": { "type": "count", "target": 5 },
+      "progressMax": 5,
+      "reward": { "rp": 2000, "cash": 0, "item": null },
+      "tiers": [
+        { "tier": 1, "target": 1, "rp": 500 },
+        { "tier": 2, "target": 3, "rp": 1000 },
+        { "tier": 3, "target": 5, "rp": 2000 }
+      ],
+      "guide": {
+        "summary": "フリーロームで他プレイヤーがミッション中の場合、乱入（Barge In）オプションを使って敵として参加できる。",
+        "steps": [
+          "地図上で他プレイヤーのミッションアイコンを見つける",
+          "近づいて「乱入」プロンプトが出たら参加",
+          "ミッション実行中のプレイヤーを妨害する"
+        ],
+        "tips": [
+          "乱入には時間制限あり。素早く行動して妨害を成立させる",
+          "報酬も獲得できることがある"
+        ]
+      },
+      "media": { "images": [], "videos": [] },
+      "seo": {
+        "keywords": ["組織の一員", "乱入", "Barge In", "ミッション妨害"],
+        "description": "GTA Online 組織の一員アワード。他プレイヤーのミッションに乱入して妨害する方法。"
+      }
+    }
+  ]
+}
